@@ -1,0 +1,214 @@
+.testimonials{
+    background-image: url(../img/bg-section7.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.h2-oitava-sessao{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #056bff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-weight: bold;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.h1-oitava-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    font-size: 25px;
+    margin-top: 0;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 31px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        font-size: 31px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        font-size: 35px;
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.h1-slider7-oitava-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 30px;
+    margin-top: 52px;
+    line-height: 28px;
+    margin-bottom: 28px;
+    font-weight: bold;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.aspas-desk{
+    height: 32px !important;
+    display: flex;
+    margin: 85px auto 40px auto;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none !important;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        margin: 85px auto 125px auto;
+    }
+}
+.aspas{
+    height: 32px !important;
+    display: flex;
+    margin: 85px auto 50px auto;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none !important;
+    }
+}
+.p-oitava-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 40px;
+    font-family: sans-serif;
+    margin-bottom: 37px;
+    font-size: 14px;
+    font-style: italic;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.intena-slide-logo{
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none !important;
+    }
+}
+.avatar-testimonials{
+    height: 50px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        height: 60px;
+    }
+}
+.testimonials-section-8{
+    color: #fff;
+    padding-left: 15px;
+}
+.strong-on-testimonial{
+    font-weight: bold;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 23px;
+    }
+}
+.no-strong-on-testimonial{
+    color: #7d7d7d;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 20px;
+    }
+}
+.indicators-testimonial{
+    background-color: #056bff !important;
+    border: 1px solid #056bff !important;
+}
+.h2-oitava-slider-sessao{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #056bff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titulo-slider1-oitava-sessao-desk{
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: #0061ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 25px;
+    }
+}
+.h1-slider1-oitava-sessao-desk{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 28px;
+    margin-bottom: 110px;
+    font-weight: bold;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 51px;
+    }
+}
+.p-oitava-sessao-desk{
+    color: #fff;
+    text-align: center;
+    padding: 0 25% 0 25%;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 36px;
+    font-style: italic;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 23px;
+    }
+}
+.intena-slide-logo-desk{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}

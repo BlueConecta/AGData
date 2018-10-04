@@ -1,0 +1,223 @@
+.contact{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+.h1-decima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 33px;
+    margin: 0;
+    line-height: 28px;
+    padding-top: 32px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.p-decima-sessao{
+    color: #fff;
+    padding: 0 54px;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    margin-bottom: 10px;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.form-control{
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+.btn-default{
+    background-color: #056bff;
+    color: #fff;
+    border: none;
+}
+
+
+#InputEmail::-webkit-input-placeholder {
+    color: #fff;
+ }
+ 
+#InputEmail:-moz-placeholder {
+    color: #fff;
+ }
+ 
+#InputEmail::-moz-placeholder {
+    color: #fff;  
+ }
+ 
+#InputEmail:-ms-input-placeholder {  
+    color: #fff;  
+ }
+#InputPassword::-webkit-input-placeholder {
+    color: #fff;
+ }
+ #InputPassword:-moz-placeholder {
+    color: #fff;
+ }
+ 
+#InputPassword::-moz-placeholder {
+    color: #fff;  
+ }
+ 
+#InputPassword:-ms-input-placeholder {  
+    color: #fff;  
+ }
+ #InputPhone::-webkit-input-placeholder {
+    color: #fff;
+ }
+ #InputPhone:-moz-placeholder {
+    color: #fff;
+ }
+ 
+#InputPhone::-moz-placeholder {
+    color: #fff;  
+ }
+ 
+#InputPhone:-ms-input-placeholder {  
+    color: #fff;  
+ }
+
+ .form-control:focus{
+    border-color: #fff;
+ }
+
+ .mapa{
+    height: 178px;
+    padding-top: 14px;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+ }
+ .mapa-interno{
+    margin: 0 auto; 
+ }
+ .by-blue{
+     color: #fff;
+     text-align: center;
+     margin: 0;
+    //  padding-top: 10px;
+     font-family: sans-serif;
+     font-size: 14px;
+        @media (max-width: 1920px) and (min-width: 768px) {
+            display: none;
+        }
+    
+ }
+
+//  Desktop
+
+.parceiros{
+    background-color: #080808;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.div-mapa-desk{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.mapa-desk{
+    border: 0;
+    width: 600px;
+    height: 450px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        width: 725px;
+        height: 650px;
+    }
+}
+.h1-decima-sessao-desk{
+    color: #fff;
+    text-align: left;
+    font-size: 33px;
+    margin: 0;
+    line-height: 28px;
+    padding-top: 45px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 42px;
+        padding-top: 75px;
+    }
+}
+.p-decima-sessao-desk{
+    color: #a9a7a7;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 21px;
+    text-align: left;
+    padding-right: 50px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size:28px;
+        line-height: 38px;
+        margin-bottom: 100px;
+    }
+
+}
+.height-form{
+    height: 40px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        height: 50px;
+    }
+}
+.parceiros-col-1{
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.parceiros-col-2{
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.form-responsive{
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.bold-button{
+    font-weight: bold;
+}
+
+

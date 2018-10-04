@@ -1,0 +1,887 @@
+.services{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+.setima01{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.h2-setima-sessao{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #056bff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    // padding-top: 35px;
+    // padding-bottom: 10px;
+    letter-spacing: 5px;
+    // padding-left: 55px;
+    // padding-right: 55px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: 50%;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.h1-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 25px;
+    margin-top: 0px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) {
+        color: #fff;
+        text-align: center;
+        padding: 0 16px;
+        font-size: 36px;
+        margin-top: 0px;
+        line-height: 31px;
+        margin-bottom: 10px;
+        font-weight: bold; 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        color: #fff;
+        text-align: center;
+        padding: 0 16px;
+        font-size: 30px;
+        margin-top: 0px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        color: #fff;
+        text-align: center;
+        padding: 0 16px;
+        font-size: 34px;
+        margin-top: 0px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}
+.h1-slider3-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 22px;
+    margin-top: 0px;
+    line-height: 28px;
+    margin-bottom: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 24px;
+    }
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        font-size: 27px;
+    }
+}
+.p-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 52px;
+    font-family: sans-serif;
+    margin-bottom: 6px;
+    font-size: 12px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        color: #fff;
+        text-align: center;
+        padding: 8px 52px 28px 52px;
+        font-family: sans-serif;
+        margin-bottom: 0;
+        font-size: 12px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        color: #fff;
+        text-align: center;
+        padding: 0px 52px 32px 52px;
+        font-family: sans-serif;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        color: #fff;
+        text-align: center;
+        padding: 0px 52px 25px 52px;
+        font-family: sans-serif;
+        margin-bottom: 0;
+        font-size: 17px;
+    }
+}
+.button-setima-sessao{
+    // position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #056bff;
+    border-radius: 15px;
+    padding: 5px 18px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    position: relative;
+    top: 50px;
+}
+.iphone-setima-sessao{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 242px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 375px) and (min-width: 359px) {
+        height: 188px;
+    } 
+    @media (max-width: 413px) and (min-width: 376px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+    }
+}
+.iphone-setima-sessao2{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 157px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        height: 104px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        height: 104px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+    }
+}
+#carousel-example-generic{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-caption{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    top:0;
+}
+
+
+.p2-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 52px 33px 52px 33px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 15px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        padding: 52px 33px 85px 33px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        font-size: 17px;
+    }
+}
+.div-interna-setima-sessao{
+    display: flex;
+    // align-items: flex-end;
+    padding: 0 44px;
+    margin-bottom: 25px;
+    position: relative;
+    top: 50px;
+}
+.h3-setima-sessao{
+    margin-top: 0;
+    color: #fff;
+    // font-weight: bold;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    line-height: 21px;
+    text-align: justify;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 23px;
+    }
+}
+.strongh3{
+    font-weight: bold;
+}
+.p-slider3-setima-sessao{
+    color: #fff;
+    text-align: justify;
+    padding: 0 35px;
+    font-family: sans-serif;
+    margin-bottom: 13px;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        padding: 0 47px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        padding: 20px 35px 0px 35px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        padding: 25px 45px 0px 45px;
+    }
+}
+.p2-slider3-setima-sessao{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 27px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        margin-bottom: 46px;
+    }
+}
+.div2-interna-setima-sessao{
+    display: flex;
+    // justify-content: space-between;
+    padding: 0 44px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50px;
+}
+.div-interna-sessao7-segunda-1{
+    display: flex;
+    padding-left: 30px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) {
+        padding-left: 53px; 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        padding-left: 71px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        padding-left: 105px;
+    }
+}
+.div-interna-sessao7-segunda-2{
+    display: flex;
+    padding-left: 28px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        padding-left: 52px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        padding-left: 69px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        padding-left: 103px;
+    }
+}
+.div-interna-sessao7-segunda-3{
+    display: flex;
+    padding-left: 15px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        padding-left: 39px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        padding-left: 55px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        padding-left: 89px;
+    }
+}
+.div-interna-sessao7-1{
+    display: flex;
+}
+.img3-slider3{
+    height: 198px;
+}
+.arrow-left-carousel{
+    right: 50%;
+    margin-right: -10px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+}
+.arrow-right-carousel{
+    right: 50%;
+    margin-right: -10px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+}
+.h3-slider3-setima-sessao{
+    margin-top: 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 11px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    line-height: 21px;
+}
+.h1-slide4-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 28px;
+    margin-top: 6px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 31px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+}
+.p-slide5-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 40px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    font-size: 12px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 15px;
+        line-height: 18px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        margin-bottom: 50px;
+        font-size: 17px;
+        line-height: 19px;
+    }
+}
+.socials-slider7{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+}
+.socials-slider7 img{
+    height: 18px;
+}
+.p-sexta-sessao-slider{
+    color: #fff;
+    padding: 0 30px 0 54px;
+    font-family: sans-serif;
+    font-size: 11px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+        font-size: 13px;
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+        font-size: 14px;
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        font-size: 16px;
+    }
+}
+.imac{
+    height: auto;
+}
+.h1-slider7-setima-sessao{
+    color: #fff;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 30px;
+    margin-top: 6px;
+    line-height: 28px;
+    margin-bottom: 42px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+}
+.carousel{
+    top: -15px;
+}
+
+@media (max-width: 375px) and (min-width: 269px) {
+    
+}
+
+
+// Desktop
+
+.setima-sessao-desk{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.img01-slider1-sessao7{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 93%;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo-slider1-setima-sessao{
+    padding-top: 81px;
+    text-transform: uppercase;
+    color: #0061ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 21px;
+        padding-top: 178px;
+    }
+}
+.titulo2-slider1-setima-sessao{
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 60px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo3-slider-setima-sessao{
+    text-align: left;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.button-setima-sessao-desk{
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #056bff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 15px;
+    margin-top: 40px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo-slider2-setima-sessao{
+    padding-top: 105px;
+    padding-left: 125px;
+    text-transform: uppercase;
+    color: #0061ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 26px;
+    }
+}
+.titulo2-slider2-setima-sessao{
+    color: #fff;
+    text-align: left;
+    padding-left: 125px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 50px;
+    }
+}
+.titulo3-slider2-setima-sessao{
+    text-align: justify;
+    padding-right: 52%;
+    padding-left: 125px;
+    line-height: 26px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 50px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 25px;
+        line-height: 39px;
+        padding-right: 54%;
+    }
+}
+.div-interna-setima-sessao-desk{
+    display: flex;
+    padding-left: 125px;
+    margin-bottom: 25px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo-slider3-setima-sessao-desk{
+    padding-top: 60px;
+    padding-left: 125px;
+    text-transform: uppercase;
+    color: #0061ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 26px;
+        padding-top: 160px;
+    }
+}
+.titulo3-slider3-setima-sessao-desk{
+    text-align: justify;
+    padding-left: 125px;
+    line-height: 26px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 24px;
+        line-height: 39px;
+    }
+}
+.paragrafo3-slider3-setima-sessao-desk{
+    text-align: justify;
+    padding-left: 125px;
+    line-height: 26px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 18px;
+        letter-spacing: 7px;
+    }
+}
+.div-interna-slider3-setima-sessao-desk{
+    display: flex;
+    padding-left: 125px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 25px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.h3-setima-sessao-desk-bold{
+    margin-top: 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-left: 18px;
+    line-height: 21px;
+    text-align: justify;
+    font-weight: bold;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 17px;
+    }
+}
+.h3-setima-slider3-sessao-desk{
+    margin-top: 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-left: 18px;
+    line-height: 21px;
+    text-align: justify;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 17px;
+    }
+}
+.img01-slider3-sessao7-desk{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+    }
+}
+.img04-slider4-sessao7-desk{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 74%;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo1-slider4-setima-sessao-desk{
+    margin-top: 10px;
+    margin-bottom: 45px;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 38px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 46px;
+    }
+}
+.div-interna-slider2-setima-sessao-desk{
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        align-items: flex-start;
+    }
+}
+.h3-setima-sessao-slider4-desk{
+    margin-top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-left: 18px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 24px;
+    }
+}
+.p-setima-slider4-sessao-desk{
+    color: #fff;
+    padding: 10px 160px 10px 35px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+        padding: 10px 107px 10px 35px;
+    }
+    @media (min-width: 1368px) {
+        font-size: 18px;
+        padding: 10px 255px 10px 35px;
+        margin-bottom: 21px;
+    }
+}
+.titulo-slider5-setima-sessao-desk{
+    padding-top: 120px;
+    padding-left: 125px;
+    text-transform: uppercase;
+    color: #0061ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 22px;
+        padding-top: 165px;
+    }
+}
+.titulo2-slider5-setima-sessao-desk{
+    color: #fff;
+    text-align: left;
+    padding-left: 125px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 66px;
+        padding-right: 140px;
+    }
+}
+.titulo3-slider5-setima-sessao-desk{
+    text-align: justify;
+    padding-left: 125px;
+    padding-right: 284px;
+    line-height: 26px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        text-align: left;
+        padding-right: 369px;
+        font-size: 23px;
+        line-height: 32px;
+    }
+}
+.socials-slider5-setima-sessao-desk{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    padding: 0px 280px 0px 125px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        padding: 0px 380px 0px 125px;
+        top: 95px;
+    }
+}

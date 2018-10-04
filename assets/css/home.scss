@@ -1,0 +1,393 @@
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.home{
+    background-image: url(../img/background01.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.conteudo-home{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.paragrafo1{
+        color: #fff;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin: 0;
+        letter-spacing: 6px;
+        position: relative;
+        opacity: 0;
+        animation: text1 ease-in-out 1s forwards;
+        animation-delay: 1.5s;
+    @media (max-width: 361px) and (min-width: 321px) {
+        font-size: 15px;
+    }    
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 20px;
+    }
+}
+.paragrafo10{
+    display: none;
+}
+.titulo1{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 26px;    
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+    opacity: 0;
+    animation: title1 ease-in-out 3s forwards;
+    // animation-delay: 1s;
+    @media (max-width: 361px) and (min-width: 321px) {
+        font-size: 30px;       
+    }
+    @media (max-width: 375px) and (min-width: 362px) {
+        font-size: 31px;
+    } 
+    @media (max-width: 415px) and (min-width: 376px) {
+        font-size: 34px;
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        // font-size: 66px;
+    }
+}
+.titulo10{
+    display: none;
+}
+.botao1{
+    color: #fff;
+    font-family: sans-serif;
+    border: none;
+    background-color: #056bff;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    letter-spacing: 5px;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 361px) and (min-width: 321px) {
+        padding: 6px 28px;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        border-radius: 20px;
+        padding: 10px 25px;
+    }
+}
+.botao10{
+    display: none;
+}
+.redes-sociais{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 85%;
+    align-items: center;
+    justify-content: space-evenly;
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.logo-agdata{
+    height: 20px;
+    margin: 15px 0 0 10px;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: logo-agdata ease-in-out 1s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 361px) and (min-width: 321px) {
+        height: 20px;
+    }
+    @media (max-width: 415px) and (min-width: 375px) {
+        height: 28px;
+    }
+    @media (max-width: 500px) and (min-width: 416px) {
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.logo-agdata0{
+    display: none;
+}
+.icone-shopping{
+    position: relative;
+    // left: -60px;
+    opacity: 0;
+    animation: text2 ease-in-out 1s forwards;
+    animation-delay: 1s;
+}
+.facebook1{
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: icones-sociais ease-in-out 1s forwards;
+    animation-delay: 1.8s;
+}
+.facebook10{
+    display: none;
+}
+.instagram1{
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: icones-sociais ease-in-out 1s forwards;
+    animation-delay: 2s;
+}
+.instagram10{
+    display: none;
+}
+.youtube1{
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: icones-sociais ease-in-out 1s forwards;
+    animation-delay: 2.2s;
+}
+.youtube10{
+    display: none;
+}
+.linkedin1{
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: icones-sociais ease-in-out 1s forwards;
+    animation-delay: 2.4s;
+}
+.linkedin10{
+    display: none;
+}
+
+
+.logo-agdata-desk{
+    padding-top: 2%;
+    padding-left: 2%; 
+    opacity: 0;
+    animation: logo-agdata ease-in-out 1s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (min-width: 1200px) {
+        width: 13.666667%;
+    }
+}
+.redes-sociais-desk{
+    width: 25%;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    @media (max-width: 768px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.mouse-icon-desk{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: mouse-icon ease-in-out 1s forwards;
+    animation-delay: 1.8s;
+    @media (max-width: 768px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.conteudo-home-desk{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.titulo1-desk{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px auto 30px auto;
+    opacity: 0;
+    width: 50%;
+    animation: title1 ease-in-out 3s forwards;
+    // animation-delay: 1s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 65px;
+    }
+}
+.links-navegacao-desk{
+    padding-top: 2%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link-nav01{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 1.8s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link-nav010{
+    display: none;
+}
+.link-nav02{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link-nav020{
+    display: none;
+}
+.link-nav03{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2.2s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link-nav030{
+    display: none;
+}
+.link-nav04{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2.4s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link-nav040{
+    display: none;
+}
+.icone-navegacao{
+    width: 8px;
+    height: 5px;
+    margin-left: 8px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link{
+    color: #fff;
+    margin-bottom: 0;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    } 
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 20px;
+    }
+    
+}
+.nav-button-desk{
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0061ff;
+    padding: 3px 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: 0;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        padding: 6px 15px;
+    }
+}
+.nav-button-desk0{
+    display: none;
+}
+.icone-shop{
+    width: 17px;
+    height: 19px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    opacity: 0;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.shop0{
+    display: none;
+}
+.shop img{
+    cursor: pointer;
+}

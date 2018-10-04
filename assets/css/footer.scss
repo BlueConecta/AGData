@@ -1,0 +1,178 @@
+.footer{
+    background-color: #000;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-primeira-coluna{
+    background-color: #000;
+    height: 100%;
+    min-width: 25%;
+    border-bottom: 1px solid #3d3d3d;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-primeira-coluna-imagem{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+        height: 24%;
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        height: 18%;
+    }
+}
+.footer-primeira-coluna-paragrafo{
+    color: #fff;
+    font-size: 11px;
+    padding-left: 20px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 17px;
+    }
+}
+.footer-primeira-coluna-paragrafo-bold{
+    font-weight: bold;
+}
+
+
+.footer-segunda-coluna{
+    background-color: #000;
+    height: 100%;
+    min-width: 25%;
+    border-bottom: 1px solid #3d3d3d;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-segunda-coluna-paragrafoTitulo-bold{
+    color: #fff;
+    font-weight: bold;
+    padding-left: 15%;
+    padding-top: 30px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 22px;
+    }
+}
+.footer-segunda-coluna-paragrafo-bold{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-left: 15%;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 18px;
+    }
+}
+.footer-segunda-coluna-paragrafo{
+    color: #fff;
+    font-style: italic;
+    padding-left: 15%;
+}
+
+
+.footer-terceira-coluna{
+    background-color: #000;
+    height: 100%;
+    min-width: 25%;
+    border-bottom: 1px solid #3d3d3d;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-terceira-coluna-paragrafo-bold{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-top: 30px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 22px;
+    }
+}
+.footer-terceira-coluna-noticias{
+    display: flex;
+    padding-bottom: 25px;
+}
+.footer-terceira-coluna-noticias-paragrafos{
+    padding-left: 25px;
+}
+.footer-terceira-coluna-noticias-paragrafo-bold{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 18px;
+    }
+}
+.footer-terceira-coluna-noticias-paragrafo{
+    color: #fff;
+    font-style: italic;
+}
+
+.footer-quarta-coluna{
+    background-color: #000;
+    height: 100%;
+    min-width: 25%;
+    border-bottom: 1px solid #3d3d3d;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-quarta-coluna-paragrafo-bold{
+    color: #fff;
+    font-weight: bold;
+    padding-top: 30px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 22px;
+    }
+}
+.footer-quarta-coluna-texto{
+    color: #fff;
+    line-height: 30px;
+    width: 307.25px;
+    height: 90px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1368px) {
+        font-size: 18px;
+    }
+}
+
+.footer-final{
+    background-color: #000;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.footer-final-byBlue{
+}
+.footer-final-texto{
+    color: #fff;
+}
+.footer-final-redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
