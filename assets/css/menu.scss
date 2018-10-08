@@ -134,10 +134,6 @@
     font-weight: bold;
 }
 
-
-
-
-
 .menu-scroll{
     position: fixed;
     right: 0;
@@ -159,7 +155,7 @@
     align-items: center;
     margin-bottom: 0;
 }
-.primeira-opcao{
+.liga{
     width: 15px;
     height: 15px;
     background-color: white;
@@ -167,7 +163,7 @@
     cursor: pointer;
     margin-bottom: 4px;
 }
-.primeira-opcao-desativado{
+.desliga{
     width: 9.5px;
     height: 9.5px;
     background-color: transparent;
@@ -175,186 +171,18 @@
     border-radius: 9.5px;
     cursor: pointer;
     margin-bottom: 4px;
-}
-.segunda-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.segunda-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.terceira-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.terceira-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.quarta-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.quarta-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.quinta-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.quinta-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.sexta-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.sexta-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.setima-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.setima-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.oitava-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.oitava-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.nona-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.nona-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.decima-opcao{
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
-.decima-opcao-desativado{
-    width: 9.5px;
-    height: 9.5px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9.5px;
-    cursor: pointer;
 }
 
-
-.div-menu-balls{
-    display: flex;
-    align-items: center;
-    color: white;
-    width: 75px;
-    justify-content: flex-end;
-}
+// 
 
 
-
-.name-menu{
-    color: rgba(0,0,0,0);
-    margin-bottom: 4px;
-    padding-right: 4px;
-}
-.name-menu-color{
-    color: white;
-    margin-bottom: 4px;
-    padding-right: 4px;
-    font-weight: bold;
-}
-.name-menu:hover{
-    color: #fff;
-    margin-bottom: 4px;
-}
+// .div-menu-balls{
+//     display: flex;
+//     align-items: center;
+//     color: white;
+//     width: 75px;
+//     justify-content: flex-end;
+// }
 
 
 .scroll-icon{

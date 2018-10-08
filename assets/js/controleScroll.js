@@ -1,92 +1,55 @@
-$(function () {
-    $("#one").click(function () {
-        $.scrollify.move("#home-section");
-        $(".manipulador01").removeClass("primeira-opcao-desativado");
-        $(".manipulador01").addClass("primeira-opcao");
-        $(".m01").removeClass("name-menu");
-        $(".m01").addClass("name-menu-color");
-    });
-    $("#two").click(function () {
-        $.scrollify.move("#about-section");
-        $(".manipulador02").removeClass("segunda-opcao-desativado");
-        $(".manipulador02").addClass("segunda-opcao");
-        $(".m02").removeClass("name-menu");
-        $(".m02").addClass("name-menu-color");
-    });
-    $("#three").click(function () {
-        $.scrollify.move("#design-section");
-        $(".manipulador03").removeClass("terceira-opcao-desativado");
-        $(".manipulador04").addClass("terceira-opcao");
-        $(".m03").removeClass("name-menu");
-        $(".m03").addClass("name-menu-color");
-    });
-    $("#four").click(function () {
-        $.scrollify.move("#experience-section");
-        $(".manipulador04").removeClass("quarta-opcao-desativado");
-        $(".manipulador04").addClass("quarta-opcao");
-        $(".m04").removeClass("name-menu");
-        $(".m04").addClass("name-menu-color");
-    });
-    $("#five").click(function () {
-        $.scrollify.move("#video-section");
-        $(".manipulador05").removeClass("quinta-opcao-desativado");
-        $(".manipulador05").addClass("quinta-opcao");
-        $(".m05").removeClass("name-menu");
-        $(".m05").addClass("name-menu-color");
-    });
-    $("#six").click(function () {
-        $.scrollify.move("#our-section");
-        $(".manipulador06").removeClass("sexta-opcao-desativado");
-        $(".manipulador06").addClass("sexta-opcao");
-        $(".m06").removeClass("name-menu");
-        $(".m06").addClass("name-menu-color");
-    });
-    $("#seven").click(function () {
-        $.scrollify.move("#services-section");
-        $(".manipulador07").removeClass("setima-opcao-desativado");
-        $(".manipulador07").addClass("setima-opcao");
-        $(".m07").removeClass("name-menu");
-        $(".m07").addClass("name-menu-color");
-    });
-    $("#eight").click(function () {
-        $.scrollify.move("#testimonials-section");
-        $(".manipulador08").removeClass("oitava-opcao-desativado");
-        $(".manipulador08").addClass("oitava-opcao");
-        $(".m08").removeClass("name-menu");
-        $(".m08").addClass("name-menu-color");
-    });
-    $("#nine").click(function () {
-        $.scrollify.move("#technology-section");
-        $(".manipulador09").removeClass("nona-opcao-desativado");
-        $(".manipulador09").addClass("nona-opcao");
-        $(".m09").removeClass("name-menu");
-        $(".m09").addClass("name-menu-color");
-    });
-    $("#ten").click(function () {
-        $.scrollify.move("#contact-section");
-        $(".manipulador10").removeClass("decima-opcao-desativado");
-        $(".manipulador10").addClass("decima-opcao");
-        $(".m10").removeClass("name-menu");
-        $(".m10").addClass("name-menu-color");
-    });
+(function (initCode){
+    initCode(window.jQuery, window, document);
+ }(function ($, window, document){
+     $(function(){
+         $(".lista-menu li").click(function(){
+             var item = $(this);
+             $.scrollify.move(item.data("section"));
+             $(".lista-menu li").not(item).each(function () {
+                 $(this).switchClass("liga","desliga");
+             });
+             item.addClass("liga");
+             item.removeClass("desliga");
+         })
+         $(".links-navegacao-desk p").click(function(){
+            var item = $(this);
+            $.scrollify.move(item.data("section"));
+        })
+        $(".links-navegacao-desk button").click(function(){
+            var item = $(this);
+            $.scrollify.move(item.data("section"));
+        })
+        $("#arrow-to-top").click(function(){
+            var item = $(this);
+            $.scrollify.move(item.data("section"));
+        })
+        $(".conteudo-menu li a").click(function () {
+            var item = $(this);
+            $.scrollify.move(item.data("section"));
+            $(".menu-navegacao").hide(600);
+            $("#botao-menu2").hide(300);
+            $(".menu-hamburguer").show(300);
+            $(".menu-hamburguer2").hide(300);
+        })
+        $(".navegacao #botao-menu").click(function () {
+            var item = $(this);
+            $(".menu-navegacao").show(300);
+            $("#botao-menu").hide(300);
+            $(".menu-hamburguer2").show(300);
+        })
+        $(".navegacao #botao-menu2").click(function () {
+            var item = $(this);
+            $(".menu-navegacao").hide(600);
+            $("#botao-menu2").hide(300);
+            $(".menu-hamburguer").show(300);
+            $(".menu-hamburguer2").hide(3000);
+        })      
+     })
+     
+ }));
 
-    $("#link1").click(function () {
-        $.scrollify.move("#about-section");
-    });
-    $("#link2").click(function () {
-        $.scrollify.move("#video-section");
-    });
-    $("#link3").click(function () {
-        $.scrollify.move("#services-section");
-    });
-    $("#link4").click(function () {
-        $.scrollify.move("#technology-section");
-    });
-    $("#link5").click(function () {
-        $.scrollify.move("#contact-section");
-    });
 
-});
+
 $(function () {
 
     $.scrollify({
@@ -94,16 +57,10 @@ $(function () {
         InterstitialSection: ".sessao, .footer",
         before: function (section) {
 
-
             if (section === 0) {
+
                 $(".controle-arrow").removeClass("arrow-up");
                 $(".controle-arrow").addClass("arrow-up0");
-
-                $(".manipulador01").removeClass("primeira-opcao-desativado");
-                $(".manipulador01").addClass("primeira-opcao");
-
-                $(".m01").removeClass("name-menu");
-                $(".m01").addClass("name-menu-color");
 
                 $(".elemento1").removeClass("logo-agdata0");
                 $(".elemento1").addClass("logo-agdata");
@@ -152,16 +109,11 @@ $(function () {
 
                 $(".menu05").removeClass("nav-button-desk0");
                 $(".menu05").addClass("nav-button-desk");
-            }
+                }
+
             if (section !== 0) {
                 $(".controle-arrow").removeClass("arrow-up0");
                 $(".controle-arrow").addClass("arrow-up");
-
-                $(".manipulador01").removeClass("primeira-opcao");
-                $(".manipulador01").addClass("primeira-opcao-desativado");
-
-                $(".m01").removeClass("name-menu-color");
-                $(".m01").addClass("name-menu");
 
                 $(".elemento1").removeClass("logo-agdata");
                 $(".elemento1").addClass("logo-agdata0");
@@ -212,11 +164,6 @@ $(function () {
                 $(".menu05").addClass("nav-button-desk0");
             }
             if (section === 1) {
-                $(".manipulador02").removeClass("segunda-opcao-desativado");
-                $(".manipulador02").addClass("segunda-opcao");
-
-                $(".m02").removeClass("name-menu");
-                $(".m02").addClass("name-menu-color");
 
                 $(".control-desk-div2").removeClass("desktop-div-section2-1-0");
                 $(".control-desk-div2").addClass("desktop-div-section2-1");
@@ -238,11 +185,6 @@ $(function () {
 
             }
             if (section !== 1) {
-                $(".manipulador02").removeClass("segunda-opcao");
-                $(".manipulador02").addClass("segunda-opcao-desativado");
-
-                $(".m02").removeClass("name-menu-color");
-                $(".m02").addClass("name-menu");
 
                 $(".control-desk-div2").removeClass("desktop-div-section2-1");
                 $(".control-desk-div2").addClass("desktop-div-section2-1-0");
@@ -263,11 +205,6 @@ $(function () {
                 $(".controlador-sobre-segunda-sessao").addClass("sobre-segunda-sessao-0");
             }
             if (section === 2) {
-                $(".manipulador03").removeClass("terceira-opcao-desativado");
-                $(".manipulador03").addClass("terceira-opcao");
-
-                $(".m03").removeClass("name-menu");
-                $(".m03").addClass("name-menu-color");
 
                 $(".controladorbox1").removeClass("box-1-0");
                 $(".controladorbox1").addClass("box-1");
@@ -373,11 +310,6 @@ $(function () {
 
             }
             if (section !== 2) {
-                $(".manipulador03").removeClass("terceira-opcao");
-                $(".manipulador03").addClass("terceira-opcao-desativado");
-
-                $(".m03").removeClass("name-menu-color");
-                $(".m03").addClass("name-menu");
 
                 $(".controladorbox1").removeClass("box-1");
                 $(".controladorbox1").addClass("box-1-0");
@@ -389,8 +321,6 @@ $(function () {
                 $(".controladorbox3").addClass("box-3-0");
             }
             if (section === 3) {
-                $(".manipulador04").removeClass("quarta-opcao-desativado");
-                $(".manipulador04").addClass("quarta-opcao");
 
                 $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk-0");
                 $(".control-h1-section-4").addClass("titulo-quarta-sessao-desk");
@@ -494,74 +424,34 @@ $(function () {
                                 
             }
             if (section === 5) {
-                $(".manipulador06").removeClass("sexta-opcao-desativado");
-                $(".manipulador06").addClass("sexta-opcao");
-
-                $(".m06").removeClass("name-menu");
-                $(".m06").addClass("name-menu-color");
+               
             }
             if (section !== 5) {
-                $(".manipulador06").removeClass("sexta-opcao");
-                $(".manipulador06").addClass("sexta-opcao-desativado");
-
-                $(".m06").removeClass("name-menu-color");
-                $(".m06").addClass("name-menu");
+                
             }
             if (section === 6) {
-                $(".manipulador07").removeClass("setima-opcao-desativado");
-                $(".manipulador07").addClass("setima-opcao");
-
-                $(".m07").removeClass("name-menu");
-                $(".m07").addClass("name-menu-color");
+                
             }
             if (section !== 6) {
-                $(".manipulador07").removeClass("setima-opcao");
-                $(".manipulador07").addClass("setima-opcao-desativado");
-
-                $(".m07").removeClass("name-menu-color");
-                $(".m07").addClass("name-menu");
+                
             }
             if (section === 7) {
-                $(".manipulador08").removeClass("oitava-opcao-desativado");
-                $(".manipulador08").addClass("oitava-opcao");
-
-                $(".m08").removeClass("name-menu");
-                $(".m08").addClass("name-menu-color");
+               
             }
             if (section !== 7) {
-                $(".manipulador08").removeClass("oitava-opcao");
-                $(".manipulador08").addClass("oitava-opcao-desativado");
-
-                $(".m08").removeClass("name-menu-color");
-                $(".m08").addClass("name-menu");
+                
             }
             if (section === 8) {
-                $(".manipulador09").removeClass("nona-opcao-desativado");
-                $(".manipulador09").addClass("nona-opcao");
-
-                $(".m09").removeClass("name-menu");
-                $(".m09").addClass("name-menu-color");
+                
             }
             if (section !== 8) {
-                $(".manipulador09").removeClass("nona-opcao");
-                $(".manipulador09").addClass("nona-opcao-desativado");
-
-                $(".m09").removeClass("name-menu-color");
-                $(".m09").addClass("name-menu");
+                
             }
             if (section === 9) {
-                $(".manipulador10").removeClass("decima-opcao-desativado");
-                $(".manipulador10").addClass("decima-opcao");
-
-                $(".m10").removeClass("name-menu");
-                $(".m10").addClass("name-menu-color");
+                
             }
             if (section !== 9) {
-                $(".manipulador10").removeClass("decima-opcao");
-                $(".manipulador10").addClass("decima-opcao-desativado");
-
-                $(".m10").removeClass("name-menu-color");
-                $(".m10").addClass("name-menu");
+                
             }
         }
     });
