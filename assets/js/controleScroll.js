@@ -12,14 +12,14 @@
              item.addClass("on");
              item.removeClass("off");
          })
-         $(".navigation-links-desktop p").click(function(){
+         $(".navigation-links-desktop p, button").click(function(){
             var item = $(this);
             $.scrollify.move(item.data("section"));
         })
-        $(".navigation-links-desktop button").click(function(){
-            var item = $(this);
-            $.scrollify.move(item.data("section"));
-        })
+        //$(".navigation-links-desktop button").click(function(){
+           // var item = $(this);
+            //$.scrollify.move(item.data("section"));
+        //})
         $("#arrow-to-top").click(function(){
             var item = $(this);
             $.scrollify.move(item.data("section"));
@@ -54,6 +54,12 @@ $(function () {
         InterstitialSection: ".sessao, .footer",
         before: function (section) {
             if (section === 0) {
+                
+               $("body").not(".circle-home").each(function () {
+                 $(this).switchClass("on","off");
+               });
+                
+                
                 $(".circle-home").removeClass("off");
                 $(".circle-home").addClass("on");
 
