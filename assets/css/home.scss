@@ -11,7 +11,7 @@ body, html{
     height: 100%;
     width: 100%;
 }
-.conteudo-home{
+.content-home{
     position: absolute;
     text-align: center;
     top: 50%;
@@ -22,7 +22,7 @@ body, html{
         display: none;
     }
 }
-.paragrafo1{
+.paragraph-home{
         color: #fff;
         text-transform: uppercase;
         font-family: sans-serif;
@@ -41,10 +41,10 @@ body, html{
         font-size: 20px;
     }
 }
-.paragrafo10{
+.paragraph-home-disabled{
     display: none;
 }
-.titulo1{
+.title-home{
     color: #fff;
     font-family: sans-serif;
     font-size: 26px;    
@@ -66,10 +66,10 @@ body, html{
         // font-size: 66px;
     }
 }
-.titulo10{
+.title-home-disabled{
     display: none;
 }
-.botao1{
+.button-home{
     color: #fff;
     font-family: sans-serif;
     border: none;
@@ -92,10 +92,10 @@ body, html{
         padding: 10px 25px;
     }
 }
-.botao10{
+.button-home-disabled{
     display: none;
 }
-.redes-sociais{
+.social-network-mobile{
     width: 100%;
     display: flex;
     position: absolute;
@@ -106,7 +106,7 @@ body, html{
         display: none;
     }
 }
-.logo-agdata{
+.logo-agdata-mobile{
     height: 20px;
     margin: 15px 0 0 10px;
     position: relative;
@@ -126,7 +126,7 @@ body, html{
         display: none;
     }
 }
-.logo-agdata0{
+.logo-agdata-disabled{
     display: none;
 }
 .icone-shopping{
@@ -136,49 +136,49 @@ body, html{
     animation: text2 ease-in-out 1s forwards;
     animation-delay: 1s;
 }
-.facebook1{
+.facebook{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.8s;
 }
-.facebook10{
+.facebook-disabled{
     display: none;
 }
-.instagram1{
+.instagram{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2s;
 }
-.instagram10{
+.instagram-disabled{
     display: none;
 }
-.youtube1{
+.youtube{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2.2s;
 }
-.youtube10{
+.youtube-disabled{
     display: none;
 }
-.linkedin1{
+.linkedin{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2.4s;
 }
-.linkedin10{
+.linkedin-disabled{
     display: none;
 }
 
 
-.logo-agdata-desk{
+.logo-agdata-desktop{
     padding-top: 2%;
     padding-left: 2%; 
     opacity: 0;
@@ -191,7 +191,7 @@ body, html{
         width: 13.666667%;
     }
 }
-.redes-sociais-desk{
+.social-network-desktop{
     width: 25%;
     display: flex;
     position: absolute;
@@ -203,7 +203,7 @@ body, html{
         display: none;
     }
 }
-.mouse-icon-desk{
+.mouse-icon-home{
     width: 20px;
     height: 30px;
     position: absolute;
@@ -217,7 +217,7 @@ body, html{
         display: none;
     }
 }
-.conteudo-home-desk{
+.content-home-desktop{
     position: absolute;
     text-align: center;
     top: 50%;
@@ -228,7 +228,7 @@ body, html{
         display: none;
     }
 }
-.titulo1-desk{
+.title-home-desktop{
     color: #fff;
     font-family: sans-serif;
     font-size: 55px;
@@ -247,7 +247,10 @@ body, html{
         font-size: 65px;
     }
 }
-.links-navegacao-desk{
+.title-home-desktop-disabled{
+    display: none;
+}
+.navigation-links-desktop{
     padding-top: 2%;
     width: 50%;
     display: flex;
@@ -256,23 +259,23 @@ body, html{
         display: none;
     }
 }
-.link-nav01{
+.agency-desktop-link{
     display: flex;
     align-items: center;
     position: relative;
     left: -60px;
     opacity: 0;
     cursor: pointer;
-    animation: links-desk ease-in-out 1s forwards;
+    animation: links-desk ease-in-out 1s  forwards;
     animation-delay: 1.8s;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
 }
-.link-nav010{
+.agency-desktop-link-disabled{
     display: none;
 }
-.link-nav02{
+.video-desktop-link{
     display: flex;
     align-items: center;
     position: relative;
@@ -285,10 +288,10 @@ body, html{
         display: none;
     }
 }
-.link-nav020{
+.video-desktop-link-disabled{
     display: none;
 }
-.link-nav03{
+.services-desktop-link{
     display: flex;
     align-items: center;
     position: relative;
@@ -301,10 +304,10 @@ body, html{
         display: none;
     }
 }
-.link-nav030{
+.services-desktop-link-disabled{
     display: none;
 }
-.link-nav04{
+.technology-desktop-link{
     display: flex;
     align-items: center;
     position: relative;
@@ -317,7 +320,7 @@ body, html{
         display: none;
     }
 }
-.link-nav040{
+.technology-desktop-link-disabled{
     display: none;
 }
 .icone-navegacao{
@@ -341,7 +344,7 @@ body, html{
     }
     
 }
-.nav-button-desk{
+.contact-button-desktop{
     border: none;
     border-radius: 15px;
     text-transform: uppercase;
@@ -373,7 +376,7 @@ body, html{
         display: none;
     }
 }
-.shop{
+.icon-shop{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,9 +388,9 @@ body, html{
         display: none;
     }
 }
-.shop0{
+.icon-shop-disabled{
     display: none;
 }
-.shop img{
+.icon-shop img{
     cursor: pointer;
 }

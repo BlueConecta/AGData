@@ -1,21 +1,22 @@
 (function (initCode){
     initCode(window.jQuery, window, document);
- }(function ($, window, document){
+ }
+ (function ($, window, document){
      $(function(){
-         $(".lista-menu li").click(function(){
+         $(".indicators-list li").click(function(){
              var item = $(this);
              $.scrollify.move(item.data("section"));
-             $(".lista-menu li").not(item).each(function () {
-                 $(this).switchClass("liga","desliga");
+             $(".indicators-list li").not(item).each(function () {
+                 $(this).switchClass("on","off");
              });
-             item.addClass("liga");
-             item.removeClass("desliga");
+             item.addClass("on");
+             item.removeClass("off");
          })
-         $(".links-navegacao-desk p").click(function(){
+         $(".navigation-links-desktop p").click(function(){
             var item = $(this);
             $.scrollify.move(item.data("section"));
         })
-        $(".links-navegacao-desk button").click(function(){
+        $(".navigation-links-desktop button").click(function(){
             var item = $(this);
             $.scrollify.move(item.data("section"));
         })
@@ -23,147 +24,148 @@
             var item = $(this);
             $.scrollify.move(item.data("section"));
         })
-        $(".conteudo-menu li a").click(function () {
+        $(".content-mobile-menu li a").click(function () {
             var item = $(this);
             $.scrollify.move(item.data("section"));
-            $(".menu-navegacao").hide(600);
-            $("#botao-menu2").hide(300);
+            $(".navigation-mobile-menu").hide(600);
+            $("#button-mobile-closed").hide(300);
             $(".menu-hamburguer").show(300);
-            $(".menu-hamburguer2").hide(300);
+            $(".menu-hamburguer-closed").hide(300);
         })
-        $(".navegacao #botao-menu").click(function () {
+        $(".navigation-desktop-menu #button-mobile").click(function () {
             var item = $(this);
-            $(".menu-navegacao").show(300);
-            $("#botao-menu").hide(300);
-            $(".menu-hamburguer2").show(300);
+            $(".navigation-mobile-menu").show(300);
+            $("#button-mobile").hide(300);
+            $(".menu-hamburguer-closed").show(300);
         })
-        $(".navegacao #botao-menu2").click(function () {
+        $(".navigation-desktop-menu #button-mobile-closed").click(function () {
             var item = $(this);
-            $(".menu-navegacao").hide(600);
-            $("#botao-menu2").hide(300);
+            $(".navigation-mobile-menu").hide(600);
+            $("#button-mobile-closed").hide(300);
             $(".menu-hamburguer").show(300);
-            $(".menu-hamburguer2").hide(3000);
-        })      
+            $(".menu-hamburguer-closed").hide(3000);
+        })  
      })
-     
  }));
-
-
-
 $(function () {
-
     $.scrollify({
         section: ".sessao",
+        scrollSpeed: 1800,
         InterstitialSection: ".sessao, .footer",
         before: function (section) {
-
             if (section === 0) {
+                $(".circle-home").removeClass("off");
+                $(".circle-home").addClass("on");
 
-                $(".controle-arrow").removeClass("arrow-up");
-                $(".controle-arrow").addClass("arrow-up0");
+                $(".control-arrow").removeClass("arrow-up");
+                $(".control-arrow").addClass("arrow-up-disabled");
 
-                $(".elemento1").removeClass("logo-agdata0");
-                $(".elemento1").addClass("logo-agdata");
+                $(".m-logo-mobile").removeClass("logo-agdata-disabled");
+                $(".m-logo-mobile").addClass("logo-agdata-mobile");
 
-                $(".logo").removeClass("logo-agdata0");
-                $(".logo").addClass("logo-agdata-desk");
+                $(".m-logo-desktop").removeClass("logo-agdata-disabled");
+                $(".m-logo-desktop").addClass("logo-agdata-desktop");                
 
-                $(".icon-shop").removeClass("shop0");
-                $(".icon-shop").addClass("shop");
+                $(".m-icon-shop").removeClass("icon-shop-disabled");
+                $(".m-icon-shop").addClass("icon-shop");
 
-                $(".elemento2").removeClass("menu-hamburguer0");
-                $(".elemento2").addClass("menu-hamburguer");
+                $(".m-paragraph-home").removeClass("paragraph-home-disabled");
+                $(".m-paragraph-home").addClass("paragraph-home");
 
-                $(".elemento3").removeClass("paragrafo10");
-                $(".elemento3").addClass("paragrafo1");
+                $(".m-title-home").removeClass("title-home-disabled");
+                $(".m-title-home").addClass("title-home");
 
-                $(".elemento4").removeClass("titulo10");
-                $(".elemento4").addClass("titulo1");
+                $(".m-title-home-desktop").removeClass("title-home-desktop-disabled");
+                $(".m-title-home-desktop").addClass("title-home-desktop");
 
-                $(".elemento5").removeClass("botao10");
-                $(".elemento5").addClass("botao1");
+                $(".m-button-desktop").removeClass("button-home-disabled");
+                $(".m-button-desktop").addClass("button-home");
 
-                $(".elemento6").removeClass("facebook10");
-                $(".elemento6").addClass("facebook1");
+                $(".m-facebook").removeClass("facebook-disabled");
+                $(".m-facebook").addClass("facebook");
 
-                $(".elemento7").removeClass("instagram10");
-                $(".elemento7").addClass("instagram1");
+                $(".m-instagram").removeClass("instagram-disabled");
+                $(".m-instagram").addClass("instagram");
 
-                $(".elemento8").removeClass("youtube10");
-                $(".elemento8").addClass("youtube1");
+                $(".m-youtube").removeClass("youtube-disabled");
+                $(".m-youtube").addClass("youtube");
 
-                $(".elemento9").removeClass("linkedin10");
-                $(".elemento9").addClass("linkedin1");
+                $(".m-linkedin").removeClass("linkedin-disabled");
+                $(".m-linkedin").addClass("linkedin");
 
-                $(".menu01").removeClass("link-nav010");
-                $(".menu01").addClass("link-nav01");
+                $(".m-agency").removeClass("agency-desktop-link-disabled");
+                $(".m-agency").addClass("agency-desktop-link");
 
-                $(".menu02").removeClass("link-nav020");
-                $(".menu02").addClass("link-nav02");
+                $(".m-video").removeClass("video-desktop-link-disabled");
+                $(".m-video").addClass("video-desktop-link");
 
-                $(".menu03").removeClass("link-nav030");
-                $(".menu03").addClass("link-nav03");
+                $(".m-services").removeClass("services-desktop-link-disabled");
+                $(".m-services").addClass("services-desktop-link");
 
-                $(".menu04").removeClass("link-nav040");
-                $(".menu04").addClass("link-nav04");
+                $(".m-technology").removeClass("technology-desktop-link-disabled");
+                $(".m-technology").addClass("technology-desktop-link");
 
-                $(".menu05").removeClass("nav-button-desk0");
-                $(".menu05").addClass("nav-button-desk");
+                $(".m-contact").removeClass("contact-button-desktop-disabled");
+                $(".m-contact").addClass("contact-button-desktop");
                 }
-
             if (section !== 0) {
-                $(".controle-arrow").removeClass("arrow-up0");
-                $(".controle-arrow").addClass("arrow-up");
+                $(".circle-home").removeClass("on");
+                $(".circle-home").addClass("off");
+                
+                $(".control-arrow").removeClass("arrow-up-disabled");
+                $(".control-arrow").addClass("arrow-up");
 
-                $(".elemento1").removeClass("logo-agdata");
-                $(".elemento1").addClass("logo-agdata0");
+                $(".m-logo-mobile").removeClass("logo-agdata-mobile");
+                $(".m-logo-mobile").addClass("logo-agdata-disabled");
 
-                $(".logo").removeClass("logo-agdata-desk");
-                $(".logo").addClass("logo-agdata0");
+                $(".m-logo-desktop").removeClass("logo-agdata-desktop");
+                $(".m-logo-desktop").addClass("logo-agdata-disabled");
 
-                $(".icon-shop").removeClass("shop");
-                $(".icon-shop").addClass("shop0");
+                $(".m-icon-shop").removeClass("icon-shop");
+                $(".m-icon-shop").addClass("icon-shop-disabled");
 
-                $(".elemento2").removeClass("menu-hamburguer");
-                $(".elemento2").addClass("menu-hamburguer0");
+                $(".m-paragraph-home").removeClass("paragraph-home");
+                $(".m-paragraph-home").addClass("paragraph-home-disabled");
 
-                $(".elemento3").removeClass("paragrafo1");
-                $(".elemento3").addClass("paragrafo10");
+                $(".m-title-home").removeClass("title-home");
+                $(".m-title-home").addClass("title-home-disabled");
 
-                $(".elemento4").removeClass("titulo1");
-                $(".elemento4").addClass("titulo10");
+                $(".m-title-home-desktop").removeClass("title-home-desktop");
+                $(".m-title-home-desktop").addClass("title-home-desktop-disabled");
 
-                $(".elemento5").removeClass("botao1");
-                $(".elemento5").addClass("botao10");
+                $(".m-button-desktop").removeClass("button-home");
+                $(".m-button-desktop").addClass("button-home-disabled");
 
-                $(".elemento6").removeClass("facebook1");
-                $(".elemento6").addClass("facebook10");
+                $(".m-facebook").removeClass("facebook");
+                $(".m-facebook").addClass("facebook-disabled");
 
-                $(".elemento7").removeClass("instagram1");
-                $(".elemento7").addClass("instagram10");
+                $(".m-instagram").removeClass("instagram");
+                $(".m-instagram").addClass("instagram-disabled");
 
-                $(".elemento8").removeClass("youtube1");
-                $(".elemento8").addClass("youtube10");
+                $(".m-youtube").removeClass("youtube");
+                $(".m-youtube").addClass("youtube-disabled");
 
-                $(".elemento9").removeClass("linkedin1");
-                $(".elemento9").addClass("linkedin10");
+                $(".m-linkedin").removeClass("linkedin");
+                $(".m-linkedin").addClass("linkedin-disabled");
 
-                $(".menu01").removeClass("link-nav01");
-                $(".menu01").addClass("link-nav010");
+                $(".m-agency").removeClass("agency-desktop-link");
+                $(".m-agency").addClass("agency-desktop-link-disabled");
 
-                $(".menu02").removeClass("link-nav02");
-                $(".menu02").addClass("link-nav020");
+                $(".m-video").removeClass("video-desktop-link");
+                $(".m-video").addClass("video-desktop-link-disabled");
 
-                $(".menu03").removeClass("link-nav03");
-                $(".menu03").addClass("link-nav030");
+                $(".m-services").removeClass("services-desktop-link");
+                $(".m-services").addClass("services-desktop-link-disabled");
 
-                $(".menu04").removeClass("link-nav04");
-                $(".menu04").addClass("link-nav040");
+                $(".m-technology").removeClass("technology-desktop-link");
+                $(".m-technology").addClass("technology-desktop-link-disabled");
 
-                $(".menu05").removeClass("nav-button-desk");
-                $(".menu05").addClass("nav-button-desk0");
+                $(".m-contact").removeClass("contact-button-desktop");
+                $(".m-contact").addClass("contact-button-desktop-disabled");
             }
             if (section === 1) {
+                $(".circle-about").removeClass("off");
+                $(".circle-about").addClass("on");
 
                 $(".control-desk-div2").removeClass("desktop-div-section2-1-0");
                 $(".control-desk-div2").addClass("desktop-div-section2-1");
@@ -186,6 +188,9 @@ $(function () {
             }
             if (section !== 1) {
 
+                $(".circle-about").removeClass("on");
+                $(".circle-about").addClass("off");
+
                 $(".control-desk-div2").removeClass("desktop-div-section2-1");
                 $(".control-desk-div2").addClass("desktop-div-section2-1-0");
 
@@ -205,6 +210,8 @@ $(function () {
                 $(".controlador-sobre-segunda-sessao").addClass("sobre-segunda-sessao-0");
             }
             if (section === 2) {
+                $(".circle-design").removeClass("off");
+                $(".circle-design").addClass("on");
 
                 $(".controladorbox1").removeClass("box-1-0");
                 $(".controladorbox1").addClass("box-1");
@@ -310,6 +317,8 @@ $(function () {
 
             }
             if (section !== 2) {
+                $(".circle-design").removeClass("on");
+                $(".circle-design").addClass("off");
 
                 $(".controladorbox1").removeClass("box-1");
                 $(".controladorbox1").addClass("box-1-0");
@@ -321,6 +330,8 @@ $(function () {
                 $(".controladorbox3").addClass("box-3-0");
             }
             if (section === 3) {
+                $(".circle-experience").removeClass("off");
+                $(".circle-experience").addClass("on");
 
                 $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk-0");
                 $(".control-h1-section-4").addClass("titulo-quarta-sessao-desk");
@@ -352,6 +363,9 @@ $(function () {
                 }, 1500);
             }
             if (section !== 3) {
+                $(".circle-experience").removeClass("on");
+                $(".circle-experience").addClass("off");
+
                 $(".manipulador04").removeClass("quarta-opcao");
                 $(".manipulador04").addClass("quarta-opcao-desativado");
 
@@ -384,6 +398,9 @@ $(function () {
                 }, 10);
             }
             if (section === 4) {
+                $(".circle-video").removeClass("off");
+                $(".circle-video").addClass("on");
+
                 $(".manipulador05").removeClass("quinta-opcao-desativado");
                 $(".manipulador05").addClass("quinta-opcao");
 
@@ -404,6 +421,9 @@ $(function () {
                 
             }
             if (section !== 4) {
+                $(".circle-video").removeClass("on");
+                $(".circle-video").addClass("off");
+
                 $(".manipulador05").removeClass("quinta-opcao");
                 $(".manipulador05").addClass("quinta-opcao-desativado");
 
@@ -424,34 +444,44 @@ $(function () {
                                 
             }
             if (section === 5) {
-               
+                $(".circle-our").removeClass("off");
+                $(".circle-our").addClass("on");               
             }
             if (section !== 5) {
-                
+                $(".circle-our").removeClass("on");
+                $(".circle-our").addClass("off");
             }
             if (section === 6) {
-                
+                $(".circle-services").removeClass("off");
+                $(".circle-services").addClass("on");                
             }
             if (section !== 6) {
-                
+                $(".circle-services").removeClass("on");
+                $(".circle-services").addClass("off");
             }
             if (section === 7) {
-               
+                $(".circle-testimonials").removeClass("off");
+                $(".circle-testimonials").addClass("on");
             }
             if (section !== 7) {
-                
+                $(".circle-testimonials").removeClass("on");
+                $(".circle-testimonials").addClass("off");
             }
             if (section === 8) {
-                
+                $(".circle-technology").removeClass("off");
+                $(".circle-technology").addClass("on");
             }
             if (section !== 8) {
-                
+                $(".circle-technology").removeClass("on");
+                $(".circle-technology").addClass("off");
             }
             if (section === 9) {
-                
+                $(".circle-contact").removeClass("off");
+                $(".circle-contact").addClass("on");
             }
             if (section !== 9) {
-                
+                $(".circle-contact").removeClass("on");
+                $(".circle-contact").addClass("off");
             }
         }
     });

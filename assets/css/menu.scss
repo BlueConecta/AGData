@@ -1,5 +1,5 @@
-.navegacao{
-    position: fixed;
+.navigation-desktop-menu{
+    position: absolute;
     z-index: 500;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     margin-top: -2px;
     transform: rotate(135deg);
 }
-.menu-navegacao{
+.navigation-mobile-menu{
     display: none;
     width: 100%;
     height: 100%;
@@ -57,17 +57,17 @@
     margin-bottom: 0;
     right: 0;
 }
-.menu-navegacao-fechado{
-    width: 40%;
-    height: 70%;
-    position: fixed;
-    background-color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-    margin-bottom: 0;
-    right: -40%;
-}
+// .navigation-menu-disabled{
+//     width: 40%;
+//     height: 70%;
+//     position: fixed;
+//     background-color: #fff;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     z-index: 20;
+//     margin-bottom: 0;
+//     right: -40%;
+// }
 
 @keyframes fecharMenu {
     from{
@@ -90,7 +90,7 @@
         display: none;
     }
 }
-.menu-hamburguer2{
+.menu-hamburguer-closed{
     display: none;
     z-index: 50;
     position: fixed;
@@ -101,27 +101,27 @@
         display: none;
     }
 }
-.conteudo-menu{
+.content-mobile-menu{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
     margin-bottom: 0;
 }
-.conteudo-menu li a{
+.content-mobile-menu li a{
     text-decoration: none;
     color: #fff;
     padding-left: 18px;
     font-weight: bold;
     font-size: 21px;
 }
-.conteudo-menu li p{
+.content-mobile-menu li p{
     text-decoration: none;
     color: #fff;
     padding-left: 18px;
     font-size: 13px;
 }
-.menu-redes-sociais{
+.menu-socials-network{
     display: flex;
     padding-left: 18px;
     justify-content: space-around;
@@ -134,7 +134,7 @@
     font-weight: bold;
 }
 
-.menu-scroll{
+.navigation-indicator{
     position: fixed;
     right: 0;
     top: 50%;
@@ -149,13 +149,13 @@
         display: none;
     }
 }
-.lista-menu{
+.indicators-list{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
 }
-.liga{
+.on{
     width: 15px;
     height: 15px;
     background-color: white;
@@ -163,7 +163,7 @@
     cursor: pointer;
     margin-bottom: 4px;
 }
-.desliga{
+.off{
     width: 9.5px;
     height: 9.5px;
     background-color: transparent;
@@ -172,17 +172,6 @@
     cursor: pointer;
     margin-bottom: 4px;
 }
-
-// 
-
-
-// .div-menu-balls{
-//     display: flex;
-//     align-items: center;
-//     color: white;
-//     width: 75px;
-//     justify-content: flex-end;
-// }
 
 
 .scroll-icon{
@@ -213,6 +202,6 @@
 .arrow-up img{
     transform: rotate(90deg);
 }
-.arrow-up0{
+.arrow-up-disabled{
     display: none;
 }

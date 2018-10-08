@@ -12,8 +12,8 @@
 
 <body>
 
-    <div class="controle-menu menu-navegacao">
-        <ul class="conteudo-menu">
+    <div class="navigation-mobile-menu">
+        <ul class="content-mobile-menu">
             <li><a id="about-menu" data-section="#about-section">Agency</a></li>
             <li><a id="video-menu" data-section="#video-section">Vídeo</a></li>
             <li><a id="services-menu" data-section="#services-section">Services</a></li>
@@ -22,7 +22,7 @@
             <li>
                 <p>Praça Dr. Adhemar de Almeida Prado, n 40.<br/> <span class="tel-menu">(11) 9 3258 - 5842</span></p>
             </li>
-            <li class="menu-redes-sociais">
+            <li class="menu-socials-network">
                 <img src="assets/img/facebook-logo.png" alt="Facebook">
                 <img src="assets/img/instagram-logo.png" alt="Instagram">
                 <img src="assets/img/youtube-logo.png" alt="YouTube">
@@ -31,56 +31,55 @@
         </ul>
     </div>
 
-    <div class="menu-scroll">
-        <ul class="lista-menu">
-            <li id="one" data-section="#home-section" class="liga"></li>
-            <li id="two" data-section="#about-section" class="desliga"></li>
-            <li id="three" data-section="#design-section" class="desliga"></li>
-            <li id="four" data-section="#experience-section" class="desliga"></li>
-            <li id="five" data-section="#video-section" class="desliga"></li>
-            <li id="six" data-section="#our-section" class="desliga"></li>
-            <li id="seven" data-section="#services-section" class="desliga"></li>
-            <li id="eight" data-section="#testimonials-section" class="desliga"></li>
-            <li id="nine" data-section="#technology-section" class="desliga"></li>
-            <li id="ten" data-section="#contact-section" class="desliga"></li>
+    <div class="navigation-indicator">
+        <ul class="indicators-list">
+            <li data-section="#home-section" class="circle-home on"></li>
+            <li data-section="#about-section" class="circle-about off"></li>
+            <li data-section="#design-section" class="circle-design off"></li>
+            <li data-section="#experience-section" class="circle-experience off"></li>
+            <li data-section="#video-section" class="circle-video off"></li>
+            <li data-section="#our-section" class="circle-our off"></li>
+            <li data-section="#services-section" class="circle-services off"></li>
+            <li data-section="#testimonials-section" class="circle-testimonials off"></li>
+            <li data-section="#technology-section" class="circle-technology off"></li>
+            <li data-section="#contact-section" class="circle-contact off"></li>
         </ul>
 
     </div>
 
-    <nav class="navegacao">
-        <img class="elemento1 logo-agdata" src="assets/img/agdata02.png" alt="Agência Data">
-        <img class="logo logo-agdata-desk col-sm-2 col-md-2 col-lg-2" src="assets/img/agdata02.png" alt="Agência Data">
-        <div class="links-navegacao-desk col-sm-5 col-sm-offset-4  col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4">
-            <div class="link-nav01 menu01">
-                <p id="link1" data-section="#about-section" class="link">Agency</p>
+    <nav class="navigation-desktop-menu">
+        <img class="m-logo-mobile logo-agdata-mobile" src="assets/img/agdata02.png" alt="Agência Data">
+        <img class="m-logo-desktop logo-agdata-desktop col-sm-2 col-md-2 col-lg-2" src="assets/img/agdata02.png" alt="Agência Data">
+        <div class="navigation-links-desktop col-sm-5 col-sm-offset-4  col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4">
+            <div class="agency-desktop-link m-agency">
+                <p  data-section="#about-section" class="link">Agency</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div class="link-nav02 menu02">
-                <p id="link2" data-section="#video-section" class="link">Video</p>
+            <div class="video-desktop-link m-video">
+                <p data-section="#video-section" class="link">Video</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div class="link-nav03 menu03">
-                <p id="link3" data-section="#services-section" class="link">Services</p>
+            <div class="services-desktop-link m-services">
+                <p data-section="#services-section" class="link">Services</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div class="link-nav04 menu04">
-                <p id="link4" data-section="#technology-section" class="link">Technology</p>
+            <div class="technology-desktop-link m-technology">
+                <p data-section="#technology-section" class="link">Technology</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-
-            <button id="link5" data-section="#contact-section" class="nav-button-desk menu05">contact</button>
+            <button data-section="#contact-section" class="contact-button-desktop m-contact">contact</button>
         </div>
-        <div class="icon-shop shop col-sm-1 col-md-1 col-lg-1">
+        <div class="m-icon-shop icon-shop col-sm-1 col-md-1 col-lg-1">
             <img class="icone-shop" src="assets/img/icon_shop_header.png" alt="">
         </div>
 
-        <div id="botao-menu" class="menu-hamburguer">
+        <div id="button-mobile" class="menu-hamburguer">
             <div class="menu"></div>
             <div class="menu2"></div>
             <div class="menu3"></div>
             <div class="menu4"></div>
         </div>
-        <div id="botao-menu2" class="menu-hamburguer2">
+        <div id="button-mobile-closed" class="menu-hamburguer-closed">
             <div class="menu5"></div>
             <div class="menu6"></div>
         </div>
@@ -89,48 +88,45 @@
 
     <section data-section-name="home-section" class="sessao home">
 
-
-
-        <div class="conteudo-home-desk">
-            <p class="elemento3 paragrafo1">agência data</p>
-            <h1 class="elemento4 titulo1-desk">Nós chegamos para fazer diferente.</h1>
-            <button class="elemento5 botao1">conheça</button>
+        <div class="content-home-desktop">
+            <p class="m-paragraph-home paragraph-home">agência data</p>
+            <h1 class="m-title-home-desktop title-home-desktop">Nós chegamos para fazer diferente.</h1>
+            <button class="m-button-desktop button-home">conheça</button>
         </div>
 
-        <div class="conteudo-home">
-            <p class="elemento3 paragrafo1">agência data</p>
-            <h1 class="elemento4 titulo1">Nós chegamos para fazer diferente.</h1>
-            <button class="elemento5 botao1">conheça</button>
-
+        <div class="content-home">
+            <p class="m-paragraph-home paragraph-home">agência data</p>
+            <h1 class="m-title-home title-home">Nós chegamos para fazer diferente.</h1>
+            <button class="m-button-desktop button-home">conheça</button>
         </div>
 
-        <div class="mouse-icon-desk">
+        <div class="mouse-icon-home">
             <img src="assets/img/mouse_icon.png" alt="">
         </div>
 
-        <div id="arrow-to-top" data-section="#home-section" class="controle-arrow arrow-up0">
+        <div id="arrow-to-top" data-section="#home-section" class="control-arrow arrow-up-disabled">
             <img src="assets/img/arrowleft.png" alt="">
         </div>
 
-        <div class="redes-sociais-desk">
-            <a class="elemento6 facebook1" href="http://pt-br.facebook.com/BlueConecta" target="_blank"><img src="assets/img/facebook-logo.png"
+        <div class="social-network-desktop">
+            <a class="m-facebook facebook" href="http://pt-br.facebook.com/BlueConecta" target="_blank"><img src="assets/img/facebook-logo.png"
                     alt="Facebook"></a>
-            <a class="elemento7 instagram1" href="https://www.instagram.com/blueconecta/" target="_blank"><img src="assets/img/instagram-logo.png"
+            <a class="m-instagram instagram" href="https://www.instagram.com/blueconecta/" target="_blank"><img src="assets/img/instagram-logo.png"
                     alt="Instagram"></a>
-            <a class="elemento8 youtube1" href="https://www.youtube.com/user/blueconecta" target="_blank"><img src="assets/img/youtube-logo.png"
+            <a class="m-youtube youtube" href="https://www.youtube.com/user/blueconecta" target="_blank"><img src="assets/img/youtube-logo.png"
                     alt="Youtube"></a>
-            <a class="elemento9 linkedin1" href="https://pt.linkedin.com/company/blueconecta" target="_blank"><img src="assets/img/linkedin-logo.png"
+            <a class="m-linkedin linkedin" href="https://pt.linkedin.com/company/blueconecta" target="_blank"><img src="assets/img/linkedin-logo.png"
                     alt="LinkedIn"></a>
         </div>
 
-        <div class="redes-sociais">
-            <a class="elemento6 facebook1" href="http://pt-br.facebook.com/BlueConecta" target="_blank"><img src="assets/img/facebook-logo.png"
+        <div class="social-network-mobile">
+            <a class="m-facebook facebook" href="http://pt-br.facebook.com/BlueConecta" target="_blank"><img src="assets/img/facebook-logo.png"
                     alt="Facebook"></a>
-            <a class="elemento7 instagram1" href="https://www.instagram.com/blueconecta/" target="_blank"><img src="assets/img/instagram-logo.png"
+            <a class="m-instagram instagram" href="https://www.instagram.com/blueconecta/" target="_blank"><img src="assets/img/instagram-logo.png"
                     alt="Instagram"></a>
-            <a class="elemento8 youtube1" href="https://www.youtube.com/user/blueconecta" target="_blank"><img src="assets/img/youtube-logo.png"
+            <a class="m-youtube youtube" href="https://www.youtube.com/user/blueconecta" target="_blank"><img src="assets/img/youtube-logo.png"
                     alt="Youtube"></a>
-            <a class="elemento9 linkedin1" href="https://pt.linkedin.com/company/blueconecta" target="_blank"><img src="assets/img/linkedin-logo.png"
+            <a class="m-linkedin linkedin" href="https://pt.linkedin.com/company/blueconecta" target="_blank"><img src="assets/img/linkedin-logo.png"
                     alt="LinkedIn"></a>
         </div>
     </section>
@@ -1259,8 +1255,8 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.scrollify.js"></script>
-    <script src="assets/js/controleScroll.js"></script>
     <script src="assets/js/jquery.animateNumber.min.js"></script>
+    <script src="assets/js/controleScroll.js"></script>
 </body>
 
 </html>
