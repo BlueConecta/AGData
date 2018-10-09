@@ -61,7 +61,7 @@
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                        $(".control-arrow").removeClass("arrow-up").addClass("disabled");
+                        $("#arrow-to-top").removeClass("arrow-up").addClass("disabled");
                         $(".m-logo-mobile").removeClass("disabled").addClass("logo-agdata-mobile");
                         $(".m-logo-desktop").removeClass("disabled").addClass("logo-agdata-desktop");
                         $(".m-icon-shop").removeClass("disabled").addClass("icon-shop");
@@ -79,7 +79,7 @@
                         $(".m-technology").removeClass("disabled").addClass("technology-desktop-link");
                         $(".m-contact").removeClass("disabled").addClass("contact-button-desktop");
                     } else {
-                        $(".control-arrow").removeClass("disabled").addClass("arrow-up");
+                        $("#arrow-to-top").removeClass("disabled").addClass("arrow-up");
                         $(".m-logo-mobile").removeClass("logo-agdata-mobile").addClass("disabled");
                         $(".m-logo-desktop").removeClass("logo-agdata-desktop").addClass("disabled");
                         $(".m-icon-shop").removeClass("icon-shop").addClass("disabled");
@@ -106,7 +106,7 @@
                         $(".control2-desk-div2").removeClass("desktop-div-section2-2-0").addClass("desktop-div-section2-2");
                         $(".control3-desk-div2").removeClass("desktop-div-section2-3-0").addClass("desktop-div-section2-3");
                         $(".control4-desk-div2").removeClass("desktop-div-section2-4-0").addClass("desktop-div-section2-4");
-                        $(".m-image-about-desktop").removeClass("image-about-desktop-disabled").addClass("image-about-desktop");
+                        $(".m-image-about-desktop").removeClass("disabled").addClass("image-about-desktop");
                         $(".m-content-about").removeClass("disabled").addClass("content-about-mobile");
                         $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao-0").addClass("sobre-segunda-sessao");
                     } else {
@@ -114,7 +114,7 @@
                         $(".control2-desk-div2").removeClass("desktop-div-section2-2").addClass("desktop-div-section2-2-0");
                         $(".control3-desk-div2").removeClass("desktop-div-section2-3").addClass("desktop-div-section2-3-0");
                         $(".control4-desk-div2").removeClass("desktop-div-section2-4").addClass("desktop-div-section2-4-0");
-                        $(".m-image-about-desktop").removeClass("image-about-desktop").addClass("image-about-desktop-disabled");
+                        $(".m-image-about-desktop").removeClass("image-about-desktop").addClass("disabled");
                         $(".m-content-about").removeClass("content-about-mobile").addClass("disabled");
                         $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("sobre-segunda-sessao-0");
                     }

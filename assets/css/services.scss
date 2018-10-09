@@ -358,7 +358,7 @@
     height: 198px;
 }
 .arrow-left-carousel{
-    right: 50%;
+    right: 80%;
     margin-right: -10px;
     position: absolute;
     top: 50%;
@@ -367,9 +367,12 @@
     margin-top: -10px;
     width: 30px;
     height: 30px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        right: 63%;   
+    }
 }
 .arrow-right-carousel{
-    right: 50%;
+    right: 22%;
     margin-right: -10px;
     position: absolute;
     top: 50%;
@@ -378,6 +381,9 @@
     margin-top: -10px;
     width: 30px;
     height: 30px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        right: 23%;   
+    }
 }
 .h3-slider3-setima-sessao{
     margin-top: 0;
