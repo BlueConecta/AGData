@@ -83,6 +83,7 @@
     }
 }
 .imagem-quarta-sessao-desk-intern{
+    padding: 0;
     height: 100%;
     position: relative;
     animation: imagemquartasecao ease-in-out 1.5s forwards;
@@ -91,7 +92,7 @@
     }
     @media (max-width: 1366px) and (min-width: 768px) {
         height: 100%;
-        width: 100%;        
+        // width: 100%;        
     }
     @media (min-width: 1368px) {
     }

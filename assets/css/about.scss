@@ -26,7 +26,7 @@
         font-size:15px;
     }
 }
-.paragrafo1-segunda-sessao{
+.paragraph-one-mobile-about{
     color: #fff;
     font-family: sans-serif;
     font-size: 15px;
@@ -47,7 +47,7 @@
         width: 78%;
     }
 }
-.paragrafo1-segunda-sessao-strong{
+.paragraph-one-mobile-about-strong{
     font-weight: bold;
     @media (max-width: 1366px) and (min-width: 768px) {
         font-weight: bold;
@@ -109,12 +109,12 @@
 
     }
 }
-.img-sessao-2{
+.image-about-mobile{
     @media (min-width: 768px) {
         display: none;
     }
 }
-.img-sessao-2-1{
+.image-about-desktop{
     height: 100%;
     padding: 0;
     position: relative;
@@ -123,11 +123,10 @@
         display: none;
     }
 }
-.img-sessao-2-1-0{
+.image-about-desktop-disabled{
     display: none;
 }
-.sobre-segunda-sessao{
-    
+.content-about-mobile{    
     @media (min-width: 768px) {
         padding: 0;
         position: relative;
@@ -135,7 +134,7 @@
         animation: sobresegundasecao ease-in-out 2s forwards;
     }    
 }
-.sobre-segunda-sessao-0{
+.disabled{
     display: none;    
 }
 

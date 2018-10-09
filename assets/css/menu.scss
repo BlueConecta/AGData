@@ -50,10 +50,10 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,1);
     top: 50%;
     transform: translateY(-50%);
-    z-index: 500;
+    z-index: 501;
     margin-bottom: 0;
     right: 0;
 }
@@ -79,7 +79,7 @@
 }
 
 .menu-hamburguer{
-    z-index: 50;
+    z-index: 501;
     position: fixed;
     top: 14px;
     right: 14px;
@@ -92,7 +92,7 @@
 }
 .menu-hamburguer-closed{
     display: none;
-    z-index: 50;
+    z-index: 501;
     position: fixed;
     top: 50%;
     right: 12px;
@@ -201,7 +201,4 @@
 }
 .arrow-up img{
     transform: rotate(90deg);
-}
-.arrow-up-disabled{
-    display: none;
 }

@@ -33,16 +33,16 @@
 
     <div class="navigation-indicator">
         <ul class="indicators-list">
-            <li data-section="#home-section" class="circle-home on"></li>
-            <li data-section="#about-section" class="circle-about off"></li>
-            <li data-section="#design-section" class="circle-design off"></li>
-            <li data-section="#experience-section" class="circle-experience off"></li>
-            <li data-section="#video-section" class="circle-video off"></li>
-            <li data-section="#our-section" class="circle-our off"></li>
-            <li data-section="#services-section" class="circle-services off"></li>
-            <li data-section="#testimonials-section" class="circle-testimonials off"></li>
-            <li data-section="#technology-section" class="circle-technology off"></li>
-            <li data-section="#contact-section" class="circle-contact off"></li>
+            <li id="circle-one" data-section="#home-section"></li>
+            <li id="circle-two" data-section="#about-section"></li>
+            <li id="circle-three" data-section="#design-section"></li>
+            <li id="circle-four" data-section="#experience-section"></li>
+            <li id="circle-five" data-section="#video-section"></li>
+            <li id="circle-six" data-section="#our-section"></li>
+            <li id="circle-seven" data-section="#services-section"></li>
+            <li id="circle-eight" data-section="#testimonials-section"></li>
+            <li id="circle-nine" data-section="#technology-section"></li>
+            <li id="circle-ten" data-section="#contact-section"></li>
         </ul>
 
     </div>
@@ -104,7 +104,7 @@
             <img src="assets/img/mouse_icon.png" alt="">
         </div>
 
-        <div id="arrow-to-top" data-section="#home-section" class="control-arrow arrow-up-disabled">
+        <div id="arrow-to-top" data-section="#home-section" class="control-arrow disabled">
             <img src="assets/img/arrowleft.png" alt="">
         </div>
 
@@ -134,18 +134,18 @@
 
     <section data-section-name="about-section" class="sessao about">
 
-        <img class="img-responsive img-sessao-2" src="assets/img/img-segunda-sessao.png" alt="">
-        <img class="controlador-imagem-sessao2 img-responsive img-sessao-2-1-0 col-sm-4 col-md-4 col-lg-4" src="assets/img/img-segunda-sessao2.png"
+        <img class="img-responsive image-about-mobile" src="assets/img/img-segunda-sessao.png" alt="">
+        <img class="img-responsive m-image-about-desktop image-about-desktop-disabled col-sm-4 col-md-4 col-lg-4" src="assets/img/img-segunda-sessao2.png"
             alt="">
 
-        <div class="container controlador-sobre-segunda-sessao sobre-segunda-sessao-0 col-sm-8 col-md-8 col-lg-8">
+        <div class="container m-content-about content-about-mobile col-sm-8 col-md-8 col-lg-8">
             <h1>about the agency</h1>
-            <p class="paragrafo1-segunda-sessao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque
-                convallis ligula, non rhoncus ante tincidunt tristique. <span class="paragrafo1-segunda-sessao-strong">Praesent
+            <p class="paragraph-one-mobile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque
+                convallis ligula, non rhoncus ante tincidunt tristique. <span class="paragraph-one-mobile-about-strong">Praesent
                     iaculis vitae ex id pulvinar.</span> </p>
         </div>
 
-        <div class="container div-intern-section2 col-sm-4 col-md-4 col-lg-4">
+        <div class="container div-intern-section2">
             <img src="assets/img/img01_second.png" alt="">
             <h2 class="h2-interna-section2">Nunca dizemos não</h2>
             <p class="p-interna-section2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque.</p>
@@ -312,6 +312,7 @@
                 </div>
             </div>
         </div>
+        <img class="col-sm-6 col-md-6 col-lg-6 img-responsive control-img-section-4 imagem-quarta-sessao-desk-intern-0" src="assets/img/img-quarta-sessao-desk.png" alt="">
 
         <!-- RESPONSIVE -->
 
@@ -363,10 +364,7 @@
                 </div>
             </div>
         </div>
-        <div class="imagem-quarta-sessao-desk col-sm-6 col-md-6 col-lg-6">
-            <img class="control-img-section-4 img-responsive imagem-quarta-sessao-desk-intern-0" src="assets/img/img-quarta-sessao-desk.png"
-                alt="">
-        </div>
+        
     </section>
 
     <section data-section-name="video-section" class="sessao video">
@@ -1256,7 +1254,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.scrollify.js"></script>
     <script src="assets/js/jquery.animateNumber.min.js"></script>
-    <script src="assets/js/controleScroll.js"></script>
+    <script src="assets/js/site.js"></script>
 </body>
 
 </html>
