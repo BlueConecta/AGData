@@ -1,6 +1,6 @@
 .navigation-desktop-menu{
     position: absolute;
-    z-index: 500;
+    z-index: 499;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,7 @@
     background-color: rgba(0,0,0,1);
     top: 50%;
     transform: translateY(-50%);
-    z-index: 501;
+    z-index: 500s;
     margin-bottom: 0;
     right: 0;
 }
@@ -79,7 +79,7 @@
 }
 
 .menu-hamburguer{
-    z-index: 501;
+    z-index: 502;
     position: fixed;
     top: 14px;
     right: 14px;
@@ -92,7 +92,7 @@
 }
 .menu-hamburguer-closed{
     display: none;
-    z-index: 501;
+    z-index: 502;
     position: fixed;
     top: 50%;
     right: 12px;
@@ -201,4 +201,5 @@
 }
 .arrow-up img{
     transform: rotate(90deg);
+    opacity: 0.6;
 }

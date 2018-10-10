@@ -44,7 +44,7 @@
             })
 
             // Botão para Abrir menu
-            $(".navigation-desktop-menu #button-mobile").click(function () {
+            $("#button-mobile").click(function () {
                 var item = $(this);
                 $(".navigation-mobile-menu").show(300);
                 $("#button-mobile").hide(300);
@@ -52,7 +52,7 @@
             })
 
             // Botão para Fechar menu
-            $(".navigation-desktop-menu #button-mobile-closed").click(function () {
+            $("#button-mobile-closed").click(function () {
                 var item = $(this);
                 $(".navigation-mobile-menu").hide(600);
                 $("#button-mobile-closed").hide(300);

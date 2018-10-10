@@ -2,7 +2,7 @@
 @import url(bootstrap.css);
 .navigation-desktop-menu {
   position: absolute;
-  z-index: 500;
+  z-index: 499;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -55,7 +55,7 @@
   background-color: black;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 501;
+  z-index: 500;
   margin-bottom: 0;
   right: 0; }
 
@@ -65,7 +65,7 @@
   to {
     right: -40%; } }
 .menu-hamburguer {
-  z-index: 501;
+  z-index: 502;
   position: fixed;
   top: 14px;
   right: 14px;
@@ -78,7 +78,7 @@
 
 .menu-hamburguer-closed {
   display: none;
-  z-index: 501;
+  z-index: 502;
   position: fixed;
   top: 50%;
   right: 12px;
@@ -181,7 +181,8 @@
       animation: arrow-up-responsive ease-in-out infinite 1s alternate; } }
 
 .arrow-up img {
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  opacity: 0.6; }
 
 body, html {
   width: 100%;
@@ -4041,7 +4042,7 @@ body, html {
 
 .footer {
   background-color: #000;
-  height: 60%;
+  height: 65%;
   width: 100%;
   display: flex;
   padding-left: 0;
@@ -4065,10 +4066,11 @@ body, html {
   padding-left: 20px; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .footer-primeira-coluna-imagem {
-      height: 35%; } }
+      height: 33%; } }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-primeira-coluna-imagem {
-      height: 32%; } }
+      height: 31%;
+      margin-top: 40%; } }
 
 .footer-primeira-coluna-paragrafo {
   color: #fff;
@@ -4100,7 +4102,8 @@ body, html {
   padding-top: 22%; }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-segunda-coluna-paragrafoTitulo-bold {
-      font-size: 22px; } }
+      font-size: 22px;
+      margin-top: 40%; } }
 
 .footer-segunda-coluna-paragrafo-bold {
   color: #fff;
@@ -4132,7 +4135,8 @@ body, html {
   padding-top: 22%; }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-terceira-coluna-paragrafo-bold {
-      font-size: 22px; } }
+      font-size: 22px;
+      margin-top: 40%; } }
 
 .footer-terceira-coluna-noticias {
   display: flex;
@@ -4168,7 +4172,8 @@ body, html {
   padding-top: 22%; }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-quarta-coluna-paragrafo-bold {
-      font-size: 22px; } }
+      font-size: 22px;
+      margin-top: 40%; } }
 
 .footer-quarta-coluna-texto {
   color: #fff;
@@ -4212,5 +4217,9 @@ body, html {
   padding: 10px 20px 10px 10px;
   color: #fff;
   background-color: #0061ff; }
+
+@media (max-width: 767px) and (min-width: 2px) {
+  .footer-desktop {
+    display: none; } }
 
 /*# sourceMappingURL=site.css.map */
