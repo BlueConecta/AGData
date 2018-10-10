@@ -271,5 +271,47 @@
         left: 50%;
     }
 }
-
-
+@keyframes textonoursection {
+    from{
+        opacity: 0;
+        top: 50px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes titleonoursection {
+    from{
+        opacity: 0;
+        top: -50px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes subtitleonoursection {
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+        top: -50px;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        top: 0;
+    }
+}
+@keyframes imageonoursection {
+    from{
+        opacity: 0;   
+        // transform: translate(0,50%);
+        bottom: -50px;
+    }
+    to{
+        opacity: 1;
+        // transform: translate(-50%,0);
+        bottom: 0;
+    }
+}

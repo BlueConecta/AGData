@@ -304,10 +304,29 @@
                         $(".control-img-play").removeClass("img-play").addClass("img-play-0");
                     }
                     if (section === 5) {
+                        $("#m-animate-one-our").removeClass("disabled").addClass("first-animated-our");
+                        $("#m-animate-two-our").removeClass("disabled").addClass("second-animated-our");
+                        $("#m-animate-three-our").removeClass("disabled").addClass("third-animated-our");
+                        $("#m-animate-four-our").removeClass("disabled").addClass("fourth-animated-our");
+                        $("#m-animate-five-our").removeClass("disabled").addClass("fifth-animated-our");
+                        $("#m-animate-six-our").removeClass("disabled").addClass("sixth-animated-our");
+                        $("#m-animate-h2-our").removeClass("disabled").addClass("h2-sexta-sessao");
+                        $("#m-animate-h1-our").removeClass("disabled").addClass("h1-sexta-sessao-desk");
+                        $("#m-animate-img-our").removeClass("disabled").addClass("img-sexta-sessao-desk");
                         $("#circle-six").switchClass("off", "on");
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
+                    } else{
+                        $("#m-animate-one-our").removeClass("first-animated-our").addClass("disabled");
+                        $("#m-animate-two-our").removeClass("second-animated-our").addClass("disabled");
+                        $("#m-animate-three-our").removeClass("third-animated-our").addClass("disabled");
+                        $("#m-animate-four-our").removeClass("fourth-animated-our").addClass("disabled");
+                        $("#m-animate-five-our").removeClass("fifth-animated-our").addClass("disabled");
+                        $("#m-animate-six-our").removeClass("sixth-animated-our").addClass("disabled");
+                        $("#m-animate-h2-our").removeClass("h2-sexta-sessao").addClass("disabled");
+                        $("#m-animate-h1-our").removeClass("h1-sexta-sessao-desk").addClass("disabled");
+                        $("#m-animate-img-our").removeClass("img-sexta-sessao-desk").addClass("disabled");
                     }
                     if (section === 6) {
                         $("#circle-seven").switchClass("off", "on");
