@@ -16,14 +16,14 @@
             })
 
             // Âncoras de Navegação do menu Versão Desktop 
-            $(".navigation-links-desktop p").click(function () {
+            $(".navigation-links-desktop p, .navigation-links-desktop button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
-            $(".navigation-links-desktop button").click(function () {
+            /*$(".navigation-links-desktop button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-            })
+            })*/
 
             // Âncora de Retorno ao topo do Site
             $("#arrow-to-top").click(function () {
@@ -42,7 +42,8 @@
                 $(".menu-hamburguer").show(300);
                 $(".menu-hamburguer-closed").hide(300);
             })
-
+            
+            //Os 2 próximos trechos de código podem ser feitos em um único trecho
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
                 var item = $(this);
@@ -60,12 +61,13 @@
                 $(".menu-hamburguer-closed").hide(3000);
             })
 
+            //Lá no início você já está removendo tudo porque fazer de novo
             // Desativa todos os Indicadores de Navegação
             $(".indicators-list li").each(function () {
                 $(this).removeClass("on").addClass("off");
             });      
             
-            
+            //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            
             $.scrollify({
                 section: ".sessao",
