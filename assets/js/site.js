@@ -86,7 +86,7 @@
                         $(".m-paragraph-home").removeClass("disabled").addClass("paragraph-home");
                         $("#m-title-home").removeClass("disabled").addClass("title-home");
                         $("#m-title-home-desktop").removeClass("disabled").addClass("title-home-desktop");
-                        $("#m-button-desktop").removeClass("disabled").addClass("button-home");
+                        $(".m-button-desktop").removeClass("disabled").addClass("button-home");
                         $(".m-facebook").removeClass("disabled").addClass("facebook");
                         $(".m-instagram").removeClass("disabled").addClass("instagram");
                         $(".m-youtube").removeClass("disabled").addClass("youtube");
@@ -101,10 +101,10 @@
                         $("#m-logo-mobile").removeClass("logo-agdata-mobile").addClass("disabled");
                         $("#m-logo-desktop").removeClass("logo-agdata-desktop").addClass("disabled");
                         $("#m-icon-shop").removeClass("icon-shop").addClass("disabled");
-                        $("#m-paragraph-home").removeClass("paragraph-home").addClass("disabled");
+                        $(".m-paragraph-home").removeClass("paragraph-home").addClass("disabled");
                         $("#m-title-home").removeClass("title-home").addClass("disabled");
                         $("#m-title-home-desktop").removeClass("title-home-desktop").addClass("disabled");
-                        $("#m-button-desktop").removeClass("button-home").addClass("disabled");
+                        $(".m-button-desktop").removeClass("button-home").addClass("disabled");
                         $(".m-facebook").removeClass("facebook").addClass("disabled");
                         $(".m-instagram").removeClass("instagram").addClass("disabled");
                         $(".m-youtube").removeClass("youtube").addClass("disabled");
