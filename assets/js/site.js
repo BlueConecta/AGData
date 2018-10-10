@@ -3,6 +3,8 @@
 }
     (function ($, window, document) {
         $(function () {
+
+            // Ativa o indicador da Seção ativa e Desativa os demais, através do Click
             $(".indicators-list li").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
@@ -12,6 +14,8 @@
                 item.addClass("on");
                 item.removeClass("off");
             })
+
+            // Âncoras de Navegação do menu Versão Desktop 
             $(".navigation-links-desktop p").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
@@ -20,10 +24,16 @@
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
+
+            // Âncora de Retorno ao topo do Site
             $("#arrow-to-top").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
+
+// --------> // Menu Respojnsivo <--------
+
+            // Âncoras de Navegação do menu Versão Mobile
             $(".content-mobile-menu li a").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
@@ -32,12 +42,16 @@
                 $(".menu-hamburguer").show(300);
                 $(".menu-hamburguer-closed").hide(300);
             })
+
+            // Botão para Abrir menu
             $(".navigation-desktop-menu #button-mobile").click(function () {
                 var item = $(this);
                 $(".navigation-mobile-menu").show(300);
                 $("#button-mobile").hide(300);
                 $(".menu-hamburguer-closed").show(300);
             })
+
+            // Botão para Fechar menu
             $(".navigation-desktop-menu #button-mobile-closed").click(function () {
                 var item = $(this);
                 $(".navigation-mobile-menu").hide(600);
@@ -45,10 +59,14 @@
                 $(".menu-hamburguer").show(300);
                 $(".menu-hamburguer-closed").hide(3000);
             })
+
+            // Desativa todos os Indicadores de Navegação
             $(".indicators-list li").each(function () {
                 $(this).removeClass("on").addClass("off");
-            });            
+            });      
             
+            
+            // Inicio da Navegação por sessões e Animações            
             $.scrollify({
                 section: ".sessao",
                 InterstitialSection: ".sessao, .footer",
@@ -126,6 +144,8 @@
                         $(".controladorbox1").removeClass("box-1-0").addClass("box-1");
                         $(".controladorbox2").removeClass("box-2-0").addClass("box-2");
                         $(".controladorbox3").removeClass("box-3-0").addClass("box-3");
+                        
+                        
                         // Primeiro Contador
                         var max_number = 5000000;
 
