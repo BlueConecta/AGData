@@ -920,10 +920,16 @@ body, html {
   @media (max-width: 415px) and (min-width: 376px) {
     .titulo-contador1 {
       margin-top: 61px; } }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .titulo-contador1 {
+      font-size: 62px; } }
 
 .texto-contador1 {
   color: #fff;
   text-align: center; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .texto-contador1 {
+      font-size: 19px; } }
 
 .contador2 {
   text-align: center; }
@@ -937,10 +943,16 @@ body, html {
   margin-top: 25px;
   margin-bottom: 5px;
   font-size: 50px; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .titulo-contador2 {
+      font-size: 62px; } }
 
 .texto-contador2 {
   color: #fff;
   text-align: center; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .texto-contador2 {
+      font-size: 19px; } }
 
 .contador3 {
   text-align: center; }
@@ -954,10 +966,16 @@ body, html {
   margin-top: 40px;
   margin-bottom: 5px;
   font-size: 50px; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .titulo-contador3 {
+      font-size: 62px; } }
 
 .texto-contador3 {
   color: #fff;
   text-align: center; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .texto-contador3 {
+      font-size: 19px; } }
 
 .design-interna-1 {
   width: 100%;
@@ -1112,6 +1130,9 @@ body, html {
   margin-top: 0;
   padding-top: 30px;
   font-size: 18px; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .h3-design {
+      font-size: 24px; } }
 
 .p-design {
   color: #fff;
@@ -1122,6 +1143,10 @@ body, html {
   line-height: 28px;
   padding: 0;
   padding-right: 140px; }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .p-design {
+      font-size: 43px;
+      line-height: 41px; } }
 
 .sessao-adicional {
   width: 100%;
@@ -4171,22 +4196,28 @@ body, html {
   padding-left: 20px; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .footer-primeira-coluna-imagem {
-      height: 33%; } }
+      width: 75%;
+      margin-top: 25%;
+      margin-bottom: 12%; } }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-primeira-coluna-imagem {
-      height: 31%;
-      margin-top: 16%; } }
+      width: 65%;
+      margin-top: 31%;
+      margin-bottom: 12%; } }
 
 .footer-primeira-coluna-paragrafo {
   color: #fff;
   font-size: 11px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin: 0; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .footer-primeira-coluna-paragrafo {
-      font-size: 14px; } }
+      font-size: 14px;
+      width: 84%; } }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-primeira-coluna-paragrafo {
-      font-size: 17px; } }
+      font-size: 17px;
+      width: 68%; } }
 
 .footer-primeira-coluna-paragrafo-bold {
   font-weight: bold; }

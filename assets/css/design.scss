@@ -63,10 +63,20 @@
     @media (max-width: 415px) and (min-width: 376px) {
         margin-top: 61px;
     }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 62px;
+    }
 }
 .texto-contador1{
     color: #fff;
     text-align: center;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 19px;
+    }
 }
 .contador2{
     text-align: center;
@@ -80,10 +90,20 @@
     margin-top: 25px;
     margin-bottom: 5px;
     font-size: 50px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 62px;
+    }
 }
 .texto-contador2{
     color: #fff;
     text-align: center;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 19px;
+    }
 }
 .contador3{
     text-align: center;
@@ -97,10 +117,20 @@
     margin-top: 40px;
     margin-bottom: 5px;
     font-size: 50px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 62px;
+    }
 }
 .texto-contador3{
     color: #fff;
     text-align: center;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 19px;
+    }
 }
 
 
@@ -277,6 +307,11 @@
     margin-top: 0;
     padding-top: 30px;
     font-size: 18px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 24px;
+    }
 }
 .p-design{
     color: #fff;
@@ -287,6 +322,12 @@
     line-height: 28px;
     padding: 0;
     padding-right: 140px;
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (max-width: 1920px) and (min-width: 1367px) {
+        font-size: 43px;
+        line-height: 41px;
+    }
 }
 .sessao-adicional{
     width: 100%;
