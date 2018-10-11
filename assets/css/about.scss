@@ -3,6 +3,9 @@
     width: 100%;
     background-color: #000;
 }
+.disabled{
+    display: none;
+}
 .container h1{
     text-transform: uppercase;
     font-family: sans-serif;
@@ -59,19 +62,7 @@
         font-size: 36px;
     }
 }
-.paragrafo2-segunda-sessao{
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 17px;
-    text-align: center;
-    font-weight: bold;
-    @media (max-width: 1920px) and (min-width: 768px) {
-        display: none;
-    }
-}
-
-
-.div-intern-section2{
+.mobile-div-intern-section-about{
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -87,24 +78,21 @@
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
-
 }
-.div-intern-section2 img{
+.mobile-div-intern-section-about img{
     height: 35px;
     @media (max-width: 1920px) and (min-width: 768px) {
-
     }
 }
-.h2-interna-section2{
+.mobile-h2-intern-section-about{
     color: #fff;
     font-size: 19px;
     font-weight: bold;
     margin-top: 15px;
     @media (max-width: 1920px) and (min-width: 768px) {
-
     }
 }
-.p-interna-section2{
+.mobile-p-intern-section-about{
     color: #fff;
     @media (max-width: 1920px) and (min-width: 768px) {
 
@@ -124,9 +112,6 @@
         display: none;
     }
 }
-.image-about-desktop-disabled{
-    display: none;
-}
 .content-about-mobile{    
     @media (min-width: 768px) {
         padding: 0;
@@ -135,20 +120,15 @@
         animation: sobresegundasecao ease-in-out 2s forwards;
     }    
 }
-.disabled{
-    display: none;    
-}
-
 
 // Desktop
-.desktop-div-section2-1{
+.desktop-div-section-about-one{
     padding: 0;
     padding-left: 90px;
     padding-top: 60px;
     display: flex;
     position: relative;
     opacity: 0;
-    // align-items: center;
     animation: div1segundasection ease-in-out 1.5s forwards;
     animation-delay: 1.5s;
     @media (max-width: 767px) and (min-width: 2px) {
@@ -160,17 +140,14 @@
         padding-top: 90px;
     }
 }
-.desktop-div-section2-1-0{
-    display: none;
-}
-.desktop-text-intern-section2-1{
+.desktop-text-intern-section-about-one{
     @media (max-width: 1366px) and (min-width: 768px) {
         width: 300px;
     }
     @media (min-width: 1368px) {
     }
 }
-.desktop-h2-section2-1{
+.desktop-h2-section-about-one{
     color: #fff;
     font-weight: bold;
     padding-left: 30px;
@@ -180,10 +157,9 @@
         font-size: 23px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
 }
-.desktop-p-section2-1{
+.desktop-p-section-about-one{
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
@@ -191,10 +167,9 @@
         font-size: 19px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
 }
-.desktop-div-section2-2{
+.desktop-div-section-about-two{
     padding: 0;
     padding-left: 90px;
     padding-top: 60px;
@@ -214,10 +189,7 @@
         padding-left: 40px;
     }
 }
-.desktop-div-section2-2-0{
-    display: none;
-}
-.desktop-text-intern-section2-2{
+.desktop-text-intern-section-about-two{
     @media (max-width: 1366px) and (min-width: 768px) {
         width: 300px;
     }
@@ -225,7 +197,7 @@
         width: 485px;
     }
 }
-.desktop-h2-section2-2{
+.desktop-h2-section-about-two{
     color: #fff;
     font-weight: bold;
     padding-left: 30px;
@@ -235,11 +207,9 @@
         font-size: 23px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
-
 }
-.desktop-p-section2-2{
+.desktop-p-section-about-two{
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
@@ -247,11 +217,9 @@
         font-size: 19px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
 }
-
-.desktop-div-section2-3{
+.desktop-div-section-about-three{
     padding: 0;
     padding-left: 90px;
     padding-top: 60px;
@@ -270,17 +238,14 @@
     }
     
 }
-.desktop-div-section2-3-0{
-    display: none;
-}
-.desktop-text-intern-section2-3{
+.desktop-text-intern-section-about-three{
     @media (max-width: 1366px) and (min-width: 768px) {
         width: 300px;
     }
     @media (min-width: 1368px) {
     }
 }
-.desktop-h2-section2-3{
+.desktop-h2-section-about-three{
     color: #fff;
     font-weight: bold;
     padding-left: 30px;
@@ -290,11 +255,9 @@
         font-size: 23px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
-
 }
-.desktop-p-section2-3{
+.desktop-p-section-about-three{
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
@@ -302,12 +265,9 @@
         font-size: 19px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
 }
-
-
-.desktop-div-section2-4{
+.desktop-div-section-about-four{
     padding: 0;
     padding-left: 90px;
     padding-top: 60px;
@@ -327,10 +287,7 @@
         padding-top: 120px;
     }
 }
-.desktop-div-section2-4-0{
-display: none;
-}
-.desktop-text-intern-section2-4{
+.desktop-text-intern-section-about-four{
     @media (max-width: 1366px) and (min-width: 768px) {
         width: 300px;
     }
@@ -338,7 +295,7 @@ display: none;
         width: 485px;
     }
 }
-.desktop-h2-section2-4{
+.desktop-h2-section-about-four{
     color: #fff;
     font-weight: bold;
     padding-left: 30px;
@@ -348,11 +305,9 @@ display: none;
         font-size: 23px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
-
 }
-.desktop-p-section2-4{
+.desktop-p-section-about-four{
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
@@ -360,6 +315,5 @@ display: none;
         font-size: 19px;
     }
     @media (min-width: 1368px) {
-        // font-size: 23px;
     }
 }

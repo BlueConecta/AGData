@@ -117,21 +117,21 @@
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                        $(".control-desk-div2").removeClass("desktop-div-section2-1-0").addClass("desktop-div-section2-1");
-                        $(".control2-desk-div2").removeClass("desktop-div-section2-2-0").addClass("desktop-div-section2-2");
-                        $(".control3-desk-div2").removeClass("desktop-div-section2-3-0").addClass("desktop-div-section2-3");
-                        $(".control4-desk-div2").removeClass("desktop-div-section2-4-0").addClass("desktop-div-section2-4");
-                        $(".m-image-about-desktop").removeClass("disabled").addClass("image-about-desktop");
-                        $(".m-content-about").removeClass("disabled").addClass("content-about-mobile");
-                        $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao-0").addClass("sobre-segunda-sessao");
+                        $("#control-one-desk-div").removeClass("disabled").addClass("desktop-div-section-about-one");
+                        $("#control-two-desk-div").removeClass("disabled").addClass("desktop-div-section-about-two");
+                        $("#control-three-desk-div").removeClass("disabled").addClass("desktop-div-section-about-three");
+                        $("#control-four-desk-div").removeClass("disabled").addClass("desktop-div-section-about-four");
+                        $("#control-image-about-desktop").removeClass("disabled").addClass("image-about-desktop");
+                        $("#control-content-about").removeClass("disabled").addClass("content-about-mobile");
+                        $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
                     } else {
-                        $(".control-desk-div2").removeClass("desktop-div-section2-1").addClass("desktop-div-section2-1-0");
-                        $(".control2-desk-div2").removeClass("desktop-div-section2-2").addClass("desktop-div-section2-2-0");
-                        $(".control3-desk-div2").removeClass("desktop-div-section2-3").addClass("desktop-div-section2-3-0");
-                        $(".control4-desk-div2").removeClass("desktop-div-section2-4").addClass("desktop-div-section2-4-0");
-                        $(".m-image-about-desktop").removeClass("image-about-desktop").addClass("disabled");
-                        $(".m-content-about").removeClass("content-about-mobile").addClass("disabled");
-                        $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("sobre-segunda-sessao-0");
+                        $("#control-one-desk-div").removeClass("desktop-div-section-about-one").addClass("disabled");
+                        $("#control-two-desk-div").removeClass("desktop-div-section-about-two").addClass("disabled");
+                        $("#control-three-desk-div").removeClass("desktop-div-section-about-three").addClass("disabled");
+                        $("#control-four-desk-div").removeClass("desktop-div-section-about-four").addClass("disabled");
+                        $("#control-image-about-desktop").removeClass("image-about-desktop").addClass("disabled");
+                        $("#control-content-about").removeClass("content-about-mobile").addClass("disabled");
+                        $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("disabled");
                     }
                     if (section === 2) {
                         $("#circle-three").switchClass("off", "on");

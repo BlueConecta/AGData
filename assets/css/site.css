@@ -563,6 +563,9 @@ body, html {
   width: 100%;
   background-color: #000; }
 
+.disabled {
+  display: none; }
+
 .container h1 {
   text-transform: uppercase;
   font-family: sans-serif;
@@ -619,41 +622,31 @@ body, html {
       font-weight: bold;
       font-size: 36px; } }
 
-.paragrafo2-segunda-sessao {
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 17px;
-  text-align: center;
-  font-weight: bold; }
-  @media (max-width: 1920px) and (min-width: 768px) {
-    .paragrafo2-segunda-sessao {
-      display: none; } }
-
-.div-intern-section2 {
+.mobile-div-intern-section-about {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0px; }
   @media (max-width: 375px) and (min-width: 359px) {
-    .div-intern-section2 {
+    .mobile-div-intern-section-about {
       padding-top: 18px; } }
   @media (max-width: 415px) and (min-width: 376px) {
-    .div-intern-section2 {
+    .mobile-div-intern-section-about {
       padding-top: 43px; } }
   @media (max-width: 1920px) and (min-width: 768px) {
-    .div-intern-section2 {
+    .mobile-div-intern-section-about {
       display: none; } }
 
-.div-intern-section2 img {
+.mobile-div-intern-section-about img {
   height: 35px; }
 
-.h2-interna-section2 {
+.mobile-h2-intern-section-about {
   color: #fff;
   font-size: 19px;
   font-weight: bold;
   margin-top: 15px; }
 
-.p-interna-section2 {
+.mobile-p-intern-section-about {
   color: #fff; }
 
 @media (min-width: 768px) {
@@ -669,9 +662,6 @@ body, html {
     .image-about-desktop {
       display: none; } }
 
-.image-about-desktop-disabled {
-  display: none; }
-
 @media (min-width: 768px) {
   .content-about-mobile {
     padding: 0;
@@ -679,10 +669,7 @@ body, html {
     opacity: 0;
     animation: sobresegundasecao ease-in-out 2s forwards; } }
 
-.disabled {
-  display: none; }
-
-.desktop-div-section2-1 {
+.desktop-div-section-about-one {
   padding: 0;
   padding-left: 90px;
   padding-top: 60px;
@@ -692,38 +679,35 @@ body, html {
   animation: div1segundasection ease-in-out 1.5s forwards;
   animation-delay: 1.5s; }
   @media (max-width: 767px) and (min-width: 2px) {
-    .desktop-div-section2-1 {
+    .desktop-div-section-about-one {
       display: none; } }
   @media (min-width: 1368px) {
-    .desktop-div-section2-1 {
+    .desktop-div-section-about-one {
       padding-top: 90px; } }
 
-.desktop-div-section2-1-0 {
-  display: none; }
-
 @media (max-width: 1366px) and (min-width: 768px) {
-  .desktop-text-intern-section2-1 {
+  .desktop-text-intern-section-about-one {
     width: 300px; } }
 
-.desktop-h2-section2-1 {
+.desktop-h2-section-about-one {
   color: #fff;
   font-weight: bold;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-h2-section2-1 {
+    .desktop-h2-section-about-one {
       font-size: 23px; } }
 
-.desktop-p-section2-1 {
+.desktop-p-section-about-one {
   color: #fff;
   padding-left: 30px;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-p-section2-1 {
+    .desktop-p-section-about-one {
       font-size: 19px; } }
 
-.desktop-div-section2-2 {
+.desktop-div-section-about-two {
   padding: 0;
   padding-left: 90px;
   padding-top: 60px;
@@ -733,45 +717,42 @@ body, html {
   animation: div2segundasection ease-in-out 1.5s forwards;
   animation-delay: 2s; }
   @media (max-width: 767px) and (min-width: 2px) {
-    .desktop-div-section2-2 {
+    .desktop-div-section-about-two {
       display: none; } }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-div-section2-2 {
+    .desktop-div-section-about-two {
       padding-left: 45px; } }
   @media (min-width: 1368px) {
-    .desktop-div-section2-2 {
+    .desktop-div-section-about-two {
       padding-top: 90px;
       padding-left: 40px; } }
 
-.desktop-div-section2-2-0 {
-  display: none; }
-
 @media (max-width: 1366px) and (min-width: 768px) {
-  .desktop-text-intern-section2-2 {
+  .desktop-text-intern-section-about-two {
     width: 300px; } }
 @media (min-width: 1368px) {
-  .desktop-text-intern-section2-2 {
+  .desktop-text-intern-section-about-two {
     width: 485px; } }
 
-.desktop-h2-section2-2 {
+.desktop-h2-section-about-two {
   color: #fff;
   font-weight: bold;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-h2-section2-2 {
+    .desktop-h2-section-about-two {
       font-size: 23px; } }
 
-.desktop-p-section2-2 {
+.desktop-p-section-about-two {
   color: #fff;
   padding-left: 30px;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-p-section2-2 {
+    .desktop-p-section-about-two {
       font-size: 19px; } }
 
-.desktop-div-section2-3 {
+.desktop-div-section-about-three {
   padding: 0;
   padding-left: 90px;
   padding-top: 60px;
@@ -781,38 +762,35 @@ body, html {
   animation: div4segundasection ease-in-out 1.5s forwards;
   animation-delay: 2.5s; }
   @media (max-width: 767px) and (min-width: 2px) {
-    .desktop-div-section2-3 {
+    .desktop-div-section-about-three {
       display: none; } }
   @media (min-width: 1368px) {
-    .desktop-div-section2-3 {
+    .desktop-div-section-about-three {
       padding-top: 120px; } }
 
-.desktop-div-section2-3-0 {
-  display: none; }
-
 @media (max-width: 1366px) and (min-width: 768px) {
-  .desktop-text-intern-section2-3 {
+  .desktop-text-intern-section-about-three {
     width: 300px; } }
 
-.desktop-h2-section2-3 {
+.desktop-h2-section-about-three {
   color: #fff;
   font-weight: bold;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-h2-section2-3 {
+    .desktop-h2-section-about-three {
       font-size: 23px; } }
 
-.desktop-p-section2-3 {
+.desktop-p-section-about-three {
   color: #fff;
   padding-left: 30px;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-p-section2-3 {
+    .desktop-p-section-about-three {
       font-size: 19px; } }
 
-.desktop-div-section2-4 {
+.desktop-div-section-about-four {
   padding: 0;
   padding-left: 90px;
   padding-top: 60px;
@@ -822,42 +800,39 @@ body, html {
   animation: div4segundasection ease-in-out 1.5s forwards;
   animation-delay: 3s; }
   @media (max-width: 767px) and (min-width: 2px) {
-    .desktop-div-section2-4 {
+    .desktop-div-section-about-four {
       display: none; } }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-div-section2-4 {
+    .desktop-div-section-about-four {
       padding-left: 45px; } }
   @media (min-width: 1368px) {
-    .desktop-div-section2-4 {
+    .desktop-div-section-about-four {
       padding-left: 40px;
       padding-top: 120px; } }
 
-.desktop-div-section2-4-0 {
-  display: none; }
-
 @media (max-width: 1366px) and (min-width: 768px) {
-  .desktop-text-intern-section2-4 {
+  .desktop-text-intern-section-about-four {
     width: 300px; } }
 @media (min-width: 1368px) {
-  .desktop-text-intern-section2-4 {
+  .desktop-text-intern-section-about-four {
     width: 485px; } }
 
-.desktop-h2-section2-4 {
+.desktop-h2-section-about-four {
   color: #fff;
   font-weight: bold;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-h2-section2-4 {
+    .desktop-h2-section-about-four {
       font-size: 23px; } }
 
-.desktop-p-section2-4 {
+.desktop-p-section-about-four {
   color: #fff;
   padding-left: 30px;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
-    .desktop-p-section2-4 {
+    .desktop-p-section-about-four {
       font-size: 19px; } }
 
 .design {
