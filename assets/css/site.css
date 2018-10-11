@@ -1817,7 +1817,7 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: center; }
   @media (max-width: 767px) and (min-width: 2px) {
     .coluna1-sexta-sessao-desk {
       display: none; } }
@@ -1826,7 +1826,7 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: center; }
   @media (max-width: 767px) and (min-width: 2px) {
     .coluna3-sexta-sessao-desk {
       display: none; } }
@@ -1866,6 +1866,7 @@ body, html {
       font-size: 20px; } }
 
 .first-animated-our {
+  margin-top: 60px;
   position: relative;
   opacity: 0;
   animation: textonoursection ease-in-out 1.5s forwards;
@@ -1875,6 +1876,7 @@ body, html {
       display: none; } }
 
 .second-animated-our {
+  margin: 20px 0px;
   position: relative;
   opacity: 0;
   animation: textonoursection ease-in-out 1.5s forwards;
@@ -1893,6 +1895,7 @@ body, html {
       display: none; } }
 
 .fourth-animated-our {
+  margin-top: 60px;
   position: relative;
   opacity: 0;
   animation: textonoursection ease-in-out 1.5s forwards;
@@ -1902,6 +1905,7 @@ body, html {
       display: none; } }
 
 .fifth-animated-our {
+  margin: 20px 0px;
   position: relative;
   opacity: 0;
   animation: textonoursection ease-in-out 1.5s forwards;
