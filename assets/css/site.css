@@ -2386,6 +2386,9 @@ body, html {
   @media (max-width: 767px) and (min-width: 2px) {
     .titulo2-slider1-setima-sessao {
       display: none; } }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .titulo2-slider1-setima-sessao {
+      padding-right: 200px; } }
 
 .titulo3-slider-setima-sessao {
   text-align: left;
@@ -2395,6 +2398,9 @@ body, html {
   @media (max-width: 767px) and (min-width: 2px) {
     .titulo3-slider-setima-sessao {
       display: none; } }
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    .titulo3-slider-setima-sessao {
+      padding-right: 308px; } }
 
 .button-setima-sessao-desk {
   border: none;
