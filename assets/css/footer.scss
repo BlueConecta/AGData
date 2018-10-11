@@ -201,3 +201,9 @@
         display: none;
     }
 }
+.footer-scroll{
+    background-color: #000;
+    @media (max-width: 767px) and (min-width: 2px) {
+        height: 0% !important;
+    }
+}

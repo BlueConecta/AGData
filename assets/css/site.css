@@ -4317,4 +4317,10 @@ body, html {
   .footer-desktop {
     display: none; } }
 
+.footer-scroll {
+  background-color: #000; }
+  @media (max-width: 767px) and (min-width: 2px) {
+    .footer-scroll {
+      height: 0% !important; } }
+
 /*# sourceMappingURL=site.css.map */
