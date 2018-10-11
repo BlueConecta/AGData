@@ -55,7 +55,7 @@
   background-color: black;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 500s;
+  z-index: 500;
   margin-bottom: 0;
   right: 0; }
 
