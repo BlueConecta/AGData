@@ -14,23 +14,17 @@
                 item.addClass("on");
                 item.removeClass("off");
             })
-
             // Âncoras de Navegação do menu Versão Desktop 
             $(".navigation-links-desktop p, .navigation-links-desktop button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-            })
-            /*$(".navigation-links-desktop button").click(function () {
-                var item = $(this);
-                $.scrollify.move(item.data("section"));
-            })*/
-
+            })            
             // Âncora de Retorno ao topo do Site
             $("#arrow-to-top").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
-
+            
 // --------> // Menu Respojnsivo <--------
 
             // Âncoras de Navegação do menu Versão Mobile
@@ -72,6 +66,7 @@
             $.scrollify({
                 section: ".sessao",
                 InterstitialSection: ".sessao, .footer",
+                setHeights: false,
                 before: function (section) {
                     $(".indicators-list li").each(function () {
                         $(this).removeClass("on").addClass("off");

@@ -101,7 +101,7 @@
 @keyframes box2-terceira {
     from{
         opacity: 0;
-        left: -400px;
+        left: -250px;
     }
     to{
         opacity: 1;
@@ -111,14 +111,13 @@
 @keyframes box3-terceira {
     from{
         opacity: 0;
-        left: -400px;
+        left: -100px;
     }
     to{
         opacity: 1;
         left: 0;
     }
 }
-
 @keyframes scrollupanddown {
     from{
         top: 91%;
