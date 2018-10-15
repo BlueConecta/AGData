@@ -1559,6 +1559,9 @@ body, html {
     .button-quinta-sessao {
       display: none; } }
 
+.button-quinta-sessao:focus {
+  outline-style: none; }
+
 .interna-quinta-sessao {
   display: flex;
   flex-direction: column;
@@ -1656,6 +1659,9 @@ body, html {
       padding: 16px 55px;
       font-size: 15px;
       letter-spacing: 8px; } }
+
+.button-quinta-sessao-desk:focus {
+  outline-style: none; }
 
 .button-quinta-sessao-desk-0 {
   display: none; }
