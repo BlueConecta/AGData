@@ -25,41 +25,35 @@
                 $.scrollify.move(item.data("section"));
             })
             
-// --------> // Menu Respojnsivo <--------
+// --------> // Menu Responsivo <--------
 
             // Âncoras de Navegação do menu Versão Mobile
-            $(".content-mobile-menu li a").click(function () {
+            $(".navigation__mobile li a").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-                $(".navigation-mobile-menu").hide(600);
-                $("#button-mobile-closed").hide(300);
-                $(".menu-hamburguer").show(300);
-                $(".menu-hamburguer-closed").hide(300);
+                $(".navigation__mobile").hide(200);
+                $("#button-mobile-closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
             })
             
             //Os 2 próximos trechos de código podem ser feitos em um único trecho
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
                 var item = $(this);
-                $(".navigation-mobile-menu").show(300);
-                $("#button-mobile").hide(300);
-                $(".menu-hamburguer-closed").show(300);
+                $(".navigation__mobile").show(200);
+                $("#button-mobile").hide(100);
+                $(".menu-hamburguer-closed").show(100);
             })
 
             // Botão para Fechar menu
             $("#button-mobile-closed").click(function () {
                 var item = $(this);
-                $(".navigation-mobile-menu").hide(600);
-                $("#button-mobile-closed").hide(300);
-                $(".menu-hamburguer").show(300);
-                $(".menu-hamburguer-closed").hide(3000);
-            })
-
-            //Lá no início você já está removendo tudo porque fazer de novo
-            // Desativa todos os Indicadores de Navegação
-            $(".indicators-list li").each(function () {
-                $(this).removeClass("on").addClass("off");
-            });      
+                $(".navigation__mobile").hide(200);
+                $("#button-mobile-closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
+            })     
             
             //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            

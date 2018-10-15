@@ -8,11 +8,11 @@
 }
 .container h1{
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    color: #056bff;
+    color: #eae727;
     margin-top: 30px;
     margin-bottom: 20px;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -26,13 +26,13 @@
         margin-top: 115px;
         margin-left: 90px;
         text-align: left;
-        letter-spacing: 8px;
-        font-size:15px;
+        letter-spacing: 6px;
+        font-size: 18px;
     }
 }
 .paragraph-one-mobile-about{
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;
     margin-bottom: 5px;
@@ -47,11 +47,12 @@
         margin-top: 20px;
         margin-left: 90px;
         text-align: left;
-        font-size: 36px;
+        font-size: 28px;
         width: 78%;
     }
 }
 .paragraph-one-mobile-about-strong{
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     @media (max-width: 1366px) and (min-width: 768px) {
         font-weight: bold;
@@ -59,7 +60,7 @@
     }
     @media (min-width: 1368px) {
         font-weight: bold;
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 .mobile-div-intern-section-about{

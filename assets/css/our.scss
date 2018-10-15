@@ -63,8 +63,8 @@
     display: flex;
     align-items: flex-end;
     padding: 0 20px;
-    position: relative;
-    top: 50px;
+    // position: relative;
+    // top: 50px;
 }
 .div-interna-sexta-sessao2{
     display: flex;
@@ -78,7 +78,36 @@
 }
 .verified{
     height: 20px;
-    width: 20px;    
+    width: 20px;  
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+        margin-top: 10px;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+    }  
+}
+.verified-second{
+    height: 20px;
+    width: 20px;  
+    @media (max-width: 359px) and (min-width: 321px) {
+    }
+    @media (max-width: 374px) and (min-width: 359px) { 
+    } 
+    @media (max-width: 413px) and (min-width: 375px) {
+    }
+    @media (max-width: 500px) and (min-width: 414px) {
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+    }  
 }
 .h3-sexta-sessao{
     margin-top: 0;

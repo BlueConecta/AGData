@@ -92,6 +92,9 @@ body, html{
         padding: 10px 25px;
     }
 }
+.button-home:focus{
+    outline-style: none;
+  }
 .button-home-disabled{
     display: none;
 }

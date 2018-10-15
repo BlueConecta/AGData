@@ -7,6 +7,38 @@
   align-items: center;
   justify-content: space-between; }
 
+.navigation__mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  margin-bottom: 0;
+  right: 0; }
+
+.navigation__mobile--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin-bottom: 0; }
+
+.navigation__mobile--menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 18px;
+  font-weight: bold;
+  font-size: 21px; }
+
+.navigation__mobile--menu li p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 18px;
+  font-size: 13px; }
+
 .icone-shopping {
   margin-left: 42%; }
 
@@ -47,18 +79,6 @@
   margin-top: -2px;
   transform: rotate(135deg); }
 
-.navigation-mobile-menu {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: black;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 500;
-  margin-bottom: 0;
-  right: 0; }
-
 @keyframes fecharMenu {
   from {
     right: 0; }
@@ -86,26 +106,6 @@
   @media (max-width: 1920px) and (min-width: 768px) {
     .menu-hamburguer-closed {
       display: none; } }
-
-.content-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  margin-bottom: 0; }
-
-.content-mobile-menu li a {
-  text-decoration: none;
-  color: #fff;
-  padding-left: 18px;
-  font-weight: bold;
-  font-size: 21px; }
-
-.content-mobile-menu li p {
-  text-decoration: none;
-  color: #fff;
-  padding-left: 18px;
-  font-size: 13px; }
 
 .menu-socials-network {
   display: flex;
@@ -268,6 +268,9 @@ body, html {
     .button-home {
       border-radius: 20px;
       padding: 10px 25px; } }
+
+.button-home:focus {
+  outline-style: none; }
 
 .button-home-disabled {
   display: none; }
@@ -568,11 +571,11 @@ body, html {
 
 .container h1 {
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: #056bff;
+  color: #eae727;
   margin-top: 30px;
   margin-bottom: 20px; }
   @media (max-width: 1366px) and (min-width: 768px) {
@@ -587,12 +590,12 @@ body, html {
       margin-top: 115px;
       margin-left: 90px;
       text-align: left;
-      letter-spacing: 8px;
-      font-size: 15px; } }
+      letter-spacing: 6px;
+      font-size: 18px; } }
 
 .paragraph-one-mobile-about {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   text-align: center;
   margin-bottom: 5px; }
@@ -608,10 +611,11 @@ body, html {
       margin-top: 20px;
       margin-left: 90px;
       text-align: left;
-      font-size: 36px;
+      font-size: 28px;
       width: 78%; } }
 
 .paragraph-one-mobile-about-strong {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .paragraph-one-mobile-about-strong {
@@ -620,7 +624,7 @@ body, html {
   @media (min-width: 1368px) {
     .paragraph-one-mobile-about-strong {
       font-weight: bold;
-      font-size: 36px; } }
+      font-size: 28px; } }
 
 .mobile-div-intern-section-about {
   text-align: center;
@@ -1714,9 +1718,7 @@ body, html {
 .div-interna-sexta-sessao {
   display: flex;
   align-items: flex-end;
-  padding: 0 20px;
-  position: relative;
-  top: 50px; }
+  padding: 0 20px; }
 
 .div-interna-sexta-sessao2 {
   display: flex;
@@ -1727,6 +1729,13 @@ body, html {
       align-items: flex-start; } }
 
 .verified {
+  height: 20px;
+  width: 20px; }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .verified {
+      margin-top: 10px; } }
+
+.verified-second {
   height: 20px;
   width: 20px; }
 
@@ -1936,9 +1945,43 @@ body, html {
     .setima01 {
       display: none; } }
 
+.iphone-setima-sessao2 {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  max-width: 49%;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media (max-width: 374px) and (min-width: 359px) {
+    .iphone-setima-sessao2 {
+      max-width: 59%; } }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .iphone-setima-sessao2 {
+      max-width: 59%; } }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .iphone-setima-sessao2 {
+      max-width: 59%; } }
+
+.iphone-setima-sessao {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  max-width: 59%;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media (max-width: 375px) and (min-width: 359px) {
+    .iphone-setima-sessao {
+      max-width: 70%; } }
+  @media (max-width: 413px) and (min-width: 376px) {
+    .iphone-setima-sessao {
+      max-width: 70%; } }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .iphone-setima-sessao {
+      max-width: 70%; } }
+
 .h2-setima-sessao {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
   font-size: 14px;
   color: #056bff;
   text-transform: uppercase;
@@ -1946,11 +1989,7 @@ body, html {
   font-family: sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
-  position: relative;
-  z-index: 1;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%); }
+  z-index: 1; }
   @media (max-width: 1920px) and (min-width: 768px) {
     .h2-setima-sessao {
       display: none; } }
@@ -1963,9 +2002,7 @@ body, html {
   margin-top: 0px;
   line-height: 28px;
   margin-bottom: 10px;
-  font-weight: bold;
-  position: relative;
-  top: 50px; }
+  font-weight: bold; }
   @media (max-width: 374px) and (min-width: 359px) {
     .h1-setima-sessao {
       color: #fff;
@@ -2005,12 +2042,13 @@ body, html {
   margin-top: 0px;
   line-height: 28px;
   margin-bottom: 13px;
-  font-weight: bold;
-  position: relative;
-  top: 50px; }
+  font-weight: bold; }
   @media (max-width: 374px) and (min-width: 359px) {
     .h1-slider3-setima-sessao {
       font-size: 24px; } }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .h1-slider3-setima-sessao {
+      font-size: 25px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .h1-slider3-setima-sessao {
       font-size: 27px; } }
@@ -2021,9 +2059,7 @@ body, html {
   padding: 0 52px;
   font-family: sans-serif;
   margin-bottom: 6px;
-  font-size: 12px;
-  position: relative;
-  top: 50px; }
+  font-size: 12px; }
   @media (max-width: 374px) and (min-width: 359px) {
     .p-setima-sessao {
       color: #fff;
@@ -2058,34 +2094,7 @@ body, html {
   border-radius: 15px;
   padding: 5px 18px;
   font-family: sans-serif;
-  letter-spacing: 5px;
-  position: relative;
-  top: 50px; }
-
-.iphone-setima-sessao {
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  height: 242px;
-  left: 50%;
-  transform: translateX(-50%); }
-  @media (max-width: 375px) and (min-width: 359px) {
-    .iphone-setima-sessao {
-      height: 188px; } }
-
-.iphone-setima-sessao2 {
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  height: 157px;
-  left: 50%;
-  transform: translateX(-50%); }
-  @media (max-width: 374px) and (min-width: 359px) {
-    .iphone-setima-sessao2 {
-      height: 104px; } }
-  @media (max-width: 413px) and (min-width: 375px) {
-    .iphone-setima-sessao2 {
-      height: 104px; } }
+  letter-spacing: 5px; }
 
 #carousel-example-generic {
   height: 100%; }
@@ -2104,18 +2113,17 @@ body, html {
 .p2-setima-sessao {
   color: #fff;
   text-align: center;
-  padding: 52px 33px 52px 33px;
+  padding: 18px 33px 52px 33px;
   font-family: sans-serif;
   margin-bottom: 0;
-  font-size: 15px;
-  position: relative;
-  top: 50px; }
+  font-size: 15px; }
   @media (max-width: 374px) and (min-width: 359px) {
     .p2-setima-sessao {
-      font-size: 15px; } }
+      font-size: 14px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .p2-setima-sessao {
-      padding: 52px 33px 85px 33px; } }
+      font-size: 15px;
+      padding: 52px 33px 70px 33px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .p2-setima-sessao {
       font-size: 17px; } }
@@ -2123,9 +2131,7 @@ body, html {
 .div-interna-setima-sessao {
   display: flex;
   padding: 0 44px;
-  margin-bottom: 25px;
-  position: relative;
-  top: 50px; }
+  margin-bottom: 25px; }
 
 .h3-setima-sessao {
   margin-top: 0;
@@ -2136,6 +2142,16 @@ body, html {
   margin-left: 8px;
   line-height: 21px;
   text-align: justify; }
+  @media (max-width: 374px) and (min-width: 359px) {
+    .h3-setima-sessao {
+      font-size: 15px; } }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .h3-setima-sessao {
+      font-size: 16px; } }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .h3-setima-sessao {
+      margin-top: 10px;
+      font-size: 20px; } }
   @media (min-width: 1368px) {
     .h3-setima-sessao {
       font-size: 23px; } }
@@ -2148,27 +2164,29 @@ body, html {
   text-align: justify;
   padding: 0 35px;
   font-family: sans-serif;
-  margin-bottom: 13px;
+  margin-bottom: 45px;
   font-size: 12px;
-  line-height: 15px;
-  position: relative;
-  top: 50px; }
+  line-height: 15px; }
   @media (max-width: 374px) and (min-width: 359px) {
     .p-slider3-setima-sessao {
       padding: 0 47px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .p-slider3-setima-sessao {
+      font-size: 16px;
+      line-height: 18px;
       padding: 20px 35px 0px 35px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .p-slider3-setima-sessao {
+      font-size: 16px;
+      line-height: 20px;
       padding: 25px 45px 0px 45px; } }
 
 .p2-slider3-setima-sessao {
-  font-family: sans-serif;
   font-weight: bold;
-  margin-bottom: 27px;
-  position: relative;
-  top: 50px; }
+  margin-bottom: 27px; }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .p2-slider3-setima-sessao {
+      font-size: 16px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .p2-slider3-setima-sessao {
       margin-bottom: 46px; } }
@@ -2176,9 +2194,7 @@ body, html {
 .div2-interna-setima-sessao {
   display: flex;
   padding: 0 44px;
-  margin-bottom: 10px;
-  position: relative;
-  top: 50px; }
+  margin-bottom: 10px; }
 
 .div-interna-sessao7-segunda-1 {
   display: flex;
@@ -2261,6 +2277,12 @@ body, html {
   margin-bottom: 2px;
   margin-left: 8px;
   line-height: 21px; }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .h3-slider3-setima-sessao {
+      font-size: 12px; } }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .h3-slider3-setima-sessao {
+      font-size: 12px; } }
 
 .h1-slide4-setima-sessao {
   color: #fff;
@@ -2270,10 +2292,11 @@ body, html {
   margin-top: 6px;
   line-height: 28px;
   margin-bottom: 20px;
-  font-weight: bold;
-  position: relative;
-  top: 50px; }
+  font-weight: bold; }
   @media (max-width: 374px) and (min-width: 359px) {
+    .h1-slide4-setima-sessao {
+      font-size: 31px; } }
+  @media (max-width: 413px) and (min-width: 375px) {
     .h1-slide4-setima-sessao {
       font-size: 31px; } }
   @media (max-width: 500px) and (min-width: 414px) {
@@ -2287,13 +2310,15 @@ body, html {
   padding: 0 40px;
   font-family: sans-serif;
   margin-bottom: 40px;
-  font-size: 12px;
-  position: relative;
-  top: 50px; }
+  font-size: 12px; }
   @media (max-width: 374px) and (min-width: 359px) {
     .p-slide5-setima-sessao {
       font-size: 15px;
       line-height: 18px; } }
+  @media (max-width: 413px) and (min-width: 375px) {
+    .p-slide5-setima-sessao {
+      font-size: 15px;
+      line-height: 19px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .p-slide5-setima-sessao {
       margin-bottom: 50px;
@@ -2302,9 +2327,7 @@ body, html {
 
 .socials-slider7 {
   display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  top: 50px; }
+  justify-content: space-evenly; }
 
 .socials-slider7 img {
   height: 18px; }
@@ -2314,9 +2337,7 @@ body, html {
   padding: 0 30px 0 54px;
   font-family: sans-serif;
   font-size: 11px;
-  text-align: left;
-  position: relative;
-  top: 50px; }
+  text-align: left; }
   @media (max-width: 374px) and (min-width: 359px) {
     .p-sexta-sessao-slider {
       font-size: 13px; } }
@@ -2338,12 +2359,7 @@ body, html {
   margin-top: 6px;
   line-height: 28px;
   margin-bottom: 42px;
-  font-weight: bold;
-  position: relative;
-  top: 50px; }
-
-.carousel {
-  top: -15px; }
+  font-weight: bold; }
 
 .setima-sessao-desk {
   height: 100%;
@@ -2745,9 +2761,7 @@ body, html {
   margin-top: 0;
   line-height: 28px;
   margin-bottom: 0;
-  font-weight: bold;
-  position: relative;
-  top: 50px; }
+  font-weight: bold; }
   @media (max-width: 374px) and (min-width: 359px) {
     .h1-oitava-sessao {
       font-size: 31px; } }
