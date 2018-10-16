@@ -5,20 +5,22 @@
         $(function () {
 
             // Ativa o indicador da Seção ativa e Desativa os demais, através do Click
-            $(".indicators-list li").click(function () {
+            $(".navigation__indicators--list li").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-                $(".indicators-list li").not(item).each(function () {
+                $(".navigation__indicators--list li").not(item).each(function () {
                     $(this).switchClass("on", "off");
                 });
                 item.addClass("on");
                 item.removeClass("off");
             })
+
             // Âncoras de Navegação do menu Versão Desktop 
-            $(".navigation-links-desktop p, .navigation-links-desktop button").click(function () {
+            $(".navigation__desktop--links p, .navigation__desktop--links button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
+
             // Âncora de Retorno ao topo do Site
             $("#arrow-to-top").click(function () {
                 var item = $(this);
@@ -28,13 +30,13 @@
             // --------> // Menu Responsivo <--------
 
             // Âncoras de Navegação do menu Versão Mobile
-            $(".navigation__mobile li a").click(function () {
+            $(".navigation__mobile--menu_links li a").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
                 $(".navigation__mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".menu__hamburguer").show(100);
+                $(".menu__hamburguer--closed").hide(100);
             })
 
             //Os 2 próximos trechos de código podem ser feitos em um único trecho
@@ -43,9 +45,8 @@
                 var item = $(this);
                 $(".navigation__mobile").show(200);
                 $("#button-mobile").hide(100);
-                $(".menu-hamburguer-closed").show(100);
+                $(".menu__hamburguer--closed").show(100);
                 event.stopPropagation();
-
             })
 
             // Botão para Fechar menu
@@ -53,16 +54,16 @@
                 var item = $(this);
                 $(".navigation__mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".menu__hamburguer").show(100);
+                $(".menu__hamburguer--closed").hide(100);
             })
 
             // Fecha o menu caso ocorra click fora do menu
             $(document).click(function () {
                 $(".navigation__mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".menu__hamburguer").show(100);
+                $(".menu__hamburguer--closed").hide(100);
             })
             $(".navigation__mobile--menu").click(function () {
                 event.stopPropagation();
@@ -75,18 +76,18 @@
                 InterstitialSection: ".sessao, .footer",
                 setHeights: false,
                 before: function (section) {
-                    $(".indicators-list li").each(function () {
+                    $(".navigation__indicators--list li").each(function () {
                         $(this).removeClass("on").addClass("off");
                     });
                     if (section === 0) {
                         $("#circle-one").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
+                        $(".navigation__indicators--list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                        $("#arrow-to-top").removeClass("arrow-up").addClass("disabled");
-                        $("#m-logo-mobile").removeClass("disabled").addClass("logo-agdata-mobile");
-                        $("#m-logo-desktop").removeClass("disabled").addClass("logo-agdata-desktop");
-                        $("#m-icon-shop").removeClass("disabled").addClass("icon-shop");
+                        $("#arrow-to-top").removeClass("arrow__up").addClass("disabled");
+                        $("#m-logo-mobile").removeClass("disabled").addClass("navigation__desktop--logo-mobile");
+                        $("#m-logo-desktop").removeClass("disabled").addClass("navigation__desktop--logo-desktop");
+                        $("#m-icon-shop").removeClass("disabled").addClass("icon__shopping");
                         $(".m-paragraph-home").removeClass("disabled").addClass("paragraph-home");
                         $("#m-title-home").removeClass("disabled").addClass("title-home");
                         $("#m-title-home-desktop").removeClass("disabled").addClass("title-home-desktop");
@@ -95,15 +96,15 @@
                         $(".m-instagram").removeClass("disabled").addClass("instagram");
                         $(".m-youtube").removeClass("disabled").addClass("youtube");
                         $(".m-linkedin").removeClass("disabled").addClass("linkedin");
-                        $("#m-agency").removeClass("disabled").addClass("agency-desktop-link");
-                        $("#m-video").removeClass("disabled").addClass("video-desktop-link");
-                        $("#m-services").removeClass("disabled").addClass("services-desktop-link");
-                        $("#m-technology").removeClass("disabled").addClass("technology-desktop-link");
-                        $("#m-contact").removeClass("disabled").addClass("contact-button-desktop");
+                        $("#m-agency").removeClass("disabled").addClass("navigation__desktop--links-agency");
+                        $("#m-video").removeClass("disabled").addClass("navigation__desktop--links-video");
+                        $("#m-services").removeClass("disabled").addClass("navigation__desktop--links-services");
+                        $("#m-technology").removeClass("disabled").addClass("navigation__desktop--links-technology");
+                        $("#m-contact").removeClass("disabled").addClass("navigation__desktop--links-contact-button");
                     } else {
-                        $("#arrow-to-top").removeClass("disabled").addClass("arrow-up");
-                        $("#m-logo-mobile").removeClass("logo-agdata-mobile").addClass("disabled");
-                        $("#m-logo-desktop").removeClass("logo-agdata-desktop").addClass("disabled");
+                        $("#arrow-to-top").removeClass("disabled").addClass("arrow__up");
+                        $("#m-logo-mobile").removeClass("navigation__desktop--logo-mobile").addClass("disabled");
+                        $("#m-logo-desktop").removeClass("navigation__desktop--logo-desktop").addClass("disabled");
                         $("#m-icon-shop").removeClass("icon-shop").addClass("disabled");
                         $(".m-paragraph-home").removeClass("paragraph-home").addClass("disabled");
                         $("#m-title-home").removeClass("title-home").addClass("disabled");
@@ -113,11 +114,11 @@
                         $(".m-instagram").removeClass("instagram").addClass("disabled");
                         $(".m-youtube").removeClass("youtube").addClass("disabled");
                         $(".m-linkedin").removeClass("linkedin").addClass("disabled");
-                        $("#m-agency").removeClass("agency-desktop-link").addClass("disabled");
-                        $("#m-video").removeClass("video-desktop-link").addClass("disabled");
-                        $("#m-services").removeClass("services-desktop-link").addClass("disabled");
-                        $("#m-technology").removeClass("technology-desktop-link").addClass("disabled");
-                        $("#m-contact").removeClass("contact-button-desktop").addClass("disabled");
+                        $("#m-agency").removeClass("navigation__desktop--links-agency").addClass("disabled");
+                        $("#m-video").removeClass("navigation__desktop--links-video").addClass("disabled");
+                        $("#m-services").removeClass("navigation__desktop--links-services").addClass("disabled");
+                        $("#m-technology").removeClass("navigation__desktop--links-technology").addClass("disabled");
+                        $("#m-contact").removeClass("navigation__desktop--links-contact-button").addClass("disabled");
                     }
                     if (section === 1) {
                         $("#circle-two").switchClass("off", "on");

@@ -2,6 +2,196 @@ body, html{
     width: 100%;
     height: 100%;
 }
+.disabled{
+    display: none;
+}
+.navigation__desktop{
+    position: absolute;
+    z-index: 499;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation__desktop--logo-mobile{
+    height: 20px;
+    margin: 15px 0 0 10px;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: logo-agdata ease-in-out 1s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 361px) and (min-width: 321px) {
+        height: 20px;
+    }
+    @media (max-width: 415px) and (min-width: 375px) {
+        height: 28px;
+    }
+    @media (max-width: 500px) and (min-width: 416px) {
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+.navigation__desktop--logo-desktop{
+    padding-top: 2%;
+    padding-left: 2%; 
+    opacity: 0;
+    animation: logo-agdata ease-in-out 1s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (min-width: 1200px) {
+        width: 13.666667%;
+    }
+}
+.navigation__desktop--links{
+    padding-top: 2%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.navigation__desktop--links-agency{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s  forwards;
+    animation-delay: 1.8s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.navigation__desktop--links-video{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.navigation__desktop--links-services{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2.2s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.navigation__desktop--links-technology{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    cursor: pointer;
+    animation: links-desk ease-in-out 1s forwards;
+    animation-delay: 2.4s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.navigation__desktop--links-contact-button{
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0061ff;
+    padding: 3px 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: 0;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        padding: 6px 15px;
+    }
+}
+.navigation__desktop--links-contact-button:focus{
+    outline-style: none;
+}
+
+
+
+
+.icone-navegacao{
+    width: 8px;
+    height: 5px;
+    margin-left: 8px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.link{
+    color: #fff;
+    margin-bottom: 0;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    } 
+    @media (max-width: 1366px) and (min-width: 768px) {
+    }
+    @media (min-width: 1368px) {
+        font-size: 20px;
+    }
+    
+}
+
+.nav-button-desk0{
+    display: none;
+}
+.icone-shop{
+    width: 17px;
+    height: 19px;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.icon-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    opacity: 0;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
+    @media (max-width: 767px) and (min-width: 2px) {
+        display: none;
+    }
+}
+.icon-shop-disabled{
+    display: none;
+}
+.icon-shop img{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 .home{
     background-image: url(../img/background01.png);
@@ -109,26 +299,7 @@ body, html{
         display: none;
     }
 }
-.logo-agdata-mobile{
-    height: 20px;
-    margin: 15px 0 0 10px;
-    position: relative;
-    left: -60px;
-    opacity: 0;
-    animation: logo-agdata ease-in-out 1s forwards;
-    animation-delay: 1.5s;
-    @media (max-width: 361px) and (min-width: 321px) {
-        height: 20px;
-    }
-    @media (max-width: 415px) and (min-width: 375px) {
-        height: 28px;
-    }
-    @media (max-width: 500px) and (min-width: 416px) {
-    }
-    @media (max-width: 1920px) and (min-width: 768px) {
-        display: none;
-    }
-}
+
 .logo-agdata-disabled{
     display: none;
 }
@@ -181,19 +352,7 @@ body, html{
 }
 
 
-.logo-agdata-desktop{
-    padding-top: 2%;
-    padding-left: 2%; 
-    opacity: 0;
-    animation: logo-agdata ease-in-out 1s forwards;
-    animation-delay: 1.5s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-    @media (min-width: 1200px) {
-        width: 13.666667%;
-    }
-}
+
 .social-network-desktop{
     width: 25%;
     display: flex;
@@ -253,150 +412,4 @@ body, html{
 .title-home-desktop-disabled{
     display: none;
 }
-.navigation-links-desktop{
-    padding-top: 2%;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.agency-desktop-link{
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -60px;
-    opacity: 0;
-    cursor: pointer;
-    animation: links-desk ease-in-out 1s  forwards;
-    animation-delay: 1.8s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.agency-desktop-link-disabled{
-    display: none;
-}
-.video-desktop-link{
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -60px;
-    opacity: 0;
-    cursor: pointer;
-    animation: links-desk ease-in-out 1s forwards;
-    animation-delay: 2s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.video-desktop-link-disabled{
-    display: none;
-}
-.services-desktop-link{
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -60px;
-    opacity: 0;
-    cursor: pointer;
-    animation: links-desk ease-in-out 1s forwards;
-    animation-delay: 2.2s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.services-desktop-link-disabled{
-    display: none;
-}
-.technology-desktop-link{
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -60px;
-    opacity: 0;
-    cursor: pointer;
-    animation: links-desk ease-in-out 1s forwards;
-    animation-delay: 2.4s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.technology-desktop-link-disabled{
-    display: none;
-}
-.icone-navegacao{
-    width: 8px;
-    height: 5px;
-    margin-left: 8px;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.link{
-    color: #fff;
-    margin-bottom: 0;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    } 
-    @media (max-width: 1366px) and (min-width: 768px) {
-    }
-    @media (min-width: 1368px) {
-        font-size: 20px;
-    }
-    
-}
-.contact-button-desktop{
-    border: none;
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #0061ff;
-    padding: 3px 15px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    opacity: 0;
-    animation: button1 ease-in-out 2s forwards;
-    animation-delay: 1.5s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-    @media (max-width: 1366px) and (min-width: 768px) {
-    }
-    @media (min-width: 1368px) {
-        padding: 6px 15px;
-    }
-}
-.contact-button-desktop:focus{
-    outline-style: none;
-}
-.nav-button-desk0{
-    display: none;
-}
-.icone-shop{
-    width: 17px;
-    height: 19px;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.icon-shop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2%;
-    opacity: 0;
-    animation: button1 ease-in-out 2s forwards;
-    animation-delay: 1.5s;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-}
-.icon-shop-disabled{
-    display: none;
-}
-.icon-shop img{
-    cursor: pointer;
-}
+

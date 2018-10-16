@@ -13,7 +13,6 @@
 
 <body>
 
-
     <nav class="navigation__mobile">
         <ul class="navigation__mobile--menu">
             <div class="navigation__mobile--menu_links">
@@ -24,7 +23,7 @@
                 <li><a id="ten-menu" data-section="#contact-section">Contact</a></li>
             </div>
             <li class="navigation__mobile--menu_address">
-                <p>Praça Dr. Adhemar de Almeida Prado, n 40.<br/> <span class="tel-menu">(11) 9 3258 - 5842</span></p>
+                <p>Praça Dr. Adhemar de Almeida Prado, n 40.<br/> <span class="navigation__mobile--menu_address-tel">(11) 9 3258 - 5842</span></p>
             </li>            
             <li class="navigation__mobile--menu_social-network">
                 <img src="assets/img/facebook-logo.png" alt="Facebook">
@@ -35,19 +34,19 @@
         </ul>
     </nav>
 
-    <div id="button-mobile" class="menu-hamburguer">
+    <div id="button-mobile" class="menu__hamburguer">
         <div class="menu"></div>
         <div class="menu2"></div>
         <div class="menu3"></div>
         <div class="menu4"></div>
     </div>
-    <div id="button-mobile-closed" class="menu-hamburguer-closed">
+    <div id="button-mobile-closed" class="menu__hamburguer--closed">
         <div class="menu5"></div>
         <div class="menu6"></div>
     </div>
 
-    <!-- <div class="navigation-indicator">
-        <ul class="indicators-list">
+    <!-- <div class="navigation__indicators">
+        <ul class="navigation__indicators--list">
             <li id="circle-one" data-section="#home-section"></li>
             <li id="circle-two" data-section="#about-section"></li>
             <li id="circle-three" data-section="#design-section"></li>
@@ -62,26 +61,26 @@
     </div> -->
 
     <nav class="navigation__desktop">
-        <img id="m-logo-mobile" class="logo-agdata-mobile" src="assets/img/agdata02.png" alt="Agência Data">
-        <img id="m-logo-desktop" class="logo-agdata-desktop col-sm-2 col-md-2 col-lg-2" src="assets/img/agdata02.png" alt="Agência Data">
-        <div class="navigation-links-desktop col-sm-5 col-sm-offset-4  col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4">
-            <div id="m-agency" class="agency-desktop-link">
+        <img id="m-logo-mobile" class="navigation__desktop--logo-mobile" src="assets/img/agdata02.png" alt="Agência Data">
+        <img id="m-logo-desktop" class="navigation__desktop--logo-desktop col-sm-2 col-md-2 col-lg-2" src="assets/img/agdata02.png" alt="Agência Data">
+        <div class="navigation__desktop--links col-sm-5 col-sm-offset-4  col-md-5 col-md-offset-4 col-lg-5 col-lg-offset-4">
+            <div id="m-agency" class="navigation__desktop--links-agency">
                 <p data-section="#about-section" class="link">Agency</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div id="m-video" class="video-desktop-link">
+            <div id="m-video" class="navigation__desktop--links-video">
                 <p data-section="#video-section" class="link">Video</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div id="m-services" class="services-desktop-link">
+            <div id="m-services" class="navigation__desktop--links-services">
                 <p data-section="#services-section" class="link">Services</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <div id="m-technology" class="technology-desktop-link">
+            <div id="m-technology" class="navigation__desktop--links-technology">
                 <p data-section="#technology-section" class="link">Technology</p>
                 <img class="icone-navegacao" src="assets/img/iconemenu_lateral.png" alt="">
             </div>
-            <button id="m-contact" data-section="#contact-section" class="contact-button-desktop">contact</button>
+            <button id="m-contact" data-section="#contact-section" class="navigation__desktop--links-contact-button">contact</button>
         </div>
         <div id="m-icon-shop" class="icon-shop col-sm-1 col-md-1 col-lg-1">
             <img class="icone-shop" src="assets/img/icon_shop_header.png" alt="">
