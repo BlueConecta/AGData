@@ -1,6 +1,6 @@
 @import url(reset.css);
 @import url(bootstrap.css);
-.navigation-desktop-menu {
+.navigation__desktop {
   position: absolute;
   z-index: 499;
   display: flex;
@@ -9,10 +9,10 @@
 
 .navigation__mobile {
   display: none;
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 78%;
   position: fixed;
-  background-color: black;
+  background: black;
   top: 50%;
   transform: translateY(-50%);
   z-index: 500;
@@ -22,22 +22,47 @@
 .navigation__mobile--menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 100%;
   margin-bottom: 0; }
 
-.navigation__mobile--menu li a {
+.navigation__mobile--menu_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75%;
+  width: 85%;
+  border-right: 1px solid #3d3d3d; }
+
+.navigation__mobile--menu_links li a {
   text-decoration: none;
   color: #fff;
   padding-left: 18px;
   font-weight: bold;
-  font-size: 21px; }
+  font-size: 37px; }
 
-.navigation__mobile--menu li p {
+.navigation__mobile--menu_address {
+  border-right: 1px solid #3d3d3d;
+  height: 12.5%;
+  width: 85%; }
+
+.navigation__mobile--menu_address p {
   text-decoration: none;
   color: #fff;
   padding-left: 18px;
-  font-size: 13px; }
+  font-size: 13px;
+  margin: 0; }
+
+.navigation__mobile--menu_social-network {
+  display: flex;
+  padding-left: 18px;
+  width: 85%;
+  height: 12.5%;
+  border-right: 1px solid #3d3d3d; }
+
+.navigation__mobile--menu_social-network img {
+  width: auto;
+  height: 22px;
+  margin-right: 15%; }
 
 .icone-shopping {
   margin-left: 42%; }
@@ -101,19 +126,11 @@
   z-index: 502;
   position: fixed;
   top: 50%;
-  right: 12px;
+  right: 14px;
   opacity: 1; }
   @media (max-width: 1920px) and (min-width: 768px) {
     .menu-hamburguer-closed {
       display: none; } }
-
-.menu-socials-network {
-  display: flex;
-  padding-left: 18px;
-  justify-content: space-around; }
-  @media (max-width: 767px) and (min-width: 2px) {
-    .menu-socials-network {
-      padding-top: 15px; } }
 
 .tel-menu {
   font-weight: bold; }
@@ -532,6 +549,9 @@ body, html {
   @media (min-width: 1368px) {
     .contact-button-desktop {
       padding: 6px 15px; } }
+
+.contact-button-desktop:focus {
+  outline-style: none; }
 
 .nav-button-desk0 {
   display: none; }
@@ -1209,6 +1229,9 @@ body, html {
     .box-1-button {
       margin-top: 115px; } }
 
+.box-1-button:focus {
+  outline-style: none; }
+
 .box-2 {
   background-color: #434343;
   height: 100%;
@@ -1240,6 +1263,9 @@ body, html {
   @media (min-width: 1368px) {
     .box-1-button2 {
       margin-top: 115px; } }
+
+.box-1-button2:focus {
+  outline-style: none; }
 
 .box-3 {
   background-color: #888888;
@@ -1285,6 +1311,9 @@ body, html {
   @media (min-width: 1368px) {
     .box-1-button3 {
       margin-top: 115px; } }
+
+.box-1-button3:focus {
+  outline-style: none; }
 
 .contador1-desktop, .contador2-desktop {
   padding: 0;
@@ -2101,6 +2130,9 @@ body, html {
   padding: 5px 18px;
   font-family: sans-serif;
   letter-spacing: 5px; }
+
+.button-setima-sessao:focus {
+  outline-style: none; }
 
 #carousel-example-generic {
   height: 100%; }
@@ -3225,7 +3257,7 @@ body, html {
       max-width: 34%; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .smartphone-slider1-nona-sessao {
-      max-width: 57%; } }
+      max-width: 50%; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .smartphone-slider1-nona-sessao {
       display: none; } }
@@ -3355,7 +3387,7 @@ body, html {
       max-width: 42%; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .equipamento-img {
-      max-width: 57%; } }
+      max-width: 50%; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .equipamento-img {
       display: none; } }
@@ -3509,7 +3541,7 @@ body, html {
       max-width: 56%; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .ipad-nona-sessao-slider4 {
-      max-width: 96%; } }
+      max-width: 56%; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .ipad-nona-sessao-slider4 {
       display: none; } }
@@ -4342,12 +4374,18 @@ body, html {
   border-radius: 20px 0px 0px 20px;
   padding: 10px 0px 10px 20px; }
 
+.newsletter-input:focus {
+  outline-style: none; }
+
 .newsletter-button {
   border: none;
   border-radius: 0px 20px 20px 0px;
   padding: 10px 20px 10px 10px;
   color: #fff;
   background-color: #0061ff; }
+
+.newsletter-button:focus {
+  outline-style: none; }
 
 @media (max-width: 767px) and (min-width: 2px) {
   .footer-desktop {

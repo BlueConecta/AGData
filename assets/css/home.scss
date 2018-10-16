@@ -369,6 +369,9 @@ body, html{
         padding: 6px 15px;
     }
 }
+.contact-button-desktop:focus{
+    outline-style: none;
+}
 .nav-button-desk0{
     display: none;
 }

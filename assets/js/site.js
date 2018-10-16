@@ -18,14 +18,14 @@
             $(".navigation-links-desktop p, .navigation-links-desktop button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-            })            
+            })
             // Âncora de Retorno ao topo do Site
             $("#arrow-to-top").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
-            
-// --------> // Menu Responsivo <--------
+
+            // --------> // Menu Responsivo <--------
 
             // Âncoras de Navegação do menu Versão Mobile
             $(".navigation__mobile li a").click(function () {
@@ -36,7 +36,7 @@
                 $(".menu-hamburguer").show(100);
                 $(".menu-hamburguer-closed").hide(100);
             })
-            
+
             //Os 2 próximos trechos de código podem ser feitos em um único trecho
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
@@ -44,6 +44,8 @@
                 $(".navigation__mobile").show(200);
                 $("#button-mobile").hide(100);
                 $(".menu-hamburguer-closed").show(100);
+                event.stopPropagation();
+
             })
 
             // Botão para Fechar menu
@@ -53,8 +55,19 @@
                 $("#button-mobile-closed").hide(100);
                 $(".menu-hamburguer").show(100);
                 $(".menu-hamburguer-closed").hide(100);
-            })     
-            
+            })
+
+            // Fecha o menu caso ocorra click fora do menu
+            $(document).click(function () {
+                $(".navigation__mobile").hide(200);
+                $("#button-mobile-closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
+            })
+            $(".navigation__mobile").click(function () {
+                event.stopPropagation();
+            });
+
             //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            
             $.scrollify({
@@ -64,7 +77,7 @@
                 before: function (section) {
                     $(".indicators-list li").each(function () {
                         $(this).removeClass("on").addClass("off");
-                    });       
+                    });
                     if (section === 0) {
                         $("#circle-one").switchClass("off", "on");
                         $(".indicators-list li").each(function () {
@@ -135,8 +148,8 @@
                         $(".controladorbox1").removeClass("box-1-0").addClass("box-1");
                         $(".controladorbox2").removeClass("box-2-0").addClass("box-2");
                         $(".controladorbox3").removeClass("box-3-0").addClass("box-3");
-                        
-                        
+
+
                         // Primeiro Contador
                         var max_number = 5000000;
 
@@ -308,7 +321,7 @@
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                    } else{
+                    } else {
                         $("#m-animate-one-our").removeClass("first-animated-our").addClass("disabled");
                         $("#m-animate-two-our").removeClass("second-animated-our").addClass("disabled");
                         $("#m-animate-three-our").removeClass("third-animated-our").addClass("disabled");

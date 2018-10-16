@@ -417,6 +417,9 @@
         margin-top: 115px;
     }
 }
+.box-1-button:focus{
+    outline-style: none;
+}
 .box-2{
     background-color: #434343;
     height: 100%;
@@ -450,6 +453,9 @@
     @media (min-width: 1368px) {
         margin-top: 115px;
     }
+}
+.box-1-button2:focus{
+    outline-style: none;
 }
 .box-3{
     background-color: #888888;
@@ -499,6 +505,9 @@
     @media (min-width: 1368px) {
         margin-top: 115px;
     }
+}
+.box-1-button3:focus{
+    outline-style: none;
 }
 .contador1-desktop, .contador2-desktop{
     padding: 0;
