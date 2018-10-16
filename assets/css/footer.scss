@@ -195,18 +195,12 @@
     border-radius: 20px 0px 0px 20px;
     padding: 10px 0px 10px 20px;
 }
-.newsletter-input:focus{
-    outline-style: none;
-}
 .newsletter-button{
     border: none;
     border-radius: 0px 20px 20px 0px;
     padding: 10px 20px 10px 10px;
     color: #fff;
     background-color: #0061ff;
-}
-.newsletter-button:focus{
-    outline-style: none;
 }
 .footer-desktop{
     @media (max-width: 767px) and (min-width: 2px) {
