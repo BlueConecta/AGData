@@ -64,7 +64,7 @@
                 $(".menu-hamburguer").show(100);
                 $(".menu-hamburguer-closed").hide(100);
             })
-            $(".navigation__mobile").click(function () {
+            $(".navigation__mobile--menu").click(function () {
                 event.stopPropagation();
             });
 
