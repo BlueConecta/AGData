@@ -5,10 +5,10 @@
         $(function () {
 
             // Ativa o indicador da Seção ativa e Desativa os demais, através do Click
-            $(".navigation__indicators--list li").click(function () {
+            $(".navigation-indicators__list li").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-                $(".navigation__indicators--list li").not(item).each(function () {
+                $(".navigation-indicators__list li").not(item).each(function () {
                     $(this).switchClass("on", "off");
                 });
                 item.addClass("on");
@@ -16,7 +16,7 @@
             })
 
             // Âncoras de Navegação do menu Versão Desktop 
-            $(".navigation__desktop--links p, .navigation__desktop--links button").click(function () {
+            $(".navigation-desktop__links p, .navigation-desktop__links button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
@@ -30,42 +30,42 @@
             // --------> // Menu Responsivo <--------
 
             // Âncoras de Navegação do menu Versão Mobile
-            $(".navigation__mobile--menu_links li a").click(function () {
+            $(".navigation-mobile__menu--links li a").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-                $(".navigation__mobile").hide(200);
+                $(".navigation-mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu__hamburguer").show(100);
-                $(".menu__hamburguer--closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
             })
 
             //Os 2 próximos trechos de código podem ser feitos em um único trecho
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
                 var item = $(this);
-                $(".navigation__mobile").show(200);
+                $(".navigation-mobile").show(200);
                 $("#button-mobile").hide(100);
-                $(".menu__hamburguer--closed").show(100);
+                $(".menu-hamburguer-closed").show(100);
                 event.stopPropagation();
             })
 
             // Botão para Fechar menu
             $("#button-mobile-closed").click(function () {
                 var item = $(this);
-                $(".navigation__mobile").hide(200);
+                $(".navigation-mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu__hamburguer").show(100);
-                $(".menu__hamburguer--closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
             })
 
             // Fecha o menu caso ocorra click fora do menu
             $(document).click(function () {
-                $(".navigation__mobile").hide(200);
+                $(".navigation-mobile").hide(200);
                 $("#button-mobile-closed").hide(100);
-                $(".menu__hamburguer").show(100);
-                $(".menu__hamburguer--closed").hide(100);
+                $(".menu-hamburguer").show(100);
+                $(".menu-hamburguer-closed").hide(100);
             })
-            $(".navigation__mobile--menu").click(function () {
+            $(".navigation-mobile__menu").click(function () {
                 event.stopPropagation();
             });
 
@@ -76,70 +76,74 @@
                 InterstitialSection: ".sessao, .footer",
                 setHeights: false,
                 before: function (section) {
-                    $(".navigation__indicators--list li").each(function () {
+                    $(".navigation-indicators__list li").each(function () {
                         $(this).removeClass("on").addClass("off");
                     });
                     if (section === 0) {
                         $("#circle-one").switchClass("off", "on");
-                        $(".navigation__indicators--list li").each(function () {
+                        $(".navigation-indicators__list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
                         $("#arrow-to-top").removeClass("arrow__up").addClass("disabled");
-                        $("#m-logo-mobile").removeClass("disabled").addClass("navigation__desktop--logo-mobile");
-                        $("#m-logo-desktop").removeClass("disabled").addClass("navigation__desktop--logo-desktop");
-                        $("#m-icon-shop").removeClass("disabled").addClass("icon__shopping");
-                        $(".m-paragraph-home").removeClass("disabled").addClass("paragraph-home");
-                        $("#m-title-home").removeClass("disabled").addClass("title-home");
-                        $("#m-title-home-desktop").removeClass("disabled").addClass("title-home-desktop");
-                        $(".m-button-desktop").removeClass("disabled").addClass("button-home");
+                        $("#m-logo-mobile").removeClass("disabled").addClass("navigation-desktop__logo-mobile");
+                        $("#m-logo-desktop").removeClass("disabled").addClass("navigation-desktop__logo-desktop");
+                        $("#m-icon-shop").removeClass("disabled").addClass("navigation--desktop__shop");
+                        $(".m-paragraph-home").removeClass("disabled").addClass("home__desktop--paragraph");
+                        $(".m-paragraph-home-mobile").removeClass("disabled").addClass("home__mobile--paragraph");
+                        $("#m-title-home-mobile").removeClass("disabled").addClass("home__mobile--tile");
+                        $("#m-title-home-desktop").removeClass("disabled").addClass("home__desktop--title");
+                        $(".m-button-desktop").removeClass("disabled").addClass("home__desktop--button");
+                        $(".m-button-mobile").removeClass("disabled").addClass("home__mobile--button");
                         $(".m-facebook").removeClass("disabled").addClass("facebook");
                         $(".m-instagram").removeClass("disabled").addClass("instagram");
                         $(".m-youtube").removeClass("disabled").addClass("youtube");
                         $(".m-linkedin").removeClass("disabled").addClass("linkedin");
-                        $("#m-agency").removeClass("disabled").addClass("navigation__desktop--links-agency");
-                        $("#m-video").removeClass("disabled").addClass("navigation__desktop--links-video");
-                        $("#m-services").removeClass("disabled").addClass("navigation__desktop--links-services");
-                        $("#m-technology").removeClass("disabled").addClass("navigation__desktop--links-technology");
-                        $("#m-contact").removeClass("disabled").addClass("navigation__desktop--links-contact-button");
+                        $("#m-agency").removeClass("disabled").addClass("navigation-desktop__links--agency");
+                        $("#m-video").removeClass("disabled").addClass("navigation-desktop__links--video");
+                        $("#m-services").removeClass("disabled").addClass("navigation-desktop__links--services");
+                        $("#m-technology").removeClass("disabled").addClass("navigation-desktop__links--technology");
+                        $("#m-contact").removeClass("disabled").addClass("navigation-desktop__links--contact-button");
                     } else {
                         $("#arrow-to-top").removeClass("disabled").addClass("arrow__up");
-                        $("#m-logo-mobile").removeClass("navigation__desktop--logo-mobile").addClass("disabled");
-                        $("#m-logo-desktop").removeClass("navigation__desktop--logo-desktop").addClass("disabled");
-                        $("#m-icon-shop").removeClass("icon-shop").addClass("disabled");
-                        $(".m-paragraph-home").removeClass("paragraph-home").addClass("disabled");
-                        $("#m-title-home").removeClass("title-home").addClass("disabled");
-                        $("#m-title-home-desktop").removeClass("title-home-desktop").addClass("disabled");
-                        $(".m-button-desktop").removeClass("button-home").addClass("disabled");
+                        $("#m-logo-mobile").removeClass("navigation-desktop__logo-mobile").addClass("disabled");
+                        $("#m-logo-desktop").removeClass("navigation-desktop__logo-desktop").addClass("disabled");
+                        $("#m-icon-shop").removeClass("navigation--desktop__shop").addClass("disabled");
+                        $(".m-paragraph-home").removeClass("home__desktop--paragraph").addClass("disabled");
+                        $(".m-paragraph-home-mobile").removeClass("home__mobile--paragraph").addClass("disabled");
+                        $("#m-title-home-mobile").removeClass("home__mobile--tile").addClass("disabled");
+                        $("#m-title-home-desktop").removeClass("home__desktop--title").addClass("disabled");                        
+                        $(".m-button-desktop").removeClass("home__desktop--button").addClass("disabled");
+                        $(".m-button-mobile").removeClass("home__mobile--button").addClass("disabled");
                         $(".m-facebook").removeClass("facebook").addClass("disabled");
                         $(".m-instagram").removeClass("instagram").addClass("disabled");
                         $(".m-youtube").removeClass("youtube").addClass("disabled");
                         $(".m-linkedin").removeClass("linkedin").addClass("disabled");
-                        $("#m-agency").removeClass("navigation__desktop--links-agency").addClass("disabled");
-                        $("#m-video").removeClass("navigation__desktop--links-video").addClass("disabled");
-                        $("#m-services").removeClass("navigation__desktop--links-services").addClass("disabled");
-                        $("#m-technology").removeClass("navigation__desktop--links-technology").addClass("disabled");
-                        $("#m-contact").removeClass("navigation__desktop--links-contact-button").addClass("disabled");
+                        $("#m-agency").removeClass("navigation-desktop__links--agency").addClass("disabled");
+                        $("#m-video").removeClass("navigation-desktop__links--video").addClass("disabled");
+                        $("#m-services").removeClass("navigation-desktop__links--services").addClass("disabled");
+                        $("#m-technology").removeClass("navigation-desktop__links--technology").addClass("disabled");
+                        $("#m-contact").removeClass("navigation-desktop__links--contact-button").addClass("disabled");
                     }
                     if (section === 1) {
                         $("#circle-two").switchClass("off", "on");
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                        $("#control-one-desk-div").removeClass("disabled").addClass("desktop-div-section-about-one");
-                        $("#control-two-desk-div").removeClass("disabled").addClass("desktop-div-section-about-two");
-                        $("#control-three-desk-div").removeClass("disabled").addClass("desktop-div-section-about-three");
-                        $("#control-four-desk-div").removeClass("disabled").addClass("desktop-div-section-about-four");
-                        $("#control-image-about-desktop").removeClass("disabled").addClass("image-about-desktop");
-                        $("#control-content-about").removeClass("disabled").addClass("content-about-mobile");
-                        $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
+                        $("#control-one-desk-div").removeClass("disabled").addClass("about-desktop__div-one");
+                        $("#control-two-desk-div").removeClass("disabled").addClass("about-desktop__div-two");
+                        $("#control-three-desk-div").removeClass("disabled").addClass("about-desktop__div-three");
+                        $("#control-four-desk-div").removeClass("disabled").addClass("about-desktop__div-four");
+                        $("#control-image-about-desktop").removeClass("disabled").addClass("about__image-desktop");
+                        $("#control-content-about").removeClass("disabled").addClass("about__top-text");
+                        // $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
                     } else {
-                        $("#control-one-desk-div").removeClass("desktop-div-section-about-one").addClass("disabled");
-                        $("#control-two-desk-div").removeClass("desktop-div-section-about-two").addClass("disabled");
-                        $("#control-three-desk-div").removeClass("desktop-div-section-about-three").addClass("disabled");
-                        $("#control-four-desk-div").removeClass("desktop-div-section-about-four").addClass("disabled");
-                        $("#control-image-about-desktop").removeClass("image-about-desktop").addClass("disabled");
-                        $("#control-content-about").removeClass("content-about-mobile").addClass("disabled");
-                        $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("disabled");
+                        $("#control-one-desk-div").removeClass("about-desktop__div-one").addClass("disabled");
+                        $("#control-two-desk-div").removeClass("about-desktop__div-two").addClass("disabled");
+                        $("#control-three-desk-div").removeClass("about-desktop__div-three").addClass("disabled");
+                        $("#control-four-desk-div").removeClass("about-desktop__div-four").addClass("disabled");
+                        $("#control-image-about-desktop").removeClass("about__image-desktop").addClass("disabled");
+                        $("#control-content-about").removeClass("about__top-text").addClass("disabled");
+                        // $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("disabled");
                     }
                     if (section === 2) {
                         $("#circle-three").switchClass("off", "on");
