@@ -3,12 +3,13 @@ body, html{
     height: 100%;
 }
 .home{
-    background-image: url(../img/background01.png);
+    background-image: url(../img/background-home.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    
 }
 
 // Desktop
@@ -66,7 +67,7 @@ body, html{
     color: #fff;
     font-family: sans-serif;
     border: none;
-    background-color: #056bff;
+    background-color: #f7aa2e;
     border-radius: 15px;
     padding: 5px 20px;
     text-transform: uppercase;
@@ -173,7 +174,7 @@ body, html{
     color: #fff;
     font-family: sans-serif;
     border: none;
-    background-color: #056bff;
+    background-color: #f7aa2e;
     border-radius: 15px;
     padding: 5px 20px;
     text-transform: uppercase;

@@ -6,7 +6,9 @@
     //     display: none;
     // }
 }
-.h3-terceira-sessao{
+
+
+.design-mobile__title{
     color: #056bff;
     font-family: sans-serif;
     text-align: center;
@@ -17,7 +19,7 @@
         display: none;
     }
 }
-.p-terceira-sessao{
+.design-mobile__paragraph{
     color: #fff;
     text-align: center;
     font-family: sans-serif;
@@ -29,26 +31,13 @@
         display: none;
     }
 }
-.contador1{
+.design-mobile__first-counter{
     text-align: center;
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
 }
-.contador2-interno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cont-simb{
-    color: #fff;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 5px;
-    font-size: 50px;
-    padding-right: 10px;
-}
-.titulo-contador1{
+.design-mobile__first-counter--title{
     color: #fff;
     font-weight: bold;
     margin-top: 40px;
@@ -69,7 +58,7 @@
         font-size: 62px;
     }
 }
-.texto-contador1{
+.design-mobile__first-counter--paragraph{
     color: #fff;
     text-align: center;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -78,13 +67,26 @@
         font-size: 19px;
     }
 }
-.contador2{
+.design-mobile__second-counter{
     text-align: center;
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
 }
-.titulo-contador2{
+.design-mobile__second-counter--intern{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.design-mobile__second-counter--symbol{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    padding-right: 10px;
+}
+.design-mobile__second-counter--intern__title{
     color: #fff;
     font-weight: bold;
     margin-top: 25px;
@@ -96,7 +98,7 @@
         font-size: 62px;
     }
 }
-.texto-contador2{
+.design-mobile__second-counter--paragraph{
     color: #fff;
     text-align: center;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -105,7 +107,7 @@
         font-size: 19px;
     }
 }
-.contador3{
+.design-mobile__third-counter{
     text-align: center;
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
@@ -123,7 +125,7 @@
         font-size: 62px;
     }
 }
-.texto-contador3{
+.design-mobile__third-counter--paragraph{
     color: #fff;
     text-align: center;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -135,20 +137,18 @@
 
 
 
-
-
 // Desktop
 
 
 
-.design-interna-1{
+.design-desktop__extern-first{
     width: 100%;
     height: 70%;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
 }
-.design-interna-2{
+.design-desktop__extern-second{
     width: 100%;
     height: 30%;
     background-color: #000;
@@ -157,15 +157,18 @@
         display: none;
     }
 }
-.box-1{
+.design-desktop__extern-first--box-one{
     background-color: #0061ff;
     height: 100%;
     padding: 0;
+    opacity: 0;
+    position: relative;
+    animation: box1-terceira ease-in-out 2s forwards;    
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
 }
-.box-1-h2{
+.design-desktop__extern-first--box-one__title{
     margin: 0;
     padding: 60px 38px 40px 60px;
     color: #fff;
@@ -180,7 +183,7 @@
         font-size: 35px;
     }
 }
-.box-1-p{
+.design-desktop__extern-first--box-one__paragraph{
     margin: 0;
     padding: 0 60px;
     color: #fff;
@@ -195,9 +198,9 @@
     @media (min-width: 1368px) {
     line-height: 31px;
     font-size: 25px;
-    }    
+    }   
 }
-.box-1-button{
+.design-desktop__extern-first--box-one__button{
     text-transform: uppercase;
     background-color: #0061ff;
     border: 2px solid #fff;
@@ -216,10 +219,14 @@
         margin-top: 115px;
     }
 }
-.box-2{
+.design-desktop__extern-first--box-two{
     background-color: #434343;
     height: 100%;
     padding: 0;
+    opacity: 0;
+    position: relative;
+    animation: box2-terceira ease-in-out 1.5s forwards;
+    animation-delay: 0.5s;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
@@ -353,15 +360,7 @@
     }
 }
 .box-1{
-    background-color: #0061ff;
-    height: 100%;
-    padding: 0;
-    opacity: 0;
-    position: relative;
-    animation: box1-terceira ease-in-out 2s forwards;    
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
+    
 }
 .box-1-0{
     display: none;
@@ -382,23 +381,9 @@
     }
 }
 .box-1-p{
-    margin: 0;
-    padding: 0 60px;
-    color: #fff;
-    line-height: 24px;
-    letter-spacing: 0px;
-    font-size: 19px;
-    @media (max-width: 767px) and (min-width: 2px) {
-        display: none;
-    }
-    @media (max-width: 1366px) and (min-width: 768px) {
-    }
-    @media (min-width: 1368px) {
-    line-height: 31px;
-    font-size: 25px;
-    }    
+        
 }
-.box-1-button{
+.design-desktop__extern-first--box-one__button{
     text-transform: uppercase;
     background-color: #0061ff;
     border: 2px solid #fff;
@@ -417,7 +402,7 @@
         margin-top: 115px;
     }
 }
-.box-1-button:focus{
+.design-desktop__extern-first--box-one__button:focus{
     outline-style: none;
 }
 .box-2{
@@ -432,10 +417,8 @@
         display: none;
     }
 }
-.box-2-0{
-    display: none;
-}
-.box-1-button2{
+
+.design-desktop__extern-first--box-two__button{
     text-transform: uppercase;
     background-color: #434343;
     border: 2px solid #fff;
@@ -454,10 +437,10 @@
         margin-top: 115px;
     }
 }
-.box-1-button2:focus{
+.design-desktop__extern-first--box-two__button:focus{
     outline-style: none;
 }
-.box-3{
+.design-desktop__extern-first--box-three{
     background-color: #888888;
     height: 100%;
     padding: 0;
@@ -469,10 +452,8 @@
         display: none;
     }
 }
-.box-3-0{
-    display: none;
-}
-.box-3-h2{
+
+.design-desktop__extern-first--box-three__title{
     margin: 0;
     padding: 60px 38px 40px 60px;
     color: #fff;
@@ -487,7 +468,7 @@
         font-size: 35px;
     }
 }
-.box-1-button3{
+.design-desktop__extern-first--box-three__button{
     text-transform: uppercase;
     background-color: #888888;
     border: 2px solid #fff;
