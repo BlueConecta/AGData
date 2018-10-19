@@ -74,6 +74,7 @@
             $.scrollify({
                 section: ".sessao",
                 InterstitialSection: ".sessao, .footer",
+                scrollSpeed: 200,
                 setHeights: false,
                 before: function (section) {
                     $(".navigation-indicators__list li").each(function () {
@@ -150,9 +151,9 @@
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
-                        $(".controladorbox1").removeClass("box-1-0").addClass("box-1");
-                        $(".controladorbox2").removeClass("box-2-0").addClass("box-2");
-                        $(".controladorbox3").removeClass("box-3-0").addClass("box-3");
+                        $(".controladorbox1").removeClass("disabled").addClass("design-desktop__extern-first--box-one");
+                        $(".controladorbox2").removeClass("disabled").addClass("design-desktop__extern-first--box-two");
+                        $(".controladorbox3").removeClass("disabled").addClass("design-desktop__extern-first--box-three");
 
 
                         // Primeiro Contador
@@ -249,9 +250,9 @@
                         });
 
                     } else {
-                        $(".controladorbox1").removeClass("box-1").addClass("box-1-0");
-                        $(".controladorbox2").removeClass("box-2").addClass("box-2-0");
-                        $(".controladorbox3").removeClass("box-3").addClass("box-3-0");
+                        $(".controladorbox1").removeClass("design-desktop__extern-first--box-one").addClass("disabled");
+                        $(".controladorbox2").removeClass("design-desktop__extern-first--box-two").addClass("disabled");
+                        $(".controladorbox3").removeClass("design-desktop__extern-first--box-three").addClass("disabled");
                     }
                     if (section === 3) {
                         $("#circle-four").switchClass("off", "on");

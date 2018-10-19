@@ -8,8 +8,7 @@ body, html{
     background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 // Desktop
@@ -142,6 +141,9 @@ body, html{
     @media (max-width: 361px) and (min-width: 321px) {
         font-size: 15px;
     }    
+    @media (max-width: 500px) and (min-width: 416px) {
+        font-size: 20px;
+    }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
@@ -166,6 +168,9 @@ body, html{
     @media (max-width: 415px) and (min-width: 376px) {
         font-size: 34px;
     }
+    @media (max-width: 500px) and (min-width: 416px) {
+        font-size: 38px;
+    }
     @media (max-width: 1920px) and (min-width: 768px) {
         // font-size: 66px;
     }
@@ -186,6 +191,11 @@ body, html{
     @media (max-width: 361px) and (min-width: 321px) {
         padding: 6px 28px;
     }
+    @media (max-width: 500px) and (min-width: 416px) {
+        border-radius: 34px;
+        padding: 15px 35px;
+    }
+    
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
@@ -218,12 +228,22 @@ body, html{
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.8s;
 }
+.facebook img{
+    @media (max-width: 500px) and (min-width: 416px) {
+        height: 25px;
+    }
+}
 .instagram{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2s;
+}
+.instagram img{
+    @media (max-width: 500px) and (min-width: 416px) {
+        height: 25px;
+    }
 }
 .youtube{
     position: relative;
@@ -232,12 +252,22 @@ body, html{
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2.2s;
 }
+.youtube img{
+    @media (max-width: 500px) and (min-width: 416px) {
+        height: 25px;
+    }
+}
 .linkedin{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 2.4s;
+}
+.linkedin img{
+    @media (max-width: 500px) and (min-width: 416px) {
+        height: 25px;
+    }
 }
 .arrow__up{
     width: 38px;

@@ -30,6 +30,9 @@
     opacity: 0;
     animation: titleonoursection ease-in-out 1.5s forwards;
     // animation-delay: 2.5s;
+    @media (max-width: 500px) and (min-width: 416px) {
+        font-size: 20px;
+    }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
@@ -55,8 +58,13 @@
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 31px;
     }
-    @media (max-width: 500px) and (min-width: 414px) {
+    @media (max-width: 416px) and (min-width: 414px) {
         font-size: 35px;
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        margin-bottom: 72px;
+        font-size: 33px;
+        line-height: 35px;
     }
 }
 .div-interna-sexta-sessao{
@@ -70,6 +78,10 @@
     display: flex;
     align-items: flex-end;
     padding: 0 20px;
+    @media (max-width: 500px) and (min-width: 416px) {
+        display: flex;
+        align-items: center;
+    }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
@@ -85,8 +97,11 @@
     } 
     @media (max-width: 413px) and (min-width: 375px) {
     }
-    @media (max-width: 500px) and (min-width: 414px) {
+    @media (max-width: 416px) and (min-width: 414px) {
         margin-top: 10px;
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        margin-top: 0;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -124,8 +139,11 @@
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 19px;
     }
-    @media (max-width: 500px) and (min-width: 414px) {
+    @media (max-width: 420px) and (min-width: 414px) {
         font-size: 21px;
+    }
+    @media (max-width: 500px) and (min-width: 421px) {
+        font-size: 28px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -146,8 +164,12 @@
     @media (max-width: 415px) and (min-width: 375px) {
         font-size: 11px;
     }
-    @media (max-width: 500px) and (min-width: 414px) {
+    @media (max-width: 416px) and (min-width: 414px) {
         font-size: 13px;    
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        font-size: 15px;
+        margin-bottom: 35px;
     }
     @media (min-width: 768px) {
     }
