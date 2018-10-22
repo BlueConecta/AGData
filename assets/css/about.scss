@@ -214,6 +214,8 @@
     // Mobile
 
 .about-mobile__image{
+    position: relative;
+    animation: imagemsegundasecao ease-in-out 2s forwards;
     @media (min-width: 768px) {
         display: none;
     }
@@ -231,6 +233,11 @@
     @media (max-width: 415px) and (min-width: 376px) {
         padding-top: 43px;
     }
+    @media (max-width: 500px) and (min-width: 417px) {
+        padding-left: 0;
+        padding-right: 0;
+        width: 45%;
+    }
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
@@ -247,7 +254,7 @@
     font-weight: bold;
     margin-top: 15px;
     @media (max-width: 500px) and (min-width: 416px) {
-        font-size: 22px;
+        font-size: 16px;
     }
     @media (max-width: 1920px) and (min-width: 768px) {
     }
@@ -256,7 +263,8 @@
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     @media (max-width: 500px) and (min-width: 416px) {
-        font-size: 16px;
+        text-align: center;
+        font-size: 14px;
     }
     @media (max-width: 1920px) and (min-width: 768px) {
     }
@@ -278,11 +286,11 @@
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    color: #eae727;
+    color: #f7aa2e;
     margin-top: 30px;
     margin-bottom: 20px;
     @media (max-width: 500px) and (min-width: 416px) {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 45px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -297,19 +305,19 @@
         margin-left: 90px;
         text-align: left;
         letter-spacing: 6px;
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 .about__top-text--paragraph{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 5px;
     @media (max-width: 500px) and (min-width: 416px) {
-        font-size: 20px;
+        font-size: 17px;
         padding: 0 8%;
-        margin-bottom: 65px;
+        margin-bottom: 30px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
         margin-top: 20px;
@@ -339,3 +347,19 @@
     }
 }
 
+.mobile-medium{
+    @media (min-width: 416px) {
+        display: none;
+    }
+}
+.mobile-large{
+    display: flex;
+    align-items: center;
+    height: 175px;
+    @media (max-width: 416px) {
+        display: none;
+    }
+    @media (min-width: 768px){
+        display: none;
+    }
+}

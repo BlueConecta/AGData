@@ -22,8 +22,9 @@
         font-size: 28px;
     }
     @media (max-width: 500px) and (min-width: 416px) {
-        font-size: 44px;
-        line-height: 48px;
+        font-size: 34px;
+        line-height: 41px;
+        padding: 65px 20px 25px 20px;
     }
 }
 .p-quarta-sessao{
@@ -46,6 +47,7 @@
     @media (max-width: 500px) and (min-width: 416px) {
         font-size: 16px;
         margin-bottom: 80px;
+        margin-top: 24px;
     }
 }
 .descricao-barra1{
@@ -83,7 +85,7 @@
     }
 }
 .cor-barra{
-    background-color: #056bff;
+    background-color: #f7aa2e;
 }
 
 .imagem-quarta-sessao-desk{

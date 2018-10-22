@@ -269,6 +269,18 @@ body, html{
         height: 25px;
     }
 }
+.twitter{
+    position: relative;
+    left: -60px;
+    opacity: 0;
+    animation: icones-sociais ease-in-out 1s forwards;
+    animation-delay: 2.6s;
+}
+.twitter img{
+    @media (max-width: 500px) and (min-width: 416px) {
+        height: 25px;
+    }
+}
 .arrow__up{
     width: 38px;
     height: 38px;
@@ -286,3 +298,10 @@ body, html{
     transform: rotate(90deg);
     opacity: 0.6;
 }
+
+
+
+
+// Menu Versão Definitiva
+
+

@@ -270,6 +270,16 @@
         left: 50%;
     }
 }
+@keyframes imgplayanimation-mobile{
+    from{
+        opacity: 0;
+        left: -35%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
 @keyframes textonoursection {
     from{
         opacity: 0;

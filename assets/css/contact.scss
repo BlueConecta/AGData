@@ -6,7 +6,7 @@
 .h1-decima-sessao{
     color: #fff;
     text-align: center;
-    padding: 0 16px;
+    padding: 0 10%;
     font-size: 33px;
     margin: 0;
     line-height: 28px;
@@ -16,6 +16,11 @@
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
+    @media (max-width: 500px) and (min-width: 417px) {
+        font-size: 45px;
+        padding-top: 110px;
+    }
+
 }
 .p-decima-sessao{
     color: #fff;
@@ -28,16 +33,44 @@
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
+    @media (max-width: 500px) and (min-width: 417px) {
+        padding: 0 18.5%;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 38px;
+    }
 }
 .form-control{
     font-family: sans-serif;
     background-color: #000;
     color: #fff;
+    @media (max-width: 500px) and (min-width: 417px) {
+        height: 45px;
+    }
+}
+.form-margin{
+    margin-bottom: 20px;
 }
 .btn-default{
-    background-color: #056bff;
+    background-color: #f7aa2e;
     color: #fff;
     border: none;
+}
+.btn-default:hover{
+    background-color: #f19400;
+    color: #fff;
+    border: none;
+}
+.btn-default:focus{
+    background-color: #f19400;
+    color: #fff;
+    border: none;
+    outline-style: none;
+}
+
+.btn-formulario{
+    height: 45px;
 }
 
 
@@ -95,9 +128,16 @@
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
     }
+    @media (max-width: 500px) and (min-width: 417px) {
+        height: 235px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
  }
  .mapa-interno{
     margin: 0 auto; 
+    height: 100%;
+    width: 85%;
  }
  .by-blue{
      color: #fff;

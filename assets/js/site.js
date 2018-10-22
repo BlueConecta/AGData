@@ -4,17 +4,6 @@
     (function ($, window, document) {
         $(function () {
 
-            // Ativa o indicador da Seção ativa e Desativa os demais, através do Click
-            $(".navigation-indicators__list li").click(function () {
-                var item = $(this);
-                $.scrollify.move(item.data("section"));
-                $(".navigation-indicators__list li").not(item).each(function () {
-                    $(this).switchClass("on", "off");
-                });
-                item.addClass("on");
-                item.removeClass("off");
-            })
-
             // Âncoras de Navegação do menu Versão Desktop 
             $(".navigation-desktop__links p, .navigation-desktop__links button").click(function () {
                 var item = $(this);
@@ -33,41 +22,53 @@
             $(".navigation-mobile__menu--links li a").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
-                $(".navigation-mobile").hide(200);
-                $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".navigation-mobile").removeClass("active");
+                $(".menu-hamburguer").removeClass("disabled");
             })
 
             //Os 2 próximos trechos de código podem ser feitos em um único trecho
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
-                var item = $(this);
-                $(".navigation-mobile").show(200);
-                $("#button-mobile").hide(100);
-                $(".menu-hamburguer-closed").show(100);
+                $(".navigation-mobile").addClass("active");
+                $(".menu-hamburguer").addClass("disabled");
                 event.stopPropagation();
             })
 
             // Botão para Fechar menu
             $("#button-mobile-closed").click(function () {
                 var item = $(this);
-                $(".navigation-mobile").hide(200);
-                $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".navigation-mobile").removeClass("active");
+                $(".menu-hamburguer").removeClass("disabled");
             })
 
-            // Fecha o menu caso ocorra click fora do menu
+            // Fecha o menu caso ocorra click fora dele
             $(document).click(function () {
-                $(".navigation-mobile").hide(200);
-                $("#button-mobile-closed").hide(100);
-                $(".menu-hamburguer").show(100);
-                $(".menu-hamburguer-closed").hide(100);
+                $(".navigation-mobile").removeClass("active");
+                $(".menu-hamburguer").removeClass("disabled");
             })
-            $(".navigation-mobile__menu").click(function () {
+            
+            // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, 
+            //      suprimindo o evento de fechar.
+            $(".navigation-mobile").click(function () {
                 event.stopPropagation();
-            });
+            })
+
+            // Alterna entre a exibição do vídeo e da seção.
+            $("#play_video").click(function(){
+                $("#m_video-play").removeClass("disabled").addClass("video-play");
+                $("#m_quinta-sessao").removeClass("quinta-sessao").addClass("disabled");
+                $(".video-play-intern").attr("controls", "true");  
+                $(".video-play-intern").on('play',function(){
+                    console.log("Set Iniciado");
+                    setTimeout(function(){
+                        $("#m_video-play").removeClass("video-play").addClass("disabled");
+                        $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
+                        console.log("setTimeout Ativada!");
+                    },14000);
+                })              
+            })
+
+            
 
             //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            
@@ -99,6 +100,7 @@
                         $(".m-instagram").removeClass("disabled").addClass("instagram");
                         $(".m-youtube").removeClass("disabled").addClass("youtube");
                         $(".m-linkedin").removeClass("disabled").addClass("linkedin");
+                        $(".m-twitter").removeClass("disabled").addClass("twitter");
                         $("#m-agency").removeClass("disabled").addClass("navigation-desktop__links--agency");
                         $("#m-video").removeClass("disabled").addClass("navigation-desktop__links--video");
                         $("#m-services").removeClass("disabled").addClass("navigation-desktop__links--services");
@@ -119,6 +121,7 @@
                         $(".m-instagram").removeClass("instagram").addClass("disabled");
                         $(".m-youtube").removeClass("youtube").addClass("disabled");
                         $(".m-linkedin").removeClass("linkedin").addClass("disabled");
+                        $(".m-twitter").removeClass("twitter").addClass("disabled");
                         $("#m-agency").removeClass("navigation-desktop__links--agency").addClass("disabled");
                         $("#m-video").removeClass("navigation-desktop__links--video").addClass("disabled");
                         $("#m-services").removeClass("navigation-desktop__links--services").addClass("disabled");
@@ -135,6 +138,9 @@
                         $("#control-three-desk-div").removeClass("disabled").addClass("about-desktop__div-three");
                         $("#control-four-desk-div").removeClass("disabled").addClass("about-desktop__div-four");
                         $("#control-image-about-desktop").removeClass("disabled").addClass("about__image-desktop");
+
+                        $("#control-image-about-mobile").removeClass("disabled").addClass("about__image-desktop");
+
                         $("#control-content-about").removeClass("disabled").addClass("about__top-text");
                         // $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
                     } else {

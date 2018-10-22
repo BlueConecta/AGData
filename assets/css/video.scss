@@ -38,6 +38,15 @@
         height: 150px;
     }
 }
+.img-play-mobile{
+    height: 85px;
+    position: relative;
+    top: 50%;
+    animation: imgplayanimation-mobile ease-in-out 2s forwards;   
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
 .img-play-0{
     display: none;
 }
@@ -85,7 +94,7 @@
 .button-quinta-sessao{
     text-transform: uppercase;
     border: none;
-    background-color: #056bff;
+    background-color: #f7aa2e;
     color: #fff;
     cursor: pointer;
     padding: 10px 30px;
@@ -114,6 +123,19 @@
     @media (min-width: 768px) {
         display: none;
     }
+}
+.video-play{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    z-index: 600;
+}
+.video-play-intern{
+    width: 100%;
+    height: 50%;
+    display: inline-block;
 }
 
 .quinta-sessao-desk{
@@ -201,7 +223,7 @@
 .button-quinta-sessao-desk{
     text-transform: uppercase;
     border: none;
-    background-color: #056bff;
+    background-color: #f7aa2e;
     color: #fff;
     cursor: pointer;
     padding: 10px 30px;

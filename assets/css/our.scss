@@ -16,10 +16,10 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;
-    color: #056bff;
+    color: #f7aa2e;
     text-transform: uppercase;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 28px;
     padding-bottom: 17.5px;
     letter-spacing: 2px;
@@ -65,14 +65,19 @@
         margin-bottom: 72px;
         font-size: 33px;
         line-height: 35px;
+        margin-top: 5px;
     }
 }
 .div-interna-sexta-sessao{
     display: flex;
     align-items: flex-end;
-    padding: 0 20px;
+    padding: 0 10%;
     // position: relative;
     // top: 50px;
+    @media (max-width: 500px) and (min-width: 416px) {
+        display: flex;
+        align-items: center; 
+    }
 }
 .div-interna-sexta-sessao2{
     display: flex;
