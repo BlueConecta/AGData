@@ -8,7 +8,10 @@ body, html{
     background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;    
+    width: 100%;
+    @media (max-width: 767px){
+        background-image: url(../img/background-home-mobile.png);
+    }   
 }
 
 // Desktop
@@ -179,6 +182,7 @@ body, html{
     color: #fff;
     font-family: sans-serif;
     border: none;
+    font-weight: bold;
     background-color: #f7aa2e;
     border-radius: 15px;
     padding: 5px 20px;
@@ -295,8 +299,8 @@ body, html{
     }
 }
 .arrow__up img{
-    transform: rotate(90deg);
-    opacity: 0.6;
+    transform: rotate(-90deg);
+    // opacity: 0.6;
 }
 
 

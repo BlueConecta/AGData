@@ -36,15 +36,17 @@
 
             // Botão para Fechar menu
             $("#button-mobile-closed").click(function () {
-                var item = $(this);
+                // var item = $(this);
                 $(".navigation-mobile").removeClass("active");
                 $(".menu-hamburguer").removeClass("disabled");
             })
 
-            // Fecha o menu caso ocorra click fora dele
+            // Fecha o Menu e a Janela de vídeo, caso ocorra click fora de algum dos dois quando ativos.
             $(document).click(function () {
                 $(".navigation-mobile").removeClass("active");
                 $(".menu-hamburguer").removeClass("disabled");
+                $("#m_video-play").removeClass("video-play").addClass("disabled");
+                $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
             })
             
             // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, 
@@ -58,17 +60,12 @@
                 $("#m_video-play").removeClass("disabled").addClass("video-play");
                 $("#m_quinta-sessao").removeClass("quinta-sessao").addClass("disabled");
                 $(".video-play-intern").attr("controls", "true");  
-                $(".video-play-intern").on('play',function(){
-                    console.log("Set Iniciado");
-                    setTimeout(function(){
+                event.stopPropagation();
+                $(".video-play-intern").on('ended',function(){
                         $("#m_video-play").removeClass("video-play").addClass("disabled");
                         $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
-                        console.log("setTimeout Ativada!");
-                    },14000);
                 })              
-            })
-
-            
+            })            
 
             //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            

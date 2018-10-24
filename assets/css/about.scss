@@ -228,7 +228,10 @@
     @media (max-width: 359px) and (min-width: 321px) {
     }
     @media (max-width: 375px) and (min-width: 359px) {
-        padding-top: 18px;
+        padding-top: 5px;
+        width: 48%;
+        padding-left: 0;
+        padding-right: 0;
     } 
     @media (max-width: 415px) and (min-width: 376px) {
         padding-top: 43px;
@@ -242,8 +245,49 @@
         display: none;
     }
 }
+
+
+
+.about-mobile__div-intern_two{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    @media (max-width: 359px) and (min-width: 321px) {
+        display: none
+    }
+    @media (max-width: 375px) and (min-width: 359px) {
+        padding-top: 5px;
+        width: 48%;
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    @media (max-width: 415px) and (min-width: 376px) {
+        display: none;
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        display: none;
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
+    }
+}
+
+
+
 .about-mobile__div-intern img{
     height: 35px;
+    @media (max-width: 375px) and (min-width: 359px) {
+        height: 28px;
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+    }
+}
+.about-mobile__div-intern_two img{
+    height: 35px;
+    @media (max-width: 375px) and (min-width: 359px) {
+        height: 28px;
+    }
     @media (max-width: 1920px) and (min-width: 768px) {
     }
 }
@@ -253,6 +297,9 @@
     font-size: 19px;
     font-weight: bold;
     margin-top: 15px;
+    @media (max-width: 375px) and (min-width: 359px) {
+        font-size: 15px;
+    }
     @media (max-width: 500px) and (min-width: 416px) {
         font-size: 16px;
     }
@@ -262,6 +309,10 @@
 .about-mobile__div-intern--paragraph{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    @media (max-width: 375px) and (min-width: 359px) {
+        font-size: 12px;
+        margin: 0;
+    }
     @media (max-width: 500px) and (min-width: 416px) {
         text-align: center;
         font-size: 14px;
@@ -273,12 +324,10 @@
 // Mobile and Desktop
 
 .about__top-text{    
-    @media (min-width: 768px) {
         padding: 0;
         position: relative;
         opacity: 0;
         animation: sobresegundasecao ease-in-out 2s forwards;
-    }    
 }
 .about__top-text--title{
     text-transform: uppercase;
@@ -289,6 +338,10 @@
     color: #f7aa2e;
     margin-top: 30px;
     margin-bottom: 20px;
+    @media (max-width: 375px) and (min-width: 359px) {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
     @media (max-width: 500px) and (min-width: 416px) {
         font-size: 20px;
         margin-bottom: 45px;
@@ -313,11 +366,15 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: justify;
-    margin-bottom: 5px;
+    padding: 0 20px;
+     margin-bottom: 0;
+    @media (max-width: 375px) and (min-width: 359px) {
+        font-size: 13px;
+        padding: 0 20px;
+    }
     @media (max-width: 500px) and (min-width: 416px) {
         font-size: 17px;
         padding: 0 8%;
-        margin-bottom: 30px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
         margin-top: 20px;
@@ -335,8 +392,18 @@
     }
 }
 .about__top-text--paragraph-strong{
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    text-align: center;
+    @media (max-width: 375px) and (min-width: 359px) {
+    font-size: 16px;
+    padding: 0 20px;
+    }
+    @media (max-width: 500px) and (min-width: 416px) {
+        font-size: 18px;
+        padding: 0 8%;
+    }
     @media (max-width: 1366px) and (min-width: 768px) {
         font-weight: bold;
         font-size: 26px;
@@ -362,4 +429,13 @@
     @media (min-width: 768px){
         display: none;
     }
+}
+
+
+
+
+
+.about-div-mobile{
+    display: flex;
+    padding: 0 2.5%;
 }
