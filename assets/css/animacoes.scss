@@ -129,18 +129,18 @@
 
 @keyframes arrow-up {
     from{
-        top: 91%;
+        top: 92%;
     }
     to{
-        top: 92%;
+        top: 94%;
     }
 }
 @keyframes arrow-up-responsive {
     from{
-        top: 84%;
+        top: 90%;
     }
     to{
-        top: 86%;
+        top: 92%;
     }
 }
 
@@ -241,6 +241,16 @@
     }
 }
 @keyframes h3secaovideo{
+    from{
+        opacity: 0;
+        top: -50px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes h3secaovideo-responsive{
     from{
         opacity: 0;
         top: -50px;

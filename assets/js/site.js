@@ -5,7 +5,7 @@
         $(function () {
 
             // Âncoras de Navegação do menu Versão Desktop 
-            $(".navigation-desktop__links p, .navigation-desktop__links button").click(function () {
+            $(".navigation-desktop__links p, .navigation-desktop__links button, .home__desktop--button, .home__mobile--button").click(function () {
                 var item = $(this);
                 $.scrollify.move(item.data("section"));
             })
@@ -41,22 +41,28 @@
                 $(".menu-hamburguer").removeClass("disabled");
             })
 
-            // Fecha o Menu e a Janela de vídeo, caso ocorra click fora de algum dos dois quando ativos.
-            $(document).click(function () {
+            $(".navigation-mobile").click(function () {
                 $(".navigation-mobile").removeClass("active");
                 $(".menu-hamburguer").removeClass("disabled");
+                event.stopPropagation();
+            })
+
+            // Fecha o Menu e a Janela de vídeo, caso ocorra click fora de algum dos dois quando ativos.
+            $(document).click(function () {
+                // $(".navigation-mobile").removeClass("active");
+                // $(".menu-hamburguer").removeClass("disabled");
                 $("#m_video-play").removeClass("video-play").addClass("disabled");
                 $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
             })
             
             // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, 
             //      suprimindo o evento de fechar.
-            $(".navigation-mobile").click(function () {
-                event.stopPropagation();
-            })
+            // $(".navigation-mobile").click(function () {
+            //     event.stopPropagation();
+            // })
 
             // Alterna entre a exibição do vídeo e da seção.
-            $("#play_video").click(function(){
+            $("#play_video, #control-img-play-mobile").click(function(){
                 $("#m_video-play").removeClass("disabled").addClass("video-play");
                 $("#m_quinta-sessao").removeClass("quinta-sessao").addClass("disabled");
                 $(".video-play-intern").attr("controls", "true");  
@@ -136,7 +142,17 @@
                         $("#control-four-desk-div").removeClass("disabled").addClass("about-desktop__div-four");
                         $("#control-image-about-desktop").removeClass("disabled").addClass("about__image-desktop");
 
-                        $("#control-image-about-mobile").removeClass("disabled").addClass("about__image-desktop");
+                        $("#control-image-about-mobile").removeClass("disabled").addClass("about-mobile__image");
+
+                        $("#control-div-one-mobile").removeClass("disabled").addClass("about-mobile__div-intern");                        
+                        $("#control-div-two-mobile").removeClass("disabled").addClass("about-mobile__div-intern--two");                        
+                        $("#control-div-three-mobile").removeClass("disabled").addClass("about-mobile__div-intern--three");                        
+                        $("#control-div-four-mobile").removeClass("disabled").addClass("about-mobile__div-intern--four"); 
+                        
+                        $("#control-about-div-intern-one").removeClass("disabled").addClass("about-mobile__div-intern__one");
+
+                        $("#control-about-div-intern-two").removeClass("disabled").addClass("about-mobile__div-intern__two"); 
+                        
 
                         $("#control-content-about").removeClass("disabled").addClass("about__top-text");
                         // $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
@@ -146,6 +162,18 @@
                         $("#control-three-desk-div").removeClass("about-desktop__div-three").addClass("disabled");
                         $("#control-four-desk-div").removeClass("about-desktop__div-four").addClass("disabled");
                         $("#control-image-about-desktop").removeClass("about__image-desktop").addClass("disabled");
+
+                        $("#control-image-about-mobile").removeClass("about-mobile__image").addClass("disabled");
+
+                        $("#control-div-one-mobile").removeClass("about-mobile__div-intern").addClass("disabled");                        
+                        $("#control-div-two-mobile").removeClass("about-mobile__div-intern--two").addClass("disabled");                        
+                        $("#control-div-three-mobile").removeClass("about-mobile__div-intern--three").addClass("disabled");                        
+                        $("#control-div-four-mobile").removeClass("about-mobile__div-intern--four").addClass("disabled"); 
+
+                        $("#control-about-div-intern-one").removeClass("about-mobile__div-intern__one").addClass("disabled");
+
+                        $("#control-about-div-intern-two").removeClass("about-mobile__div-intern__two").addClass("disabled"); 
+
                         $("#control-content-about").removeClass("about__top-text").addClass("disabled");
                         // $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("disabled");
                     }
@@ -157,7 +185,6 @@
                         $(".controladorbox1").removeClass("disabled").addClass("design-desktop__extern-first--box-one");
                         $(".controladorbox2").removeClass("disabled").addClass("design-desktop__extern-first--box-two");
                         $(".controladorbox3").removeClass("disabled").addClass("design-desktop__extern-first--box-three");
-
 
                         // Primeiro Contador
                         var max_number = 5000000;
@@ -278,6 +305,11 @@
                         $(".bar4").animate({
                             width: "45%"
                         }, 1500);
+
+
+                        $("#control-titulo-sessao").removeClass("disabled").addClass("titulo-quarta-sessao");
+                        $("#control-p-sessao").removeClass("disabled").addClass("p-quarta-sessao");
+
                     } else {
                         $(".manipulador04").removeClass("quarta-opcao").addClass("quarta-opcao-desativado");
                         $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk").addClass("titulo-quarta-sessao-desk-0");
@@ -296,6 +328,11 @@
                         $(".bar4").animate({
                             width: "0%"
                         }, 10);
+
+
+                        $("#control-titulo-sessao").removeClass("titulo-quarta-sessao").addClass("disabled");
+                        $("#control-p-sessao").removeClass("p-quarta-sessao").addClass("disabled");
+
                     }
                     if (section === 4) {
                         $("#circle-five").switchClass("off", "on");
@@ -308,6 +345,16 @@
                         $(".control-h3-section-5").removeClass("h3-quinta-sessao-desk-0").addClass("h3-quinta-sessao-desk");
                         $(".control-button-section-5").removeClass("button-quinta-sessao-desk-0").addClass("button-quinta-sessao-desk");
                         $(".control-img-play").removeClass("img-play-0").addClass("img-play");
+
+                        $("#control-img-play-mobile").removeClass("disabled").addClass("img-play-mobile");
+
+                        $("#control-h3-quinta-sessao").removeClass("disabled").addClass("h3-quinta-sessao");
+
+                        $("#control-p-quinta-sessao").removeClass("disabled").addClass("p-quinta-sessao");
+
+                        $("#play_video").removeClass("disabled").addClass("button-quinta-sessao");
+
+                        
                     } else {
                         $(".manipulador05").removeClass("quinta-opcao").addClass("quinta-opcao-desativado");
                         $(".m05").removeClass("name-menu-color").addClass("name-menu");
@@ -315,6 +362,17 @@
                         $(".control-h3-section-5").removeClass("h3-quinta-sessao-desk").addClass("h3-quinta-sessao-desk-0");
                         $(".control-button-section-5").removeClass("button-quinta-sessao-desk").addClass("button-quinta-sessao-desk-0");
                         $(".control-img-play").removeClass("img-play").addClass("img-play-0");
+
+
+                        $("#control-img-play-mobile").removeClass("img-play-mobile").addClass("disabled");
+
+                        $("#control-h3-quinta-sessao").removeClass("h3-quinta-sessao").addClass("disabled");
+
+                        $("#control-p-quinta-sessao").removeClass("p-quinta-sessao").addClass("disabled");
+
+                        $("#play_video").removeClass("button-quinta-sessao").addClass("disabled");
+
+
                     }
                     if (section === 5) {
                         $("#m-animate-one-our").removeClass("disabled").addClass("first-animated-our");
@@ -330,6 +388,17 @@
                         $(".indicators-list li").each(function () {
                             $(this).removeClass("on").addClass("off");
                         });
+
+                        $("#control-h2-sexta-sessao").removeClass("disabled").addClass("h2-sexta-sessao");
+                        $("#control-h1-sexta-sessao").removeClass("disabled").addClass("h1-sexta-sessao");
+
+                        $("#control-animation-one").removeClass("disabled").addClass("animation__one");
+                        $("#control-animation-two").removeClass("disabled").addClass("animation__two");
+                        $("#control-animation-three").removeClass("disabled").addClass("animation__three");
+                        $("#control-animation-four").removeClass("disabled").addClass("animation__four");
+                        $("#control-animation-five").removeClass("disabled").addClass("animation__five");
+
+
                     } else {
                         $("#m-animate-one-our").removeClass("first-animated-our").addClass("disabled");
                         $("#m-animate-two-our").removeClass("second-animated-our").addClass("disabled");
@@ -340,6 +409,16 @@
                         $("#m-animate-h2-our").removeClass("h2-sexta-sessao").addClass("disabled");
                         $("#m-animate-h1-our").removeClass("h1-sexta-sessao-desk").addClass("disabled");
                         $("#m-animate-img-our").removeClass("img-sexta-sessao-desk").addClass("disabled");
+
+                        $("#control-h2-sexta-sessao").removeClass("h2-sexta-sessao").addClass("disabled");
+                        $("#control-h1-sexta-sessao").removeClass("h1-sexta-sessao").addClass("disabled");
+
+                        $("#control-animation-one").removeClass("animation__one").addClass("disabled");
+                        $("#control-animation-two").removeClass("animation__two").addClass("disabled");
+                        $("#control-animation-three").removeClass("animation__three").addClass("disabled");
+                        $("#control-animation-four").removeClass("animation__four").addClass("disabled");
+                        $("#control-animation-five").removeClass("animation__five").addClass("disabled");
+
                     }
                     if (section === 6) {
                         $("#circle-seven").switchClass("off", "on");
