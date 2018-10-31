@@ -32,20 +32,19 @@
                 $(".navigation-mobile").addClass("active");
                 $(".menu-hamburguer").addClass("disabled");
                 event.stopPropagation();
-            })
-
+            });
+                
             // Botão para Fechar menu
             $("#button-mobile-closed").click(function () {
-                // var item = $(this);
                 $(".navigation-mobile").removeClass("active");
                 $(".menu-hamburguer").removeClass("disabled");
             })
 
-            $(".navigation-mobile").click(function () {
-                $(".navigation-mobile").removeClass("active");
-                $(".menu-hamburguer").removeClass("disabled");
-                event.stopPropagation();
-            })
+            // $(".navigation-mobile").click(function () {
+            //     $(".navigation-mobile").removeClass("active");
+            //     $(".menu-hamburguer").removeClass("disabled");
+            //     event.stopPropagation();
+            // })
 
             // Fecha o Menu e a Janela de vídeo, caso ocorra click fora de algum dos dois quando ativos.
             $(document).click(function () {
@@ -53,15 +52,15 @@
                 // $(".menu-hamburguer").removeClass("disabled");
                 $("#m_video-play").removeClass("video-play").addClass("disabled");
                 $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
+                $("#m_quinta-sessao-desktop").removeClass("disabled").addClass("quinta-sessao-desk");
             })
             
-            // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, 
-            //      suprimindo o evento de fechar.
+            // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, suprimindo o evento de fechar.
             // $(".navigation-mobile").click(function () {
             //     event.stopPropagation();
             // })
 
-            // Alterna entre a exibição do vídeo e da seção.
+            // Alterna entre a exibição do vídeo e da seção na Versão Mobile.
             $("#play_video, #control-img-play-mobile").click(function(){
                 $("#m_video-play").removeClass("disabled").addClass("video-play");
                 $("#m_quinta-sessao").removeClass("quinta-sessao").addClass("disabled");
@@ -71,8 +70,31 @@
                         $("#m_video-play").removeClass("video-play").addClass("disabled");
                         $("#m_quinta-sessao").removeClass("disabled").addClass("quinta-sessao");
                 })              
-            })            
+            })
 
+            // Alterna entre a exibição do vídeo e da seção na Versão Desktop.
+            $("#play_video-desktop, #control-img-play-desktop").click(function(){
+                $("#m_video-play").removeClass("disabled").addClass("video-play");
+                $("#m_quinta-sessao-desktop").removeClass("quinta-sessao-desk").addClass("disabled");
+                $(".video-play-intern").attr("controls", "true");  
+                event.stopPropagation();
+                $(".video-play-intern").on('ended',function(){
+                        $("#m_video-play").removeClass("video-play").addClass("disabled");
+                        $("#m_quinta-sessao-desktop").removeClass("disabled").addClass("quinta-sessao-desk");
+                })              
+            })
+
+            // Navegação nos carousels através do deslize na Versão Mobile 
+            $("#carousel-example-generic00, #carousel-example-generic4").swipe( {
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {    
+                    if(direction=='left'){
+                        $(this).carousel('next');
+                    }else if(direction=='right'){
+                        $(this).carousel('prev');
+                    }    
+                }
+            });     
+           
             //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
             // Inicio da Navegação por sessões e Animações            
             $.scrollify({
@@ -80,15 +102,10 @@
                 InterstitialSection: ".sessao, .footer",
                 scrollSpeed: 200,
                 setHeights: false,
-                before: function (section) {
-                    $(".navigation-indicators__list li").each(function () {
-                        $(this).removeClass("on").addClass("off");
-                    });
-                    if (section === 0) {
-                        $("#circle-one").switchClass("off", "on");
-                        $(".navigation-indicators__list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
+                before: function (section) {   
+                    
+                    // Controle de Navegação da Primeira Seção
+                    if (section === 0) {                        
                         $("#arrow-to-top").removeClass("arrow__up").addClass("disabled");
                         $("#m-logo-mobile").removeClass("disabled").addClass("navigation-desktop__logo-mobile");
                         $("#m-logo-desktop").removeClass("disabled").addClass("navigation-desktop__logo-desktop");
@@ -131,57 +148,40 @@
                         $("#m-technology").removeClass("navigation-desktop__links--technology").addClass("disabled");
                         $("#m-contact").removeClass("navigation-desktop__links--contact-button").addClass("disabled");
                     }
-                    if (section === 1) {
-                        $("#circle-two").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
+
+                    // Controle de Navegação da Segunda Seção
+                    if (section === 1) {                        
                         $("#control-one-desk-div").removeClass("disabled").addClass("about-desktop__div-one");
                         $("#control-two-desk-div").removeClass("disabled").addClass("about-desktop__div-two");
                         $("#control-three-desk-div").removeClass("disabled").addClass("about-desktop__div-three");
                         $("#control-four-desk-div").removeClass("disabled").addClass("about-desktop__div-four");
                         $("#control-image-about-desktop").removeClass("disabled").addClass("about__image-desktop");
-
                         $("#control-image-about-mobile").removeClass("disabled").addClass("about-mobile__image");
-
                         $("#control-div-one-mobile").removeClass("disabled").addClass("about-mobile__div-intern");                        
                         $("#control-div-two-mobile").removeClass("disabled").addClass("about-mobile__div-intern--two");                        
                         $("#control-div-three-mobile").removeClass("disabled").addClass("about-mobile__div-intern--three");                        
-                        $("#control-div-four-mobile").removeClass("disabled").addClass("about-mobile__div-intern--four"); 
-                        
+                        $("#control-div-four-mobile").removeClass("disabled").addClass("about-mobile__div-intern--four");                         
                         $("#control-about-div-intern-one").removeClass("disabled").addClass("about-mobile__div-intern__one");
-
-                        $("#control-about-div-intern-two").removeClass("disabled").addClass("about-mobile__div-intern__two"); 
-                        
-
+                        $("#control-about-div-intern-two").removeClass("disabled").addClass("about-mobile__div-intern__two");     
                         $("#control-content-about").removeClass("disabled").addClass("about__top-text");
-                        // $(".controlador-sobre-segunda-sessao").removeClass("disabled").addClass("sobre-segunda-sessao");
                     } else {
                         $("#control-one-desk-div").removeClass("about-desktop__div-one").addClass("disabled");
                         $("#control-two-desk-div").removeClass("about-desktop__div-two").addClass("disabled");
                         $("#control-three-desk-div").removeClass("about-desktop__div-three").addClass("disabled");
                         $("#control-four-desk-div").removeClass("about-desktop__div-four").addClass("disabled");
                         $("#control-image-about-desktop").removeClass("about__image-desktop").addClass("disabled");
-
                         $("#control-image-about-mobile").removeClass("about-mobile__image").addClass("disabled");
-
                         $("#control-div-one-mobile").removeClass("about-mobile__div-intern").addClass("disabled");                        
                         $("#control-div-two-mobile").removeClass("about-mobile__div-intern--two").addClass("disabled");                        
                         $("#control-div-three-mobile").removeClass("about-mobile__div-intern--three").addClass("disabled");                        
                         $("#control-div-four-mobile").removeClass("about-mobile__div-intern--four").addClass("disabled"); 
-
                         $("#control-about-div-intern-one").removeClass("about-mobile__div-intern__one").addClass("disabled");
-
                         $("#control-about-div-intern-two").removeClass("about-mobile__div-intern__two").addClass("disabled"); 
-
                         $("#control-content-about").removeClass("about__top-text").addClass("disabled");
-                        // $(".controlador-sobre-segunda-sessao").removeClass("sobre-segunda-sessao").addClass("disabled");
                     }
-                    if (section === 2) {
-                        $("#circle-three").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
+
+                    // Controle de Navegação da Terceira Seção
+                    if (section === 2) {                        
                         $(".controladorbox1").removeClass("disabled").addClass("design-desktop__extern-first--box-one");
                         $(".controladorbox2").removeClass("disabled").addClass("design-desktop__extern-first--box-two");
                         $(".controladorbox3").removeClass("disabled").addClass("design-desktop__extern-first--box-three");
@@ -284,38 +284,31 @@
                         $(".controladorbox2").removeClass("design-desktop__extern-first--box-two").addClass("disabled");
                         $(".controladorbox3").removeClass("design-desktop__extern-first--box-three").addClass("disabled");
                     }
-                    if (section === 3) {
-                        $("#circle-four").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                        $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk-0").addClass("titulo-quarta-sessao-desk");
-                        $(".control-p-section-4").removeClass("p-quarta-sessao-desk-0").addClass("p-quarta-sessao-desk");
-                        $(".control-img-section-4").removeClass("imagem-quarta-sessao-desk-intern-0").addClass("imagem-quarta-sessao-desk-intern");
-                        $(".m04").removeClass("name-menu").addClass("name-menu-color");
+
+                    // Controle de Navegação da Quarta Seção
+                    if (section === 3) {                        
+                        $(".control-h1-section-4").removeClass("disabled").addClass("titulo-quarta-sessao-desk");
+                        $(".control-p-section-4").removeClass("disabled").addClass("p-quarta-sessao-desk");
+                        $(".control-img-section-4").removeClass("disabled").addClass("imagem-quarta-sessao-desk-intern");
                         $(".bar1").animate({
                             width: "90%"
-                        }, 1500);
+                        }, 2000);
                         $(".bar2").animate({
                             width: "77%"
-                        }, 1500);
+                        }, 2000);
                         $(".bar3").animate({
                             width: "63%"
-                        }, 1500);
+                        }, 2000);
                         $(".bar4").animate({
                             width: "45%"
-                        }, 1500);
-
-
+                        }, 2000);
                         $("#control-titulo-sessao").removeClass("disabled").addClass("titulo-quarta-sessao");
                         $("#control-p-sessao").removeClass("disabled").addClass("p-quarta-sessao");
-
                     } else {
-                        $(".manipulador04").removeClass("quarta-opcao").addClass("quarta-opcao-desativado");
-                        $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk").addClass("titulo-quarta-sessao-desk-0");
-                        $(".control-p-section-4").removeClass("p-quarta-sessao-desk").addClass("p-quarta-sessao-desk-0");
-                        $(".control-img-section-4").removeClass("imagem-quarta-sessao-desk-intern").addClass("imagem-quarta-sessao-desk-intern-0");
-                        $(".m04").removeClass("name-menu-color").addClass("name-menu");
+                        $(".manipulador04").removeClass("quarta-opcao").addClass("disabled");
+                        $(".control-h1-section-4").removeClass("titulo-quarta-sessao-desk").addClass("disabled");
+                        $(".control-p-section-4").removeClass("p-quarta-sessao-desk").addClass("disabled");
+                        $(".control-img-section-4").removeClass("imagem-quarta-sessao-desk-intern").addClass("disabled");
                         $(".bar1").animate({
                             width: "0%"
                         }, 10);
@@ -328,52 +321,34 @@
                         $(".bar4").animate({
                             width: "0%"
                         }, 10);
-
-
                         $("#control-titulo-sessao").removeClass("titulo-quarta-sessao").addClass("disabled");
                         $("#control-p-sessao").removeClass("p-quarta-sessao").addClass("disabled");
-
                     }
-                    if (section === 4) {
-                        $("#circle-five").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                        $(".manipulador05").removeClass("quinta-opcao-desativado").addClass("quinta-opcao");
-                        $(".m05").removeClass("name-menu").addClass("name-menu-color");
-                        $(".control-p-section-5").removeClass("p-quinta-sessao-desk-0").addClass("p-quinta-sessao-desk");
-                        $(".control-h3-section-5").removeClass("h3-quinta-sessao-desk-0").addClass("h3-quinta-sessao-desk");
-                        $(".control-button-section-5").removeClass("button-quinta-sessao-desk-0").addClass("button-quinta-sessao-desk");
-                        $(".control-img-play").removeClass("img-play-0").addClass("img-play");
 
+                    // Controle de Navegação da Quinta Seção
+                    if (section === 4) {                        
+                        $(".manipulador05").removeClass("disabled").addClass("quinta-opcao");
+                        $(".control-p-section-5").removeClass("disabled").addClass("p-quinta-sessao-desk");
+                        $(".control-h3-section-5").removeClass("disabled").addClass("h3-quinta-sessao-desk");
+                        $(".control-button-section-5").removeClass("disabled").addClass("button-quinta-sessao-desk");
+                        $(".control-img-play").removeClass("disabled").addClass("img-play");
                         $("#control-img-play-mobile").removeClass("disabled").addClass("img-play-mobile");
-
                         $("#control-h3-quinta-sessao").removeClass("disabled").addClass("h3-quinta-sessao");
-
                         $("#control-p-quinta-sessao").removeClass("disabled").addClass("p-quinta-sessao");
-
-                        $("#play_video").removeClass("disabled").addClass("button-quinta-sessao");
-
-                        
+                        $("#play_video").removeClass("disabled").addClass("button-quinta-sessao");                        
                     } else {
-                        $(".manipulador05").removeClass("quinta-opcao").addClass("quinta-opcao-desativado");
-                        $(".m05").removeClass("name-menu-color").addClass("name-menu");
-                        $(".control-p-section-5").removeClass("p-quinta-sessao-desk").addClass("p-quinta-sessao-desk-0");
-                        $(".control-h3-section-5").removeClass("h3-quinta-sessao-desk").addClass("h3-quinta-sessao-desk-0");
-                        $(".control-button-section-5").removeClass("button-quinta-sessao-desk").addClass("button-quinta-sessao-desk-0");
-                        $(".control-img-play").removeClass("img-play").addClass("img-play-0");
-
-
+                        $(".manipulador05").removeClass("quinta-opcao").addClass("disabled");
+                        $(".control-p-section-5").removeClass("p-quinta-sessao-desk").addClass("disabled");
+                        $(".control-h3-section-5").removeClass("h3-quinta-sessao-desk").addClass("disabled");
+                        $(".control-button-section-5").removeClass("button-quinta-sessao-desk").addClass("disabled");
+                        $(".control-img-play").removeClass("img-play").addClass("disabled");
                         $("#control-img-play-mobile").removeClass("img-play-mobile").addClass("disabled");
-
                         $("#control-h3-quinta-sessao").removeClass("h3-quinta-sessao").addClass("disabled");
-
                         $("#control-p-quinta-sessao").removeClass("p-quinta-sessao").addClass("disabled");
-
                         $("#play_video").removeClass("button-quinta-sessao").addClass("disabled");
-
-
                     }
+
+                    // Controle de Navegação da Sexta Seção
                     if (section === 5) {
                         $("#m-animate-one-our").removeClass("disabled").addClass("first-animated-our");
                         $("#m-animate-two-our").removeClass("disabled").addClass("second-animated-our");
@@ -383,22 +358,14 @@
                         $("#m-animate-six-our").removeClass("disabled").addClass("sixth-animated-our");
                         $("#m-animate-h2-our").removeClass("disabled").addClass("h2-sexta-sessao");
                         $("#m-animate-h1-our").removeClass("disabled").addClass("h1-sexta-sessao-desk");
-                        $("#m-animate-img-our").removeClass("disabled").addClass("img-sexta-sessao-desk");
-                        $("#circle-six").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-
+                        $("#m-animate-img-our").removeClass("disabled").addClass("img-sexta-sessao-desk");                      
                         $("#control-h2-sexta-sessao").removeClass("disabled").addClass("h2-sexta-sessao");
                         $("#control-h1-sexta-sessao").removeClass("disabled").addClass("h1-sexta-sessao");
-
                         $("#control-animation-one").removeClass("disabled").addClass("animation__one");
                         $("#control-animation-two").removeClass("disabled").addClass("animation__two");
                         $("#control-animation-three").removeClass("disabled").addClass("animation__three");
                         $("#control-animation-four").removeClass("disabled").addClass("animation__four");
                         $("#control-animation-five").removeClass("disabled").addClass("animation__five");
-
-
                     } else {
                         $("#m-animate-one-our").removeClass("first-animated-our").addClass("disabled");
                         $("#m-animate-two-our").removeClass("second-animated-our").addClass("disabled");
@@ -409,41 +376,14 @@
                         $("#m-animate-h2-our").removeClass("h2-sexta-sessao").addClass("disabled");
                         $("#m-animate-h1-our").removeClass("h1-sexta-sessao-desk").addClass("disabled");
                         $("#m-animate-img-our").removeClass("img-sexta-sessao-desk").addClass("disabled");
-
                         $("#control-h2-sexta-sessao").removeClass("h2-sexta-sessao").addClass("disabled");
                         $("#control-h1-sexta-sessao").removeClass("h1-sexta-sessao").addClass("disabled");
-
                         $("#control-animation-one").removeClass("animation__one").addClass("disabled");
                         $("#control-animation-two").removeClass("animation__two").addClass("disabled");
                         $("#control-animation-three").removeClass("animation__three").addClass("disabled");
                         $("#control-animation-four").removeClass("animation__four").addClass("disabled");
                         $("#control-animation-five").removeClass("animation__five").addClass("disabled");
-
-                    }
-                    if (section === 6) {
-                        $("#circle-seven").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                    }
-                    if (section === 7) {
-                        $("#circle-eight").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                    }
-                    if (section === 8) {
-                        $("#circle-nine").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                    }
-                    if (section === 9) {
-                        $("#circle-ten").switchClass("off", "on");
-                        $(".indicators-list li").each(function () {
-                            $(this).removeClass("on").addClass("off");
-                        });
-                    }
+                    }                    
                 }
             });
         })

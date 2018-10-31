@@ -77,6 +77,9 @@
     // top: 25px;
     // left: 50%;
     // transform: translateX(-50%);
+    @media (max-width: 375px) and (min-width: 359px) {
+        font-size: 15px;
+    }
     @media (max-width: 767px) and (min-width: 416px) {
         
     }
@@ -97,15 +100,15 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) {
+    @media (max-width: 375px) and (min-width: 359px) {
         color: #fff;
         text-align: center;
-        padding: 0 16px;
+        padding: 0 30px;
         font-size: 36px;
-        margin-top: 0px;
-        line-height: 31px;
-        margin-bottom: 10px;
         font-weight: bold; 
+        line-height: 33px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         color: #fff;
@@ -131,6 +134,8 @@
         padding: 0 10%;
         font-size: 45px;
         line-height: 48px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 .h1-slider3-setima-sessao{
@@ -146,8 +151,11 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
         font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 27px;
     }
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 25px;
@@ -158,7 +166,10 @@
         line-height: 28px;
     }
     @media (max-width: 500px) and (min-width: 417px) {
-        font-size: 39px;
+        font-size: 45px;
+        line-height: 45px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 .p-setima-sessao{
@@ -214,6 +225,10 @@
     // top: 50px;
     // width: 40%;
     margin: auto;
+    @media (max-width: 500px) and (min-width: 414px) {
+        width: 174px;
+        margin: 40px auto;
+    }
 }
 .button-setima-sessao:focus{
     outline-style: none;
@@ -245,8 +260,9 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
         font-size: 14px;
+        padding: 10% 10% 12% 10%;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 15px;
@@ -263,20 +279,24 @@
     margin-bottom: 25px;
     // position: relative;
     // top: 50px;
+    @media (max-width: 374px) and (min-width: 360px) { 
+        margin-bottom: 12px;
+    }
     @media (max-width: 500px) and (min-width: 417px) {
         margin-bottom: 40px;
+        padding: 0 44px 0 66px;
     }
 }
 .h3-setima-sessao{
     margin-top: 0;
     color: #fff;
     // font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-bottom: 2px;
     margin-left: 8px;
     line-height: 21px;
-    text-align: justify;
+    text-align: left;
     @media (max-width: 359px) and (min-width: 321px) {
     }
     @media (max-width: 374px) and (min-width: 359px) { 
@@ -291,7 +311,8 @@
     }
     @media (max-width: 500px) and (min-width: 417px) {
         margin-top: 0;
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 30px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -314,7 +335,7 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
         padding: 0 47px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
@@ -357,6 +378,9 @@
     margin-bottom: 10px;
     // position: relative;
     // top: 50px;
+    @media (max-width: 374px) and (min-width: 360px) {
+        padding: 0 10% 0 15%;
+    }
 }
 .div-interna-sessao7-segunda-1{
     display: flex;
@@ -400,7 +424,7 @@
         padding-left: 56px;
     }
     @media (max-width: 500px) and (min-width: 414px) {
-        padding-left: 86px;
+        padding-left: 85px;
     }
 }
 .div-interna-sessao7-1{
@@ -447,7 +471,7 @@
     line-height: 21px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
     } 
     @media (max-width: 416px) and (min-width: 375px) {
         font-size: 12px;
@@ -469,9 +493,10 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
-        font-size: 31px;
-        margin-top: -50px;
+    @media (max-width: 374px) and (min-width: 360px) { 
+        font-size: 35px;
+        margin-top: 20px;
+        line-height: 33px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 31px;
@@ -484,7 +509,8 @@
     @media (max-width: 500px) and (min-width: 417px) {
         font-size: 55px;
         line-height: 58px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 .p-slide5-setima-sessao{
@@ -498,9 +524,10 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
         font-size: 15px;
         line-height: 18px;
+        margin-bottom: 30px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 15px;
@@ -513,6 +540,7 @@
     }
     @media (max-width: 500px) and (min-width: 417px) {
         font-size: 16px;
+        margin-bottom: 60px;
     }
 }
 .socials-slider7{
@@ -535,9 +563,10 @@
     // top: 50px;
     @media (max-width: 359px) and (min-width: 321px) {
     }
-    @media (max-width: 374px) and (min-width: 359px) { 
+    @media (max-width: 374px) and (min-width: 360px) { 
         font-size: 11px;
         padding: 0 30px 0 64px;
+        margin-bottom: 10px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 14px;
@@ -548,8 +577,9 @@
         font-size: 16px;
     }
     @media (max-width: 500px) and (min-width: 417px) {
-        padding: 0 10% 0 73px;
+        padding: 0 10% 0 74px;
         font-size: 15px;
+        margin-bottom: 24px;
     }
 }
 .imac{
@@ -566,9 +596,15 @@
     font-weight: bold;
     // position: relative;
     // top: 50px;
+    @media (max-width: 374px) and (min-width: 360px) { 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     @media (max-width: 500px) and (min-width: 417px) {
         font-size: 42px;
         line-height: 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -605,7 +641,7 @@
 .titulo-slider1-setima-sessao{
     padding-top: 81px;
     text-transform: uppercase;
-    color: #0061ff;
+    color: #f7aa2e;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: left;
@@ -649,7 +685,7 @@
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
-    background-color: #056bff;
+    background-color: #f7aa2e;
     border-radius: 20px;
     padding: 8px 20px;
     font-family: sans-serif;
@@ -668,7 +704,7 @@
     padding-top: 105px;
     padding-left: 125px;
     text-transform: uppercase;
-    color: #0061ff;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: left;
@@ -731,7 +767,7 @@
     padding-top: 60px;
     padding-left: 125px;
     text-transform: uppercase;
-    color: #0061ff;
+    color: #f7aa2e;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: left;
@@ -921,7 +957,7 @@
     padding-top: 120px;
     padding-left: 125px;
     text-transform: uppercase;
-    color: #0061ff;
+    color: #f7aa2e;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: left;

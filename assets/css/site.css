@@ -26,10 +26,10 @@
   margin-bottom: 0;
   right: 0;
   position: absolute;
-  border-left: 4px solid #f7aa2e;
-  border-bottom: 4px solid #f7aa2e;
-  border-right: 4px solid #f7aa2e;
-  border-top: 4px solid #f7aa2e; }
+  border-left: 2px solid #f7aa2e;
+  border-bottom: 2px solid #f7aa2e;
+  border-right: 2px solid #f7aa2e;
+  border-top: 2px solid #f7aa2e; }
 
 .navigation-mobile__menu--links {
   display: flex;
@@ -45,15 +45,15 @@
 
 .icon-on-menu {
   height: 20px;
-  padding-left: 18px; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  padding-left: 10px; }
+  @media (max-width: 360px) and (min-width: 320px) {
     .icon-on-menu {
       height: 16px; } }
 
 .icon-on-menu-interno {
   height: 20px;
-  padding-left: 52px; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  padding-left: 40px; }
+  @media (max-width: 360px) and (min-width: 320px) {
     .icon-on-menu-interno {
       height: 16px; } }
 
@@ -65,9 +65,9 @@
   font-weight: bold;
   font-size: 20px;
   cursor: pointer; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  @media (max-width: 360px) and (min-width: 320px) {
     .navigation-mobile__menu--links li a {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .navigation-mobile__menu--address {
   height: 8.5%;
@@ -80,7 +80,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   margin: 0; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  @media (max-width: 360px) and (min-width: 320px) {
     .navigation-mobile__menu--address p {
       font-size: 11px; } }
 
@@ -101,14 +101,18 @@
 .navigation-mobile__menu--social-network .icons img {
   width: 22px;
   height: 22px; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  @media (max-width: 360px) and (min-width: 320px) {
     .navigation-mobile__menu--social-network .icons img {
       width: 16px;
       height: 16px; } }
 
 .facebook-menu {
-  width: 15px !important;
+  width: 12px !important;
   height: 22px !important; }
+  @media (max-width: 360px) and (min-width: 320px) {
+    .facebook-menu {
+      width: 9px !important;
+      height: 16px !important; } }
 
 .menu-hamburguer {
   z-index: 502;
@@ -123,7 +127,7 @@
   animation: text2 ease-in-out 0.6s forwards;
   animation-delay: 0.2s;
   cursor: pointer; }
-  @media (max-width: 359px) and (min-width: 320px) {
+  @media (max-width: 360px) and (min-width: 320px) {
     .menu-hamburguer {
       top: 4px;
       right: 7px; } }
@@ -305,6 +309,7 @@
   background-color: #f7aa2e;
   padding: 3px 15px;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   cursor: pointer;
   opacity: 0;
@@ -322,7 +327,8 @@
 
 .navigation-desktop__links--link {
   color: #fff;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 767px) and (min-width: 2px) {
     .navigation-desktop__links--link {
       display: none; } }
@@ -387,7 +393,7 @@ body, html {
 .home__desktop--paragraph {
   color: #fff;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   letter-spacing: 6px;
   position: relative;
@@ -419,7 +425,7 @@ body, html {
 
 .home__desktop--button {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border: none;
   background-color: #f7aa2e;
   border-radius: 15px;
@@ -685,6 +691,7 @@ body, html {
 .about-desktop__div-one--text-intern__title {
   color: #fff;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
@@ -694,6 +701,7 @@ body, html {
 
 .about-desktop__div-one--text-intern__paragraph {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
@@ -730,6 +738,7 @@ body, html {
 .about-desktop__div-two--text-intern__title {
   color: #fff;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
@@ -740,6 +749,7 @@ body, html {
 .about-desktop__div-two--text-intern__paragraph {
   color: #fff;
   padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 21px; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .about-desktop__div-two--text-intern__paragraph {
@@ -768,6 +778,7 @@ body, html {
 .about-desktop__div-three--text-intern__title {
   color: #fff;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
@@ -778,7 +789,8 @@ body, html {
 .about-desktop__div-three--text-intern__paragraph {
   color: #fff;
   padding-left: 30px;
-  font-size: 21px; }
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .about-desktop__div-three--text-intern__paragraph {
       font-size: 19px; } }
@@ -813,6 +825,7 @@ body, html {
 .about-desktop__div-four--text-intern__title {
   color: #fff;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 30px;
   margin-top: 0;
   font-size: 25px; }
@@ -823,7 +836,8 @@ body, html {
 .about-desktop__div-four--text-intern__paragraph {
   color: #fff;
   padding-left: 30px;
-  font-size: 21px; }
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 1366px) and (min-width: 768px) {
     .about-desktop__div-four--text-intern__paragraph {
       font-size: 19px; } }
@@ -1151,7 +1165,8 @@ body, html {
       margin-left: 90px;
       text-align: left;
       font-size: 26px;
-      width: 78%; } }
+      width: 78%;
+      padding: 0; } }
   @media (min-width: 1368px) {
     .about__top-text--paragraph {
       margin-top: 20px;
@@ -1188,7 +1203,8 @@ body, html {
   @media (max-width: 1366px) and (min-width: 768px) {
     .about__top-text--paragraph-strong {
       font-weight: bold;
-      font-size: 26px; } }
+      font-size: 26px;
+      margin-left: 90px; } }
   @media (min-width: 1368px) {
     .about__top-text--paragraph-strong {
       font-weight: bold;
@@ -1403,6 +1419,7 @@ body, html {
 .design-desktop__extern-first--box-one__title {
   margin: 0;
   padding: 60px 38px 40px 60px;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: bold; }
   @media (max-width: 767px) and (min-width: 2px) {
@@ -1417,6 +1434,7 @@ body, html {
   margin: 0;
   padding: 0 60px;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   line-height: 24px;
   letter-spacing: 0px;
   font-size: 19px; }
@@ -1540,7 +1558,7 @@ body, html {
 .p-design {
   color: #fff;
   text-align: left;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 27px;
   line-height: 28px;
@@ -1594,6 +1612,7 @@ body, html {
   text-transform: uppercase;
   background-color: #f7aa2e;
   border: 2px solid #fff;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 18px;
   letter-spacing: 3px;
   padding: 5px 15px;
@@ -1625,6 +1644,7 @@ body, html {
 .design-desktop__extern-first--box-two__button {
   text-transform: uppercase;
   background-color: #434343;
+  font-family: 'Montserrat', sans-serif;
   border: 2px solid #fff;
   border-radius: 18px;
   letter-spacing: 3px;
@@ -1658,7 +1678,8 @@ body, html {
   margin: 0;
   padding: 60px 38px 40px 60px;
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 767px) and (min-width: 2px) {
     .design-desktop__extern-first--box-three__title {
       display: none; } }
@@ -1670,6 +1691,7 @@ body, html {
 .design-desktop__extern-first--box-three__button {
   text-transform: uppercase;
   background-color: #888888;
+  font-family: 'Montserrat', sans-serif;
   border: 2px solid #fff;
   border-radius: 18px;
   letter-spacing: 3px;
@@ -1683,6 +1705,9 @@ body, html {
   @media (min-width: 1368px) {
     .design-desktop__extern-first--box-three__button {
       margin-top: 115px; } }
+
+.design-desktop__extern-first--box-three__button:focus {
+  outline-style: none; }
 
 .box-1-button3:focus {
   outline-style: none; }
@@ -1739,9 +1764,9 @@ body, html {
   @media (max-width: 359px) and (min-width: 320px) {
     .titulo-quarta-sessao {
       padding: 45px 20px 25px 20px; } }
-  @media (max-width: 375px) and (min-width: 359px) {
+  @media (max-width: 375px) and (min-width: 360px) {
     .titulo-quarta-sessao {
-      font-size: 25px; } }
+      font-size: 24px; } }
   @media (max-width: 415px) and (min-width: 376px) {
     .titulo-quarta-sessao {
       font-size: 28px; } }
@@ -1798,7 +1823,7 @@ body, html {
   border-radius: 0px; }
   @media (max-width: 375px) and (min-width: 359px) {
     .barra-personalizada1 {
-      margin-bottom: 29px; } }
+      margin-bottom: 18px; } }
   @media (max-width: 415px) and (min-width: 376px) {
     .barra-personalizada1 {
       margin-bottom: 39px; } }
@@ -1831,9 +1856,6 @@ body, html {
     .imagem-quarta-sessao-desk-intern {
       height: 100%; } }
 
-.imagem-quarta-sessao-desk-intern-0 {
-  display: none; }
-
 .quarta-sessao-responsiva {
   width: 100%;
   height: 100%; }
@@ -1854,7 +1876,7 @@ body, html {
   color: #fff;
   text-align: left;
   padding: 25px 20px 45px 20px;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 31px;
   font-weight: bold;
   line-height: 28px;
@@ -1878,7 +1900,7 @@ body, html {
   color: #fff;
   text-align: justify;
   padding: 0 20px;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   margin-bottom: 45px;
   line-height: 24px;
@@ -1899,7 +1921,7 @@ body, html {
       display: none; } }
   @media (min-width: 1368px) {
     .progress-desk {
-      height: 12px; } }
+      height: 18px; } }
 
 @media (min-width: 1368px) {
   .descricao-barra1 p {
@@ -1975,9 +1997,9 @@ body, html {
   margin-bottom: 45px;
   position: relative;
   animation: titulosecaovideo ease-in-out 2s forwards; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .p-quinta-sessao {
-      font-size: 32px;
+      font-size: 30px;
       padding: 0 52px; } }
   @media (max-width: 414px) and (min-width: 375px) {
     .p-quinta-sessao {
@@ -2065,7 +2087,7 @@ body, html {
 .h3-quinta-sessao-desk {
   text-transform: uppercase;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 8px;
   font-size: 14px;
   margin-top: 155px;
@@ -2113,6 +2135,7 @@ body, html {
   padding: 10px 30px;
   border-radius: 30px;
   letter-spacing: 4px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   position: relative;
   animation: buttonsecaovideo ease-in-out 2s forwards; }
@@ -2130,6 +2153,35 @@ body, html {
 
 .button-quinta-sessao-desk-0 {
   display: none; }
+
+.close-video {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 600;
+  cursor: pointer; }
+
+.barra-one {
+  background-color: #000;
+  width: 23px;
+  height: 4px;
+  position: fixed;
+  top: 28px;
+  right: 19px;
+  transform: rotate(45deg); }
+
+.barra-two {
+  background-color: #000;
+  width: 23px;
+  height: 4px;
+  position: fixed;
+  top: 28px;
+  right: 19px;
+  transform: rotate(-45deg); }
 
 .our {
   height: 100%;
@@ -2152,7 +2204,7 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 28px;
+  padding-top: 18px;
   padding-bottom: 17.5px;
   letter-spacing: 2px;
   padding-left: 55px;
@@ -2185,7 +2237,7 @@ body, html {
   animation: subtitleonoursection ease-in-out 1.5s forwards; }
   @media (max-width: 374px) and (min-width: 359px) {
     .h1-sexta-sessao {
-      font-size: 29px; } }
+      font-size: 28px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .h1-sexta-sessao {
       font-size: 31px; } }
@@ -2203,6 +2255,9 @@ body, html {
   display: flex;
   align-items: flex-end;
   padding: 0 10%; }
+  @media (max-width: 374px) and (min-width: 360px) {
+    .div-interna-sexta-sessao {
+      margin-top: 10px; } }
   @media (max-width: 500px) and (min-width: 416px) {
     .div-interna-sexta-sessao {
       display: flex;
@@ -2216,9 +2271,6 @@ body, html {
     .div-interna-sexta-sessao2 {
       display: flex;
       align-items: center; } }
-  @media (min-width: 1368px) {
-    .div-interna-sexta-sessao2 {
-      align-items: flex-start; } }
 
 .verified {
   height: 20px;
@@ -2226,9 +2278,6 @@ body, html {
   @media (max-width: 416px) and (min-width: 414px) {
     .verified {
       margin-top: 10px; } }
-  @media (max-width: 500px) and (min-width: 417px) {
-    .verified {
-      margin-top: 0; } }
 
 .verified-second {
   height: 20px;
@@ -2250,7 +2299,7 @@ body, html {
       font-size: 21px; } }
   @media (max-width: 500px) and (min-width: 421px) {
     .h3-sexta-sessao {
-      font-size: 28px; } }
+      font-size: 25px; } }
   @media (min-width: 1368px) {
     .h3-sexta-sessao {
       font-size: 27px; } }
@@ -2263,10 +2312,11 @@ body, html {
   @media (max-width: 374px) and (min-width: 359px) {
     .p-sexta-sessao {
       font-size: 10px;
-      margin-bottom: 17px; } }
+      margin-bottom: 11px; } }
   @media (max-width: 415px) and (min-width: 375px) {
     .p-sexta-sessao {
-      font-size: 11px; } }
+      font-size: 10px;
+      margin-bottom: 8px; } }
   @media (max-width: 416px) and (min-width: 414px) {
     .p-sexta-sessao {
       font-size: 13px; } }
@@ -2288,6 +2338,7 @@ body, html {
 
 .h1-sexta-sessao-desk {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding: 0 35px;
   margin-top: 0;
@@ -2305,7 +2356,8 @@ body, html {
   @media (min-width: 1368px) {
     .h1-sexta-sessao-desk {
       font-size: 55px;
-      line-height: 55px; } }
+      line-height: 55px;
+      padding: 0 15px; } }
 
 .img-sexta-sessao-desk {
   position: absolute;
@@ -2349,7 +2401,7 @@ body, html {
 .p-sexta-sessao-desk {
   color: #fff;
   padding: 0 30px 0 54px;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2526,6 +2578,9 @@ body, html {
   letter-spacing: 5px;
   font-weight: bold;
   z-index: 1; }
+  @media (max-width: 375px) and (min-width: 359px) {
+    .h2-setima-sessao {
+      font-size: 15px; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .h2-setima-sessao {
       display: none; } }
@@ -2539,16 +2594,16 @@ body, html {
   line-height: 28px;
   margin-bottom: 10px;
   font-weight: bold; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 375px) and (min-width: 359px) {
     .h1-setima-sessao {
       color: #fff;
       text-align: center;
-      padding: 0 16px;
+      padding: 0 30px;
       font-size: 36px;
-      margin-top: 0px;
-      line-height: 31px;
-      margin-bottom: 10px;
-      font-weight: bold; } }
+      font-weight: bold;
+      line-height: 33px;
+      margin-top: 20px;
+      margin-bottom: 30px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .h1-setima-sessao {
       color: #fff;
@@ -2573,7 +2628,9 @@ body, html {
     .h1-setima-sessao {
       padding: 0 10%;
       font-size: 45px;
-      line-height: 48px; } }
+      line-height: 48px;
+      margin-top: 40px;
+      margin-bottom: 40px; } }
 
 .h1-slider3-setima-sessao {
   color: #fff;
@@ -2584,9 +2641,12 @@ body, html {
   line-height: 38px;
   margin-bottom: 13px;
   font-weight: bold; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .h1-slider3-setima-sessao {
-      font-size: 24px; } }
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 27px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .h1-slider3-setima-sessao {
       font-size: 25px;
@@ -2597,7 +2657,10 @@ body, html {
       line-height: 28px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .h1-slider3-setima-sessao {
-      font-size: 39px; } }
+      font-size: 45px;
+      line-height: 45px;
+      margin-top: 40px;
+      margin-bottom: 40px; } }
 
 .p-setima-sessao {
   color: #fff;
@@ -2642,6 +2705,10 @@ body, html {
   font-family: sans-serif;
   letter-spacing: 5px;
   margin: auto; }
+  @media (max-width: 500px) and (min-width: 414px) {
+    .button-setima-sessao {
+      width: 174px;
+      margin: 40px auto; } }
 
 .button-setima-sessao:focus {
   outline-style: none; }
@@ -2667,9 +2734,10 @@ body, html {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0;
   font-size: 15px; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .p2-setima-sessao {
-      font-size: 14px; } }
+      font-size: 14px;
+      padding: 10% 10% 12% 10%; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .p2-setima-sessao {
       font-size: 15px;
@@ -2682,19 +2750,23 @@ body, html {
   display: flex;
   padding: 0 44px;
   margin-bottom: 25px; }
+  @media (max-width: 374px) and (min-width: 360px) {
+    .div-interna-setima-sessao {
+      margin-bottom: 12px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .div-interna-setima-sessao {
-      margin-bottom: 40px; } }
+      margin-bottom: 40px;
+      padding: 0 44px 0 66px; } }
 
 .h3-setima-sessao {
   margin-top: 0;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   margin-bottom: 2px;
   margin-left: 8px;
   line-height: 21px;
-  text-align: justify; }
+  text-align: left; }
   @media (max-width: 374px) and (min-width: 359px) {
     .h3-setima-sessao {
       font-size: 15px; } }
@@ -2708,7 +2780,8 @@ body, html {
   @media (max-width: 500px) and (min-width: 417px) {
     .h3-setima-sessao {
       margin-top: 0;
-      font-size: 20px; } }
+      font-size: 17px;
+      line-height: 30px; } }
   @media (min-width: 1368px) {
     .h3-setima-sessao {
       font-size: 23px; } }
@@ -2724,7 +2797,7 @@ body, html {
   margin-bottom: 45px;
   font-size: 12px;
   line-height: 15px; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .p-slider3-setima-sessao {
       padding: 0 47px; } }
   @media (max-width: 413px) and (min-width: 375px) {
@@ -2757,6 +2830,9 @@ body, html {
   display: flex;
   padding: 0 10%;
   margin-bottom: 10px; }
+  @media (max-width: 374px) and (min-width: 360px) {
+    .div2-interna-setima-sessao {
+      padding: 0 10% 0 15%; } }
 
 .div-interna-sessao7-segunda-1 {
   display: flex;
@@ -2795,7 +2871,7 @@ body, html {
       padding-left: 56px; } }
   @media (max-width: 500px) and (min-width: 414px) {
     .div-interna-sessao7-segunda-3 {
-      padding-left: 86px; } }
+      padding-left: 85px; } }
 
 .div-interna-sessao7-1 {
   display: flex; }
@@ -2851,10 +2927,11 @@ body, html {
   line-height: 28px;
   margin-bottom: 20px;
   font-weight: bold; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .h1-slide4-setima-sessao {
-      font-size: 31px;
-      margin-top: -50px; } }
+      font-size: 35px;
+      margin-top: 20px;
+      line-height: 33px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .h1-slide4-setima-sessao {
       font-size: 31px; } }
@@ -2867,7 +2944,8 @@ body, html {
     .h1-slide4-setima-sessao {
       font-size: 55px;
       line-height: 58px;
-      margin-bottom: 50px; } }
+      margin-top: 40px;
+      margin-bottom: 40px; } }
 
 .p-slide5-setima-sessao {
   color: #fff;
@@ -2876,10 +2954,11 @@ body, html {
   font-family: sans-serif;
   margin-bottom: 40px;
   font-size: 12px; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .p-slide5-setima-sessao {
       font-size: 15px;
-      line-height: 18px; } }
+      line-height: 18px;
+      margin-bottom: 30px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .p-slide5-setima-sessao {
       font-size: 15px;
@@ -2891,7 +2970,8 @@ body, html {
       line-height: 19px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .p-slide5-setima-sessao {
-      font-size: 16px; } }
+      font-size: 16px;
+      margin-bottom: 60px; } }
 
 .socials-slider7 {
   display: flex;
@@ -2907,10 +2987,11 @@ body, html {
   font-family: sans-serif;
   font-size: 11px;
   text-align: justify; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .p-sexta-sessao-slider {
       font-size: 11px;
-      padding: 0 30px 0 64px; } }
+      padding: 0 30px 0 64px;
+      margin-bottom: 10px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .p-sexta-sessao-slider {
       font-size: 14px;
@@ -2921,8 +3002,9 @@ body, html {
       font-size: 16px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .p-sexta-sessao-slider {
-      padding: 0 10% 0 73px;
-      font-size: 15px; } }
+      padding: 0 10% 0 74px;
+      font-size: 15px;
+      margin-bottom: 24px; } }
 
 .imac {
   height: auto; }
@@ -2936,10 +3018,16 @@ body, html {
   line-height: 28px;
   margin-bottom: 42px;
   font-weight: bold; }
+  @media (max-width: 374px) and (min-width: 360px) {
+    .h1-slider7-setima-sessao {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .h1-slider7-setima-sessao {
       font-size: 42px;
-      line-height: 60px; } }
+      line-height: 60px;
+      margin-top: 40px;
+      margin-bottom: 40px; } }
 
 .diversas-plataformas {
   width: 100%;
@@ -2970,7 +3058,7 @@ body, html {
 .titulo-slider1-setima-sessao {
   padding-top: 81px;
   text-transform: uppercase;
-  color: #0061ff;
+  color: #f7aa2e;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -3012,7 +3100,7 @@ body, html {
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
-  background-color: #056bff;
+  background-color: #f7aa2e;
   border-radius: 20px;
   padding: 8px 20px;
   font-family: sans-serif;
@@ -3031,7 +3119,7 @@ body, html {
   padding-top: 105px;
   padding-left: 125px;
   text-transform: uppercase;
-  color: #0061ff;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -3088,7 +3176,7 @@ body, html {
   padding-top: 60px;
   padding-left: 125px;
   text-transform: uppercase;
-  color: #0061ff;
+  color: #f7aa2e;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -3258,7 +3346,7 @@ body, html {
   padding-top: 120px;
   padding-left: 125px;
   text-transform: uppercase;
-  color: #0061ff;
+  color: #f7aa2e;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -3355,15 +3443,16 @@ body, html {
 .h1-oitava-sessao {
   color: #fff;
   text-align: center;
-  padding: 10px 10%;
+  padding: 0 10%;
   font-size: 25px;
   margin-top: 0;
   line-height: 28px;
   margin-bottom: 0;
   font-weight: bold; }
-  @media (max-width: 374px) and (min-width: 359px) {
+  @media (max-width: 374px) and (min-width: 360px) {
     .h1-oitava-sessao {
-      font-size: 31px; } }
+      font-size: 32px;
+      margin-top: 20px; } }
   @media (max-width: 413px) and (min-width: 375px) {
     .h1-oitava-sessao {
       font-size: 31px; } }
@@ -3373,7 +3462,7 @@ body, html {
   @media (max-width: 500px) and (min-width: 417px) {
     .h1-oitava-sessao {
       font-size: 52px;
-      margin-top: 7%;
+      margin-top: 40px;
       line-height: 58px; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .h1-oitava-sessao {
@@ -3451,7 +3540,8 @@ body, html {
   padding-left: 15px; }
 
 .strong-on-testimonial {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 500px) and (min-width: 415px) {
     .strong-on-testimonial {
       font-size: 22px; } }
@@ -3460,7 +3550,8 @@ body, html {
       font-size: 23px; } }
 
 .no-strong-on-testimonial {
-  color: #7d7d7d; }
+  color: #7d7d7d;
+  font-family: 'Montserrat', sans-serif; }
   @media (max-width: 500px) and (min-width: 415px) {
     .no-strong-on-testimonial {
       font-size: 20px; } }
@@ -3495,7 +3586,8 @@ body, html {
 .titulo-slider1-oitava-sessao-desk {
   padding-top: 50px;
   text-transform: uppercase;
-  color: #0061ff;
+  font-family: 'Montserrat', sans-serif;
+  color: #f7aa2e;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: center; }
@@ -3509,6 +3601,7 @@ body, html {
 .h1-slider1-oitava-sessao-desk {
   color: #fff;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   padding: 0 16px;
   font-size: 40px;
   margin-top: 15px;
@@ -3526,7 +3619,7 @@ body, html {
   color: #fff;
   text-align: center;
   padding: 0 25% 0 25%;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 36px;
@@ -3536,7 +3629,7 @@ body, html {
       display: none; } }
   @media (min-width: 1368px) {
     .p-oitava-sessao-desk {
-      font-size: 23px; } }
+      font-size: 22px; } }
 
 .intena-slide-logo-desk {
   display: flex;
@@ -3803,7 +3896,8 @@ body, html {
       font-size: 42px; } }
   @media (max-width: 500px) and (min-width: 415px) {
     .p-nona-sessao {
-      font-size: 50px; } }
+      font-size: 50px;
+      margin-top: 70px; } }
   @media (max-width: 1920px) and (min-width: 768px) {
     .p-nona-sessao {
       display: none; } }
@@ -3904,7 +3998,7 @@ body, html {
 .div-teste {
   width: 100%;
   height: 40%;
-  position: relative;
+  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center; }
@@ -4542,7 +4636,7 @@ body, html {
   padding-top: 90px;
   padding-left: 125px;
   text-transform: uppercase;
-  color: #3d30f4;
+  color: #f7aa2e;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -4703,7 +4797,7 @@ body, html {
 .titulo-slider4-nona-sessao-desk {
   padding-top: 90px;
   text-transform: uppercase;
-  color: #3d30f4;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left; }
@@ -4716,7 +4810,7 @@ body, html {
       padding-top: 137px; } }
 
 .h1-slider4-nona-sessao {
-  color: #000;
+  color: #fff;
   text-align: left;
   padding: 0 33px;
   padding-left: 0px;
@@ -4738,7 +4832,7 @@ body, html {
       line-height: 97px; } }
 
 .p-slider4-nona-sessao {
-  color: #000;
+  color: #fff;
   font-family: sans-serif;
   text-align: justify;
   font-size: 20px;
@@ -4893,16 +4987,16 @@ body, html {
   @media (max-width: 360px) and (min-width: 320px) {
     .mapa {
       height: 140px;
-      margin-top: 32px;
-      margin-bottom: 8px; } }
-  @media (max-width: 1920px) and (min-width: 768px) {
-    .mapa {
-      display: none; } }
+      margin-top: 20px;
+      margin-bottom: 15px; } }
   @media (max-width: 500px) and (min-width: 417px) {
     .mapa {
       height: 290px;
       margin-top: 40px;
       margin-bottom: 36px; } }
+  @media (max-width: 1920px) and (min-width: 768px) {
+    .mapa {
+      display: none; } }
 
 .mapa-interno {
   margin: 0 auto;
@@ -4957,6 +5051,7 @@ body, html {
 .h1-decima-sessao-desk {
   color: #fff;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
   font-size: 33px;
   margin: 0;
   line-height: 28px;
@@ -4973,7 +5068,7 @@ body, html {
 
 .p-decima-sessao-desk {
   color: #a9a7a7;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 21px;
@@ -4984,11 +5079,12 @@ body, html {
       display: none; } }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .p-decima-sessao-desk {
-      font-size: 28px;
+      font-size: 26px;
       line-height: 38px;
       margin-bottom: 100px; } }
 
 .height-form {
+  font-family: 'Montserrat', sans-serif;
   height: 40px; }
   @media (max-width: 767px) and (min-width: 2px) {
     .height-form {
@@ -5052,6 +5148,7 @@ body, html {
 
 .footer-primeira-coluna-paragrafo {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   padding-left: 20px;
   margin: 0; }
@@ -5061,7 +5158,7 @@ body, html {
       width: 84%; } }
   @media (max-width: 1920px) and (min-width: 1368px) {
     .footer-primeira-coluna-paragrafo {
-      font-size: 17px;
+      font-size: 16px;
       width: 68%; } }
 
 .footer-primeira-coluna-paragrafo-bold {
@@ -5078,6 +5175,7 @@ body, html {
 
 .footer-segunda-coluna-paragrafoTitulo-bold {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   padding-left: 15%;
   padding-top: 22%; }
@@ -5088,6 +5186,7 @@ body, html {
 
 .footer-segunda-coluna-paragrafo-bold {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 0;
   padding-left: 15%; }
@@ -5097,6 +5196,7 @@ body, html {
 
 .footer-segunda-coluna-paragrafo {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-style: italic;
   padding-left: 15%; }
 
@@ -5111,6 +5211,7 @@ body, html {
 
 .footer-terceira-coluna-paragrafo-bold {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 25px;
   padding-top: 22%; }
@@ -5128,6 +5229,7 @@ body, html {
 
 .footer-terceira-coluna-noticias-paragrafo-bold {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 0; }
   @media (max-width: 1920px) and (min-width: 1368px) {
@@ -5135,6 +5237,7 @@ body, html {
       font-size: 18px; } }
 
 .footer-terceira-coluna-noticias-paragrafo {
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-style: italic; }
 
@@ -5149,6 +5252,7 @@ body, html {
 
 .footer-quarta-coluna-paragrafo-bold {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   padding-top: 22%; }
   @media (max-width: 1920px) and (min-width: 1368px) {
@@ -5158,6 +5262,7 @@ body, html {
 
 .footer-quarta-coluna-texto {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   width: 307.25px;
   height: 128px; }
@@ -5188,6 +5293,7 @@ body, html {
   padding-top: 20px; }
 
 .newsletter-input {
+  font-family: 'Montserrat', sans-serif;
   border: none;
   border-radius: 20px 0px 0px 20px;
   padding: 10px 0px 10px 20px; }
@@ -5197,10 +5303,11 @@ body, html {
 
 .newsletter-button {
   border: none;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 0px 20px 20px 0px;
   padding: 10px 20px 10px 10px;
   color: #fff;
-  background-color: #0061ff; }
+  background-color: #f7aa2e; }
 
 .newsletter-button:focus {
   outline-style: none; }

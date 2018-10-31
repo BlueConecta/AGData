@@ -28,7 +28,9 @@
                 <li><img class="icon-on-menu-interno" src="assets/img/icon-ag.png" alt=""><a data-section="#experience-section">Estatísticas</a></li>
                 <li><img class="icon-on-menu" src="assets/img/video-camera.png" alt=""><a data-section="#video-section">Video</a></li>
                 <li><img class="icon-on-menu" src="assets/img/light-bulb.png" alt=""><a data-section="#our-section">Serviços</a></li>
-                <li><img class="icon-on-menu-interno" src="assets/img/light-bulb.png" alt=""><a data-section="#services-section">Nossos Serviços</a></li>
+                <li><img class="icon-on-menu-interno" src="assets/img/light-bulb.png" alt=""><a data-section="#services-section">Nossos
+                        Serviços
+                    </a></li>
                 <li><img class="icon-on-menu" src="assets/img/light-bulb.png" alt=""><a data-section="#testimonials-section">Testemunhos</a></li>
                 <li><img class="icon-on-menu" src="assets/img/settings-work-tool.png" alt=""><a data-section="#technology-section">Tecnologia</a></li>
                 <li><img class="icon-on-menu" src="assets/img/black-bubble-speech.png" alt=""><a data-section="#contact-section">Contato</a></li>
@@ -398,7 +400,7 @@
                 </div>
             </div>
         </div>
-        <img class="col-sm-6 col-md-6 col-lg-6 img-responsive control-img-section-4 imagem-quarta-sessao-desk-intern-0" src="assets/img/img-quarta-sessao-desk.png"
+        <img class="col-sm-6 col-md-6 col-lg-6 img-responsive control-img-section-4 disabled" src="assets/img/img-quarta-sessao-desk.png"
             alt="">
 
         <!-- RESPONSIVE -->
@@ -458,12 +460,15 @@
         <!-- RESPONSIVE -->
 
         <div id="m_video-play" class="disabled">
+            <div class="close-video">
+                <span class="barra-one"></span>
+                <span class="barra-two"></span>
+            </div>
             <video class="video-play-intern" src="assets/img/video.mp4" preload="metadata"></video>
         </div>
 
         <div id="m_quinta-sessao" class="quinta-sessao">
             <div class="interna-quinta-sessao">
-                <!-- <img class="img-play" src="assets/img/play.png" alt=""> -->
                 <img id="control-img-play-mobile" class="disabled" src="assets/img/play.png" alt="">
                 <h3 id="control-h3-quinta-sessao" class="disabled">business</h3>
                 <p id="control-p-quinta-sessao" class="disabled">Agência Data uma experiência totalmente nova.</p>
@@ -473,14 +478,14 @@
 
         <!-- DESKTOP -->
 
-        <div class="quinta-sessao-desk">
+        <div id="m_quinta-sessao-desktop" class="quinta-sessao-desk">
             <div class="interna-quinta-sessao-desk col-sm-6 col-md-6 col-lg-6">
-                <img class="control-img-play img-play" src="assets/img/play.png" alt="">
+                <img id="play_video-desktop" class="control-img-play" src="assets/img/play.png" alt="">
             </div>
             <div class="interna-quinta-sessao-desk-2  col-sm-6 col-md-6 col-lg-6">
-                <h3 class="control-h3-section-5 h3-quinta-sessao-desk">business</h3>
-                <p class="control-p-section-5 p-quinta-sessao-desk">Agência Data uma experiência totalmente nova.</p>
-                <button class="control-button-section-5 button-quinta-sessao-desk">assistir</button>
+                <h3 class="control-h3-section-5">business</h3>
+                <p class="control-p-section-5">Agência Data uma experiência totalmente nova.</p>
+                <button id="control-img-play-desktop" class="control-button-section-5">assistir</button>
             </div>
         </div>
 
@@ -621,17 +626,15 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="assets/img/bg-section7.png" alt="..." style="width:100%; height:100%;">
-                    <div class="carousel-caption" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="carousel-caption" style="display: flex; flex-direction: column;">
                         <h2 class="h2-setima-sessao">serviços</h2>
 
-                        <div style="width: 100%; position: relative; display: flex; flex-direction: column;">
-                            <h1 class="h1-setima-sessao">Demos: algumas campanhas de exemplo.</h1>
-                            <p class="p-setima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor
-                                sit.
-                            </p>
-                            <button class="button-setima-sessao">show more</button>
-                        </div>
+                        <h1 class="h1-setima-sessao">Demos: algumas campanhas de exemplo.</h1>
+                        <p class="p-setima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor
+                            sit.
+                        </p>
+                        <button class="button-setima-sessao">show more</button>
                         <div class="div-teste">
                             <img class="img-responsive container responsividade-iphone" src="assets/img/iPhone.png" alt="">
                         </div>
@@ -648,15 +651,15 @@
                             ele ficará disponível para todos os seus clientes utilizarem sem se preocupar com velocidade
                             de carregamento ou perda de qualidade.</p>
                         <div class="div-interna-setima-sessao">
-                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <img class="verified" src="assets/img/verified.png" alt="" style="margin-top:5px;">
                             <h3 class="h3-setima-sessao">Carrega Vídeos e imagens na hora</h3>
                         </div>
                         <div class="div-interna-setima-sessao">
-                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <img class="verified" src="assets/img/verified.png" alt="" style="margin-top:5px;">
                             <h3 class="h3-setima-sessao">Não perde a Qualidade original do Material</h3>
                         </div>
                         <div class="div-interna-setima-sessao">
-                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <img class="verified" src="assets/img/verified.png" alt="" style="margin-top:5px;">
                             <h3 class="h3-setima-sessao">Não precisa de Download para Nada</h3>
                         </div>
                     </div>
@@ -664,43 +667,40 @@
 
                 <div class="item">
                     <img src="assets/img/bg-section7.png" alt="..." style="width:100%; height:100%;">
-                    <div class="carousel-caption" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="carousel-caption" style="display: flex; flex-direction: column;">
                         <h2 class="h2-setima-sessao">serviços</h2>
-                        <div style="width: 100%; position: relative; display: flex; flex-direction: column;">
-                            <h1 class="h1-slider3-setima-sessao">Gestão: Receba Relatórios personalizados.</h1>
-                            <p class="p-slider3-setima-sessao">Iremos gerenciar todas as informações estatísticas e gerar
-                                relatórios personalizados para você. Esses envios poderão ser feitos de forma gráfica e/ou
-                                digital.
-                            </p>
-                            <div class="div2-interna-setima-sessao">
-                                <div class="div-interna-sessao7-1">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao">Acessos diários</h3>
-                                </div>
-                                <div class="div-interna-sessao7-segunda-1">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao">Dias de Pico</h3>
-                                </div>
+                        <h1 class="h1-slider3-setima-sessao">Gestão: Receba Relatórios personalizados.</h1>
+                        <p class="p-slider3-setima-sessao">Iremos gerenciar todas as informações estatísticas e gerar relatórios
+                            personalizados para você. Esses envios poderão ser feitos de forma gráfica e/ou digital.
+                        </p>
+                        <div class="div2-interna-setima-sessao">
+                            <div class="div-interna-sessao7-1">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao">Acessos diários</h3>
                             </div>
-                            <div class="div2-interna-setima-sessao">
-                                <div class="div-interna-sessao7-1">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao">Cadastros feitos</h3>
-                                </div>
-                                <div class="div-interna-sessao7-segunda-2">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao">Frequência</h3>
-                                </div>
+                            <div class="div-interna-sessao7-segunda-1">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao">Dias de Pico</h3>
                             </div>
-                            <div class="div2-interna-setima-sessao">
-                                <div class="div-interna-sessao7-1">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao">Tipo de Dispositivo</h3>
-                                </div>
-                                <div class="div-interna-sessao7-segunda-3">
-                                    <img class="verified-second" src="assets/img/verified.png" alt="">
-                                    <h3 class="h3-slider3-setima-sessao strongh3">E Muito Mais</h3>
-                                </div>
+                        </div>
+                        <div class="div2-interna-setima-sessao">
+                            <div class="div-interna-sessao7-1">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao">Cadastros feitos</h3>
+                            </div>
+                            <div class="div-interna-sessao7-segunda-2">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao">Frequência</h3>
+                            </div>
+                        </div>
+                        <div class="div2-interna-setima-sessao">
+                            <div class="div-interna-sessao7-1">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao">Tipo de Dispositivo</h3>
+                            </div>
+                            <div class="div-interna-sessao7-segunda-3">
+                                <img class="verified-second" src="assets/img/verified.png" alt="">
+                                <h3 class="h3-slider3-setima-sessao strongh3">E Muito Mais</h3>
                             </div>
                         </div>
                         <div class="div-teste">
@@ -711,59 +711,55 @@
 
                 <div class="item">
                     <img src="assets/img/bg-section7.png" alt="..." style="width:100%; height:100%;">
-                    <div class="carousel-caption" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="carousel-caption" style="display: flex; flex-direction: column;">
                         <h2 class="h2-setima-sessao">serviços</h2>
-                        <div style="width: 100%; position: relative; display: flex; flex-direction: column;">
-                            <h1 class="h1-slider7-setima-sessao">Envio de Emails</h1>
+                        <h1 class="h1-slider7-setima-sessao">Envio de Emails</h1>
 
-                            <div class="div-interna-sexta-sessao" style="margin-top: 30px;">
-                                <img class="verified" src="assets/img/verified.png" alt="">
-                                <h3 class="h3-sexta-sessao">Aproximação</h3>
-                            </div>
-                            <p class="p-sexta-sessao-slider">Envie emails de Boas Vindas para os clientes que visitaram seu
-                                estabelecimento pela primeira vez. Esteja sempre próximo dele.</p>
-
-
-                            <div class="div-interna-sexta-sessao">
-                                <img class="verified" src="assets/img/verified.png" alt="">
-                                <h3 class="h3-sexta-sessao">Momentos Especiais</h3>
-                            </div>
-                            <p class="p-sexta-sessao-slider">Faça envios em datas específicas, como feriados, festas, aniversários
-                                e outros, demonstrando interesse em seu cliente e fidelizando ele sempre.</p>
-
-                            <div class="div-interna-sexta-sessao">
-                                <img class="verified" src="assets/img/verified.png" alt="">
-                                <h3 class="h3-sexta-sessao">Bonificação</h3>
-                            </div>
-                            <p class="p-sexta-sessao-slider">Através de Emails, ofereça descontos, promoções e outros benefícios,
-                                atraia seus clientes e aumente sempre a frequência do seu estabelecimento.</p>
+                        <div class="div-interna-sexta-sessao">
+                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <h3 class="h3-sexta-sessao">Aproximação</h3>
                         </div>
-                        <div class="div-teste">
+                        <p class="p-sexta-sessao-slider">Envie emails de Boas Vindas para os clientes que visitaram seu estabelecimento
+                            pela primeira vez. Esteja sempre próximo dele.</p>
 
-                            <img class="img-responsive container responsividade-ipad" src="assets/img/iMac.png" alt="">
+
+                        <div class="div-interna-sexta-sessao">
+                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <h3 class="h3-sexta-sessao">Momentos Especiais</h3>
                         </div>
+                        <p class="p-sexta-sessao-slider">Faça envios em datas específicas, como feriados, festas, aniversários
+                            e outros, demonstrando interesse em seu cliente e fidelizando ele sempre.</p>
+
+                        <div class="div-interna-sexta-sessao">
+                            <img class="verified" src="assets/img/verified.png" alt="">
+                            <h3 class="h3-sexta-sessao">Bonificação</h3>
+                        </div>
+                        <p class="p-sexta-sessao-slider">Através de Emails, ofereça descontos, promoções e outros benefícios,
+                            atraia seus clientes e aumente sempre a frequência do seu estabelecimento.</p>
+                    </div>
+                    <div class="div-teste">
+
+                        <img class="img-responsive container responsividade-ipad" src="assets/img/iMac.png" alt="">
                     </div>
                 </div>
 
                 <div class="item">
                     <img src="assets/img/bg-section7.png" alt="..." style="width:100%; height:100%;">
-                    <div class="carousel-caption" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="carousel-caption" style="display: flex; flex-direction: column;">
                         <h2 class="h2-setima-sessao">serviços</h2>
-                        <div class="diversas-plataformas">
 
-                            <h1 class="h1-slide4-setima-sessao">Diversas Plataformas</h1>
-                            <p class="p-slide5-setima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem
-                                ipsum dolor sit.
-                            </p>
-                            <div class="socials-slider7">
-                                <img src="assets/img/facebook-logo.png" alt="">
-                                <img src="assets/img/instagram-logo.png" alt="">
-                                <img src="assets/img/youtube-logo.png" alt="">
-                                <img src="assets/img/linkedin-logo.png" alt="">
-                                <img src="assets/img/twitter.png" alt="">
-                                <img src="assets/img/graph.png" alt="">
-                            </div>
+                        <h1 class="h1-slide4-setima-sessao">Diversas Plataformas</h1>
+                        <p class="p-slide5-setima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum
+                            dolor sit.
+                        </p>
+                        <div class="socials-slider7">
+                            <img src="assets/img/facebook-logo.png" alt="">
+                            <img src="assets/img/instagram-logo.png" alt="">
+                            <img src="assets/img/youtube-logo.png" alt="">
+                            <img src="assets/img/linkedin-logo.png" alt="">
+                            <img src="assets/img/twitter.png" alt="">
+                            <img src="assets/img/graph.png" alt="">
                         </div>
                         <div class="div-teste">
                             <img class="img-responsive container responsividade-iphone" src="assets/img/iPhonedata.png" alt="">
@@ -788,7 +784,7 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="top:0;">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="assets/img/background-setima-sessao-slider1.png" alt="..." style="height: 100%; width: 100%;">
+                        <img src="assets/img/background-slider-junji.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-5 col-md-5 col-lg-5" style="height: 100%;">
                                 <img class="img01-slider1-sessao7" src="assets/img/iPhone-slider1-setima-sessao.png" alt="">
@@ -806,7 +802,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-slider2-setima-sessao.png" alt="..." style="height: 100%;
+                        <img src="assets/img/background-slider-experiencia-offline.png" alt="..." style="height: 100%;
                                 width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-12 col-md-12 col-lg-12" style="height: 100%;">
@@ -834,7 +830,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-slider3-setima-sessao.png" alt="..." style="height: 100%;
+                        <img src="assets/img/background-slider-timo.png" alt="..." style="height: 100%;
                                     width: 100%;">
                         <div class="carousel-caption">
 
@@ -878,7 +874,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-setima-sessao-slider1.png" alt="..." style="height: 100%; width: 100%;">
+                        <img src="assets/img/background-slider-envio-de-emails.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;">
                                 <img class="img04-slider4-sessao7-desk img-responsive" src="assets/img/iMac-setima-sessao-slider3-desk.png" alt="">
@@ -914,7 +910,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-setima-sessao-slider1.png" alt="..." style="height: 100%; width: 100%;">
+                        <img src="assets/img/background-slider-diversas-plataformas.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;">
                                 <p class="titulo-slider5-setima-sessao-desk">serviços</p>
@@ -924,7 +920,7 @@
                                     dapibus leo. Lorem ipsum dolor sit.
                                 </p>
                                 <div class="socials-slider5-setima-sessao-desk">
-                                    <img src="assets/img/facebook-logo.png" alt="">
+                                    <img src="assets/img/facebook-logo.png" alt="" style="width: 15px;">
                                     <img src="assets/img/instagram-logo.png" alt="">
                                     <img src="assets/img/youtube-logo.png" alt="">
                                     <img src="assets/img/linkedin-logo.png" alt="">
@@ -934,7 +930,7 @@
 
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-right: 205px;">
-                                <img class="img01-slider3-sessao7-desk img-responsive" src="assets/img/iPhone-slider5-setimasessao-desk.png" alt="">
+                                <img class="img01-slider3-sessao7-desk img-responsive" src="assets/img/iphone-diversas-plataformas.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1018,7 +1014,7 @@
 
                 <div class="item active">
                     <img class="" src="assets/img/bg-sessao9.png" alt="..." style="height: 100%; width: 100%;">
-                    <div class="carousel-caption" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="carousel-caption">
                         <p class="h2-nona-sessao">tecnologia</p>
                         <div style="width: 100%; position: relative; display: flex; flex-direction: column;">
                             <h1 class="p-nona-sessao">Captive Portal Personalizado.</h1>
@@ -1130,7 +1126,7 @@
                 <div class="carousel-inner" role="listbox">
 
                     <div class="item active">
-                        <img class="" src="assets/img/background-nona-sessao-desk.png" alt="..." style="height: 100%; width: 100%;">
+                        <img class="" src="assets/img/background-tecnologia-captive-portal-personalizado.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
 
                             <div class="col-sm-4 col-md-4 col-lg-4" style="height: 100%;padding-left: 0;padding-right:0;">
@@ -1138,7 +1134,7 @@
                             </div>
 
                             <div class="col-sm-2 col-md-2 col-lg-2" style="height: 100%;padding-left: 0;padding-right:0;">
-                                <img class="img-responsive iphone-nona-sessao-desk" src="assets/img/iphone-slider1-nona-sessao-desk.png" alt="">
+                                <img class="img-responsive iphone-nona-sessao-desk" src="assets/img/iphone-tecnologia-captive-portal.png" alt="">
                             </div>
 
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;padding-right:0;">
@@ -1177,13 +1173,13 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;padding-right:0;">
-                                <img class="img-equipamento-slider2 img-responsive" src="assets/img/equipamento-slider2-nona-sessao-desk.png" alt="">
+                                <img class="img-equipamento-slider2 img-responsive" src="assets/img/equipamento-tecnologia-monitor.png" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-slider3-nona-sessao-desk.png" alt="..." style="height: 100%; width: 100%;">
+                        <img src="assets/img/background-slider-tecnologia-smart-tracking.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;padding-right:110;">
                                 <p class="titulo-slider2-nona-sessao-desk">tecnologia</p>
@@ -1200,13 +1196,13 @@
                                     que os seus clientes frequentam e muito mais.</p>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-6" style="height: 100%;padding-left: 0;padding-right:0;">
-                                <img class="img-tracking-slider3 img-responsive" src="assets/img/img-tracking-slider3-sessao-nove.png" alt="">
+                                <img class="img-tracking-slider3 img-responsive" src="assets/img/img-slider-smart-tracking.png" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="assets/img/background-slider4-nona-sessao.png" alt="..." style="height: 100%; width: 100%;">
+                        <img src="assets/img/background-tecnologia-marco-civil.png" alt="..." style="height: 100%; width: 100%;">
                         <div class="carousel-caption">
                             <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2" style="height: 100%;padding-left: 0;padding-right:0;">
                                 <p class="titulo-slider4-nona-sessao-desk">tecnologia</p>
@@ -1219,7 +1215,7 @@
                                     rede, liberdade de expressão e da privacidade dos usuários.</p>
                             </div>
                             <div class="col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1" style="height: 100%;padding-left: 0;padding-right:0;">
-                                <img class="ipad-slider4-nona-sessao img-responsive" src="assets/img/iPad-slider4-nona-sessao.png" alt="">
+                                <img class="ipad-slider4-nona-sessao img-responsive" src="assets/img/ipad-tecnologia-marco-civil.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1266,7 +1262,7 @@
             <h1 class="h1-decima-sessao-desk">Fale Conosco</h1>
             <p class="p-decima-sessao-desk">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, adipiscing elit. Ut elit tellus,
                 luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit.</p>
-            <form>
+            <form action="." method="post">
                 <div class="form-group">
                     <input type="text" class=" height-form form-control" id="InputEmail" placeholder="Name">
                 </div>
@@ -1274,38 +1270,37 @@
                     <input type="email" class=" height-form form-control" id="InputPassword" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <input type="number" class=" height-form form-control" id="InputPhone" placeholder="Telefone">
+                    <input type="tel" class=" height-form form-control" id="InputPhone" placeholder="Telefone">
                 </div>
-
                 <button type="submit" class=" height-form bold-button btn btn-default btn-block">Enviar</button>
             </form>
         </div>
 
         <!-- RESPONSIVE -->
-            <h1 class="h1-decima-sessao">Fale Conosco</h1>
-            <p class="p-decima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, adipiscing elit. Ut elit tellus,
-                luctus nec ullamcorper mattis.</p>
+        <h1 class="h1-decima-sessao">Fale Conosco</h1>
+        <p class="p-decima-sessao">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, adipiscing elit. Ut elit tellus, luctus
+            nec ullamcorper mattis.</p>
 
 
-            <form class="container form-responsive">
-                <div class="form-group form-margin">
-                    <input type="text" class="form-control" id="InputEmail" placeholder="Name">
-                </div>
-                <div class="form-group form-margin">
-                    <input type="email" class="form-control" id="InputPassword" placeholder="Email">
-                </div>
-                <div class="form-group form-margin">
-                    <input type="number" class="form-control" id="InputPhone" placeholder="Telefone">
-                </div>
-
-                <button type="submit" class="btn btn-default btn-block btn-formulario">Enviar</button>
-            </form>
-
-            <div class="container mapa">
-                <iframe class="img-responsive mapa-interno" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.563093203895!2d-46.701965184462026!3d-23.58413016831983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce571a0befde61%3A0x5220566993302340!2sPra%C3%A7a+Dr.+Jo%C3%A3o+Adhemar+de+Almeida+Prado%2C+40+-+Jardim+Everest%2C+S%C3%A3o+Paulo+-+SP%2C+05601-040!5e0!3m2!1spt-BR!2sbr!4v1537294689532"
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
+        <form action="." method="post" class="container form-responsive">
+            <div class="form-group form-margin">
+                <input type="text" class="form-control" id="InputEmail" placeholder="Name">
             </div>
-            <p class="by-blue">2018 - by. BlueConecta</p>
+            <div class="form-group form-margin">
+                <input type="email" class="form-control" id="InputPassword" placeholder="Email">
+            </div>
+            <div class="form-group form-margin">
+                <input type="number" class="form-control" id="InputPhone" placeholder="Telefone">
+            </div>
+
+            <button type="submit" class="btn btn-default btn-block btn-formulario">Enviar</button>
+        </form>
+
+        <div class="container mapa">
+            <iframe class="img-responsive mapa-interno" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.563093203895!2d-46.701965184462026!3d-23.58413016831983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce571a0befde61%3A0x5220566993302340!2sPra%C3%A7a+Dr.+Jo%C3%A3o+Adhemar+de+Almeida+Prado%2C+40+-+Jardim+Everest%2C+S%C3%A3o+Paulo+-+SP%2C+05601-040!5e0!3m2!1spt-BR!2sbr!4v1537294689532"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <p class="by-blue">©2018 - by. BlueConecta</p>
         <!-- <li class="menu-redes-sociais">
             <a href="http://pt-br.facebook.com/BlueConecta" target="_blank"><img src="assets/img/facebook-logo.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/blueconecta/" target="_blank"><img src="assets/img/instagram-logo.png" alt="Instagram"></a>
@@ -1318,10 +1313,10 @@
 
 
     <!-- <div class="sessao footer-scroll"> -->
-    <section class="footer col-sm-12 col-md-12 col-lg-12">
+    <!-- <section class="footer col-sm-12 col-md-12 col-lg-12">
 
         <div class="footer-primeira-coluna col-sm-3 col-md-3 col-lg-3">
-            <img class="footer-primeira-coluna-imagem img-responsive" src="assets/img/agdata02.png" alt="Agencia Data">
+            <img class="footer-primeira-coluna-imagem img-responsive" src="assets/img/logo-definitiva.png" alt="Agencia Data">
             <p class="footer-primeira-coluna-paragrafo"><span class="footer-primeira-coluna-paragrafo-bold">Address</span>:
                 Praça Dr. Adhemar de Almeida Prado, n 40.</p>
             <p class="footer-primeira-coluna-paragrafo"><span class="footer-primeira-coluna-paragrafo-bold">Mobile</span>:
@@ -1373,9 +1368,11 @@
         <div class="footer-quarta-coluna col-sm-3 col-md-3 col-lg-3">
             <p class="footer-quarta-coluna-paragrafo-bold">Notícias</p>
             <p class="footer-quarta-coluna-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices,
-                nibh vel condimentum vehicula, dolor.</p>
-            <!-- <div class="newsletter"> -->
-            <form action="" class="newsletter">
+                nibh vel condimentum vehicula, dolor.</p> -->
+
+            <!-- Newsletter -->
+
+            <!-- <form  action="." method="post" class="newsletter">
                 <input class="newsletter-input" type="email" placeholder="Your email address">
                 <button class="newsletter-button" type="submit">Sign up</button>
             </form>
@@ -1385,7 +1382,7 @@
 
     <div class="footer-final col-sm-12 col-md-12 col-lg-12">
         <div class="footer-final-byBlue col-sm-2 col-md-2 col-lg-2">
-            <p class="footer-final-texto">2018 - by. BlueConecta</p>
+            <p class="footer-final-texto">©2018 - by. BlueConecta</p>
         </div>
         <div class="footer-final-redes-sociais col-sm-3 col-md-3 col-lg-3">
             <img src="assets/img/facebook-footer.png" alt="Facebook">
@@ -1393,8 +1390,7 @@
             <img src="assets/img/youtube-footer.png" alt="YouTube">
             <img src="assets/img/linkedin-footer.png" alt="LinkedIn">
         </div>
-    </div>
-    <!-- </div> -->
+    </div> -->
 
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -1402,6 +1398,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.scrollify.js"></script>
     <script src="assets/js/jquery.animateNumber.min.js"></script>
+    <script src="assets/js/jquery.touchSwipe.min.js"></script>
     <script src="assets/js/site.js"></script>
 </body>
 

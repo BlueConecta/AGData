@@ -43,6 +43,7 @@
 .about-desktop__div-one--text-intern__title{
     color: #fff;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     margin-top: 0;
     font-size: 25px;
@@ -54,6 +55,7 @@
 }
 .about-desktop__div-one--text-intern__paragraph{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     font-size: 21px;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -93,6 +95,7 @@
 .about-desktop__div-two--text-intern__title{
     color: #fff;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     margin-top: 0;
     font-size: 25px;
@@ -105,6 +108,7 @@
 .about-desktop__div-two--text-intern__paragraph{
     color: #fff;
     padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     @media (max-width: 1366px) and (min-width: 768px) {
         font-size: 19px;
@@ -141,6 +145,7 @@
 .about-desktop__div-three--text-intern__title{
     color: #fff;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     margin-top: 0;
     font-size: 25px;
@@ -154,6 +159,7 @@
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
     @media (max-width: 1366px) and (min-width: 768px) {
         font-size: 19px;
     }
@@ -191,6 +197,7 @@
 .about-desktop__div-four--text-intern__title{
     color: #fff;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 30px;
     margin-top: 0;
     font-size: 25px;
@@ -204,6 +211,7 @@
     color: #fff;
     padding-left: 30px;
     font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
     @media (max-width: 1366px) and (min-width: 768px) {
         font-size: 19px;
     }
@@ -574,6 +582,7 @@
         text-align: left;
         font-size: 26px;
         width: 78%;
+        padding: 0;
     }
     @media (min-width: 1368px) {
         margin-top: 20px;
@@ -595,8 +604,8 @@
         margin-bottom: 20px;
     }
     @media (max-width: 375px) and (min-width: 359px) {
-    font-size: 16px;
-    padding: 0 20px;
+        font-size: 16px;
+        padding: 0 20px;
     }
     @media (max-width: 415px) and (min-width: 376px) {
         padding: 0 20px;
@@ -611,6 +620,7 @@
     @media (max-width: 1366px) and (min-width: 768px) {
         font-weight: bold;
         font-size: 26px;
+        margin-left: 90px;
     }
     @media (min-width: 1368px) {
         font-weight: bold;

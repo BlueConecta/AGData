@@ -20,7 +20,7 @@
     text-transform: uppercase;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 28px;
+    padding-top: 18px;
     padding-bottom: 17.5px;
     letter-spacing: 2px;
     padding-left: 55px;
@@ -58,7 +58,7 @@
     @media (max-width: 359px) and (min-width: 320px) {
     }
     @media (max-width: 374px) and (min-width: 359px) { 
-        font-size: 29px;
+        font-size: 28px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 31px;
@@ -79,6 +79,9 @@
     padding: 0 10%;
     // position: relative;
     // top: 50px;
+    @media (max-width: 374px) and (min-width: 360px) { 
+        margin-top: 10px;
+    }
     @media (max-width: 500px) and (min-width: 416px) {
         display: flex;
         align-items: center; 
@@ -95,7 +98,6 @@
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
-        align-items: flex-start;
     }
 }
 .verified{
@@ -111,7 +113,6 @@
         margin-top: 10px;
     }
     @media (max-width: 500px) and (min-width: 417px) {
-        margin-top: 0;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -153,7 +154,7 @@
         font-size: 21px;
     }
     @media (max-width: 500px) and (min-width: 421px) {
-        font-size: 28px;
+        font-size: 25px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -170,10 +171,12 @@
     }
     @media (max-width: 374px) and (min-width: 359px) { 
         font-size: 10px;
-        margin-bottom: 17px;  
+        margin-bottom: 11px;  
     } 
     @media (max-width: 415px) and (min-width: 375px) {
-        font-size: 11px;
+        font-size: 10px;
+        margin-bottom: 8px;  
+
     }
     @media (max-width: 416px) and (min-width: 414px) {
         font-size: 13px;    
@@ -201,6 +204,7 @@
 }
 .h1-sexta-sessao-desk{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 0 35px;
     margin-top: 0;
@@ -220,6 +224,7 @@
     @media (min-width: 1368px) {
         font-size: 55px;
         line-height: 55px;
+        padding: 0 15px;
     }
 }
 .img-sexta-sessao-desk{
@@ -266,7 +271,7 @@
 .p-sexta-sessao-desk{
     color: #fff;
     padding: 0 30px 0 54px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;    
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 10px;

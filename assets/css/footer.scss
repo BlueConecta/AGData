@@ -35,6 +35,7 @@
 }
 .footer-primeira-coluna-paragrafo{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     padding-left: 20px;
     margin: 0;
@@ -43,14 +44,13 @@
         width: 84%;
     }
     @media (max-width: 1920px) and (min-width: 1368px) {
-        font-size: 17px;
+        font-size: 16px;
         width: 68%;
     }
 }
 .footer-primeira-coluna-paragrafo-bold{
     font-weight: bold;
 }
-
 
 .footer-segunda-coluna{
     background-color: #000;
@@ -63,6 +63,7 @@
 }
 .footer-segunda-coluna-paragrafoTitulo-bold{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding-left: 15%;
     padding-top: 22%;
@@ -75,6 +76,7 @@
 }
 .footer-segunda-coluna-paragrafo-bold{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 0;
     padding-left: 15%;
@@ -86,6 +88,7 @@
 }
 .footer-segunda-coluna-paragrafo{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     padding-left: 15%;
 }
@@ -102,6 +105,7 @@
 }
 .footer-terceira-coluna-paragrafo-bold{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 25px;
     padding-top: 22%;
@@ -121,6 +125,7 @@
 }
 .footer-terceira-coluna-noticias-paragrafo-bold{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 0;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -130,6 +135,7 @@
     }
 }
 .footer-terceira-coluna-noticias-paragrafo{
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-style: italic;
 }
@@ -145,6 +151,7 @@
 }
 .footer-quarta-coluna-paragrafo-bold{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding-top: 22%;
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -156,6 +163,7 @@
 }
 .footer-quarta-coluna-texto{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     line-height: 30px;
     width: 307.25px;
     height: 128px;
@@ -191,6 +199,7 @@
     padding-top: 20px;
 }
 .newsletter-input{
+    font-family: 'Montserrat', sans-serif;
     border: none;
     border-radius: 20px 0px 0px 20px;
     padding: 10px 0px 10px 20px;
@@ -200,10 +209,11 @@
 }
 .newsletter-button{
     border: none;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 0px 20px 20px 0px;
     padding: 10px 20px 10px 10px;
     color: #fff;
-    background-color: #0061ff;
+    background-color: #f7aa2e;
 }
 .newsletter-button:focus{
     outline-style: none;

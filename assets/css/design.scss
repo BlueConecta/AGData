@@ -212,6 +212,7 @@
 .design-desktop__extern-first--box-one__title{
     margin: 0;
     padding: 60px 38px 40px 60px;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: bold;
     @media (max-width: 767px) and (min-width: 2px) {
@@ -228,6 +229,7 @@
     margin: 0;
     padding: 0 60px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;                                                                                                                                                                                                                                                          
     line-height: 24px;
     letter-spacing: 0px;
     font-size: 19px;
@@ -364,7 +366,7 @@
 .p-design{
     color: #fff;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 27px;
     line-height: 28px;
@@ -400,9 +402,6 @@
         display: none;
     }
 }
-.box-1{
-    
-}
 .box-1-0{
     display: none;
 }
@@ -421,13 +420,11 @@
         font-size: 35px;
     }
 }
-.box-1-p{
-        
-}
 .design-desktop__extern-first--box-one__button{
     text-transform: uppercase;
     background-color: #f7aa2e;
     border: 2px solid #fff;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 18px;
     letter-spacing: 3px;
     padding: 5px 15px;
@@ -462,6 +459,7 @@
 .design-desktop__extern-first--box-two__button{
     text-transform: uppercase;
     background-color: #434343;
+    font-family: 'Montserrat', sans-serif;
     border: 2px solid #fff;
     border-radius: 18px;
     letter-spacing: 3px;
@@ -499,6 +497,7 @@
     padding: 60px 38px 40px 60px;
     color: #fff;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
@@ -512,6 +511,7 @@
 .design-desktop__extern-first--box-three__button{
     text-transform: uppercase;
     background-color: #888888;
+    font-family: 'Montserrat', sans-serif;
     border: 2px solid #fff;
     border-radius: 18px;
     letter-spacing: 3px;
@@ -528,6 +528,10 @@
         margin-top: 115px;
     }
 }
+.design-desktop__extern-first--box-three__button:focus{
+    outline-style: none;
+}
+
 .box-1-button3:focus{
     outline-style: none;
 }

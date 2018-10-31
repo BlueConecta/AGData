@@ -36,7 +36,6 @@
 //     background: rgba(0,0,0,0.5);
 // }
 
-
 .navigation-mobile__menu{
     display: flex;
     flex-direction: column;
@@ -50,10 +49,10 @@
     right: 0;
     // transform: translateY(-50%);
     position: absolute;
-    border-left: 4px solid #f7aa2e;
-    border-bottom: 4px solid #f7aa2e;
-    border-right: 4px solid #f7aa2e;
-    border-top: 4px solid #f7aa2e;
+    border-left: 2px solid #f7aa2e;
+    border-bottom: 2px solid #f7aa2e;
+    border-right: 2px solid #f7aa2e;
+    border-top: 2px solid #f7aa2e;
 }
 .navigation-mobile__menu--links{
     display: flex;
@@ -74,15 +73,15 @@
 }
 .icon-on-menu{
     height: 20px;
-    padding-left: 18px;
-    @media (max-width: 359px) and (min-width: 320px) {
+    padding-left: 10px;
+    @media (max-width: 360px) and (min-width: 320px) {
         height: 16px;
     }
 }
 .icon-on-menu-interno{
     height: 20px;
-    padding-left: 52px;
-    @media (max-width: 359px) and (min-width: 320px) {
+    padding-left: 40px;
+    @media (max-width: 360px) and (min-width: 320px) {
         height: 16px;
     }
 }
@@ -94,8 +93,8 @@
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
-    @media (max-width: 359px) and (min-width: 320px) {
-        font-size: 16px;
+    @media (max-width: 360px) and (min-width: 320px) {
+        font-size: 14px;
     }
 }
 .navigation-mobile__menu--address{
@@ -111,7 +110,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     margin: 0;
-    @media (max-width: 359px) and (min-width: 320px) {
+    @media (max-width: 360px) and (min-width: 320px) {
         font-size: 11px;
     }
 
@@ -138,14 +137,18 @@
 .navigation-mobile__menu--social-network .icons img{
     width: 22px;
     height: 22px;
-    @media (max-width: 359px) and (min-width: 320px) {
+    @media (max-width: 360px) and (min-width: 320px) {
         width: 16px;
         height: 16px;
     }
 }
 .facebook-menu{
-    width: 15px !important;
+    width: 12px !important;
     height: 22px !important;
+    @media (max-width: 360px) and (min-width: 320px) {
+        width: 9px !important;
+        height: 16px !important;
+    }    
 }
 
 .menu-hamburguer{
@@ -161,7 +164,7 @@
     animation: text2 ease-in-out 0.6s forwards;
     animation-delay: 0.2s;
     cursor: pointer;
-    @media (max-width: 359px) and (min-width: 320px) {
+    @media (max-width: 360px) and (min-width: 320px) {
         top: 4px;
         right: 7px;
     }
@@ -365,6 +368,7 @@
     background-color: #f7aa2e;
     padding: 3px 15px;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     cursor: pointer;
     opacity: 0;
@@ -385,6 +389,7 @@
 .navigation-desktop__links--link{
     color: #fff;
     margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     } 

@@ -140,16 +140,16 @@
     padding-top: 14px;
     @media (max-width: 360px) and (min-width: 320px) {
         height: 140px;
-        margin-top: 32px;
-        margin-bottom: 8px;
-    }
-    @media (max-width: 1920px) and (min-width: 768px) {
-        display: none;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
     @media (max-width: 500px) and (min-width: 417px) {
         height: 290px;
         margin-top: 40px;
         margin-bottom: 36px;
+    }
+    @media (max-width: 1920px) and (min-width: 768px) {
+        display: none;
     }
  }
  .mapa-interno{
@@ -210,6 +210,7 @@
 .h1-decima-sessao-desk{
     color: #fff;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
     font-size: 33px;
     margin: 0;
     line-height: 28px;
@@ -228,7 +229,7 @@
 }
 .p-decima-sessao-desk{
     color: #a9a7a7;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 21px;
@@ -240,13 +241,14 @@
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (max-width: 1920px) and (min-width: 1368px) {
-        font-size:28px;
+        font-size: 26px;
         line-height: 38px;
         margin-bottom: 100px;
     }
 
 }
 .height-form{
+    font-family: 'Montserrat', sans-serif;
     height: 40px;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;

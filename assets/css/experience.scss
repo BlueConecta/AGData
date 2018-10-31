@@ -18,8 +18,8 @@
     @media (max-width: 359px) and (min-width: 320px) {
         padding: 45px 20px 25px 20px;
     }
-    @media (max-width: 375px) and (min-width: 359px) {
-        font-size: 25px;
+    @media (max-width: 375px) and (min-width: 360px) {
+        font-size: 24px;
     } 
     @media (max-width: 415px) and (min-width: 376px) {
         font-size: 28px;
@@ -78,7 +78,7 @@
     @media (max-width: 359px) and (min-width: 321px) {
     }
     @media (max-width: 375px) and (min-width: 359px) {
-        margin-bottom: 29px;
+        margin-bottom: 18px;
     } 
     @media (max-width: 415px) and (min-width: 376px) {
         margin-bottom: 39px;
@@ -113,13 +113,9 @@
     }
     @media (max-width: 1366px) and (min-width: 768px) {
         height: 100%;
-        // width: 100%;        
     }
     @media (min-width: 1368px) {
     }
-}
-.imagem-quarta-sessao-desk-intern-0{
-    display: none;
 }
 .quarta-sessao-responsiva{
     width: 100%;
@@ -141,7 +137,7 @@
     color: #fff;
     text-align: left;
     padding: 25px 20px 45px 20px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 31px;
     font-weight: bold;
     line-height: 28px;
@@ -165,13 +161,12 @@
     color: #fff;
     text-align: justify;
     padding: 0 20px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;    
     font-size: 17px;
     margin-bottom: 45px;
     line-height: 24px;
     position: relative;
     animation: tituloquartasecao ease-in-out 2.5s forwards;
-    // animation-delay: 0.5s;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
@@ -190,10 +185,9 @@
     @media (max-width: 1366px) and (min-width: 768px) {
     }
     @media (min-width: 1368px) {
-        height: 12px;
+        height: 18px;
     }  
 }
-
 .descricao-barra1 p{
     @media (max-width: 767px) and (min-width: 2px) {
         // display: none;
