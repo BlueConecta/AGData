@@ -231,65 +231,161 @@ body, html{
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1s;
-}
-.facebook img{
-    @media (max-width: 500px) and (min-width: 416px) {
+    background-image: url(../img/facebook-logo.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 23px;
+    @media (max-width: 768px){
+        position: relative;
+        left: -60px;
+        opacity: 0;
+        animation: icones-sociais ease-in-out 1s forwards;
+        animation-delay: 1s;
+        background-image: url(../img/facebook-logo.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
         width: 17px;
         height: 23px;
     }
 }
+.facebook:hover{
+    @media (min-width: 768px){
+        background-image: url(../img/facebook-logo-hover.png);
+    }  
+}
+
 .instagram{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.2s;
-}
-.instagram img{
-    @media (max-width: 500px) and (min-width: 416px) {
+    background-image: url(../img/instagram-logo.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    @media (max-width: 768px){
+        position: relative;
+        left: -60px;
+        opacity: 0;
+        animation: icones-sociais ease-in-out 1s forwards;
+        animation-delay: 1.2s;
+        background-image: url(../img/instagram-logo.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
         width: 23px;
         height: 23px;
     }
 }
+.instagram:hover{
+    @media (min-width: 768px){
+        background-image: url(../img/instagram-logo-hover.png);
+    }
+}
+
 .youtube{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.4s;
-}
-.youtube img{
-    @media (max-width: 500px) and (min-width: 416px) {
+    background-image: url(../img/youtube-logo.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    @media (max-width: 768px){
+        position: relative;
+        left: -60px;
+        opacity: 0;
+        animation: icones-sociais ease-in-out 1s forwards;
+        animation-delay: 1.4s;
+        background-image: url(../img/youtube-logo.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
         width: 23px;
         height: 23px;
     }
 }
+.youtube:hover{
+    @media (min-width: 768px){
+        background-image: url(../img/youtube-logo-hover.png);
+    }
+}
+
 .linkedin{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.6s;
-}
-.linkedin img{
-    @media (max-width: 500px) and (min-width: 416px) {
+    background-image: url(../img/linkedin-logo.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    @media (max-width: 768px){
+        position: relative;
+        left: -60px;
+        opacity: 0;
+        animation: icones-sociais ease-in-out 1s forwards;
+        animation-delay: 1.6s;
+        background-image: url(../img/linkedin-logo.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
         width: 23px;
         height: 23px;
     }
 }
+.linkedin:hover{
+    @media (min-width: 768px){
+        background-image: url(../img/linkedin-logo-hover.png);
+    }
+}
+
 .twitter{
     position: relative;
     left: -60px;
     opacity: 0;
     animation: icones-sociais ease-in-out 1s forwards;
     animation-delay: 1.8s;
-}
-.twitter img{
-    @media (max-width: 500px) and (min-width: 416px) {
+    background-image: url(../img/twitter.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    @media (max-width: 768px){
+        position: relative;
+        left: -60px;
+        opacity: 0;
+        animation: icones-sociais ease-in-out 1s forwards;
+        animation-delay: 1.8s;
+        background-image: url(../img/twitter.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         width: 23px;
         height: 23px;
     }
 }
+.twitter:hover{
+    @media (min-width: 768px){
+        background-image: url(../img/twitter-hover.png);
+    }
+}
+
+
 .icones{
     width: 23px;
     height: 23px;
@@ -297,6 +393,10 @@ body, html{
 .icones-facebook{
     width: 17px;
     height: 23px;
+    background-image: url(../img/facebook-logo.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .arrow__up{
     width: 38px;
@@ -321,6 +421,7 @@ body, html{
     height: 50%;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 1;
 }
 
 // Menu Versão Definitiva

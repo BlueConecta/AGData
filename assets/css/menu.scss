@@ -77,12 +77,18 @@
     @media (max-width: 360px) and (min-width: 320px) {
         height: 16px;
     }
+    @media (max-width: 500px) and (min-width: 417px) {
+        padding-left: 20px;
+    }
 }
 .icon-on-menu-interno{
     height: 20px;
     padding-left: 40px;
     @media (max-width: 360px) and (min-width: 320px) {
         height: 16px;
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        padding-left: 50px;
     }
 }
 .navigation-mobile__menu--links li a{
@@ -95,6 +101,9 @@
     cursor: pointer;
     @media (max-width: 360px) and (min-width: 320px) {
         font-size: 14px;
+    }
+    @media (max-width: 500px) and (min-width: 417px) {
+        padding-left: 10px;
     }
 }
 .navigation-mobile__menu--address{
@@ -413,17 +422,20 @@
     align-items: center;
     justify-content: center;
     padding-top: 2%;
-    opacity: 0;
-    animation: button1 ease-in-out 2s forwards;
-    animation-delay: 1.5s;
+    // opacity: 0;
+    // animation: button1 ease-in-out 2s forwards;
+    // animation-delay: 1.5s;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }
 }
-.navigation-desktop__shop img{
+.navigation-desktop__shop--img{
     width: 17px;
     height: 19px;
     cursor: pointer;
+    opacity: 0;
+    animation: button1 ease-in-out 2s forwards;
+    animation-delay: 1.5s;
     @media (max-width: 767px) and (min-width: 2px) {
         display: none;
     }

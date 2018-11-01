@@ -109,7 +109,7 @@
                         $("#arrow-to-top").removeClass("arrow__up").addClass("disabled");
                         $("#m-logo-mobile").removeClass("disabled").addClass("navigation-desktop__logo-mobile");
                         $("#m-logo-desktop").removeClass("disabled").addClass("navigation-desktop__logo-desktop");
-                        $("#m-icon-shop").removeClass("disabled").addClass("navigation--desktop__shop");
+                        $("#m-icon-shop").removeClass("disabled").addClass("navigation-desktop__shop--img");
                         $(".m-paragraph-home").removeClass("disabled").addClass("home__desktop--paragraph");
                         $(".m-paragraph-home-mobile").removeClass("disabled").addClass("home__mobile--paragraph");
                         $("#m-title-home-mobile").removeClass("disabled").addClass("home__mobile--tile");
@@ -130,7 +130,7 @@
                         $("#arrow-to-top").removeClass("disabled").addClass("arrow__up");
                         $("#m-logo-mobile").removeClass("navigation-desktop__logo-mobile").addClass("disabled");
                         $("#m-logo-desktop").removeClass("navigation-desktop__logo-desktop").addClass("disabled");
-                        $("#m-icon-shop").removeClass("navigation--desktop__shop").addClass("disabled");
+                        $("#m-icon-shop").removeClass("navigation-desktop__shop--img").addClass("disabled");
                         $(".m-paragraph-home").removeClass("home__desktop--paragraph").addClass("disabled");
                         $(".m-paragraph-home-mobile").removeClass("home__mobile--paragraph").addClass("disabled");
                         $("#m-title-home-mobile").removeClass("home__mobile--tile").addClass("disabled");

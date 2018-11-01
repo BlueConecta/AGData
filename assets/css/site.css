@@ -49,6 +49,9 @@
   @media (max-width: 360px) and (min-width: 320px) {
     .icon-on-menu {
       height: 16px; } }
+  @media (max-width: 500px) and (min-width: 417px) {
+    .icon-on-menu {
+      padding-left: 20px; } }
 
 .icon-on-menu-interno {
   height: 20px;
@@ -56,6 +59,9 @@
   @media (max-width: 360px) and (min-width: 320px) {
     .icon-on-menu-interno {
       height: 16px; } }
+  @media (max-width: 500px) and (min-width: 417px) {
+    .icon-on-menu-interno {
+      padding-left: 50px; } }
 
 .navigation-mobile__menu--links li a {
   text-decoration: none;
@@ -68,6 +74,9 @@
   @media (max-width: 360px) and (min-width: 320px) {
     .navigation-mobile__menu--links li a {
       font-size: 14px; } }
+  @media (max-width: 500px) and (min-width: 417px) {
+    .navigation-mobile__menu--links li a {
+      padding-left: 10px; } }
 
 .navigation-mobile__menu--address {
   height: 8.5%;
@@ -348,20 +357,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2%;
-  opacity: 0;
-  animation: button1 ease-in-out 2s forwards;
-  animation-delay: 1.5s; }
+  padding-top: 2%; }
   @media (max-width: 767px) and (min-width: 2px) {
     .navigation-desktop__shop {
       display: none; } }
 
-.navigation-desktop__shop img {
+.navigation-desktop__shop--img {
   width: 17px;
   height: 19px;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0;
+  animation: button1 ease-in-out 2s forwards;
+  animation-delay: 1.5s; }
   @media (max-width: 767px) and (min-width: 2px) {
-    .navigation-desktop__shop img {
+    .navigation-desktop__shop--img {
       display: none; } }
 
 body, html {
@@ -570,60 +579,150 @@ body, html {
   left: -60px;
   opacity: 0;
   animation: icones-sociais ease-in-out 1s forwards;
-  animation-delay: 1s; }
+  animation-delay: 1s;
+  background-image: url(../img/facebook-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 23px; }
+  @media (max-width: 768px) {
+    .facebook {
+      position: relative;
+      left: -60px;
+      opacity: 0;
+      animation: icones-sociais ease-in-out 1s forwards;
+      animation-delay: 1s;
+      background-image: url(../img/facebook-logo.png);
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 23px; } }
 
-@media (max-width: 500px) and (min-width: 416px) {
-  .facebook img {
-    width: 17px;
-    height: 23px; } }
+@media (min-width: 768px) {
+  .facebook:hover {
+    background-image: url(../img/facebook-logo-hover.png); } }
 
 .instagram {
   position: relative;
   left: -60px;
   opacity: 0;
   animation: icones-sociais ease-in-out 1s forwards;
-  animation-delay: 1.2s; }
+  animation-delay: 1.2s;
+  background-image: url(../img/instagram-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+  @media (max-width: 768px) {
+    .instagram {
+      position: relative;
+      left: -60px;
+      opacity: 0;
+      animation: icones-sociais ease-in-out 1s forwards;
+      animation-delay: 1.2s;
+      background-image: url(../img/instagram-logo.png);
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px; } }
 
-@media (max-width: 500px) and (min-width: 416px) {
-  .instagram img {
-    width: 23px;
-    height: 23px; } }
+@media (min-width: 768px) {
+  .instagram:hover {
+    background-image: url(../img/instagram-logo-hover.png); } }
 
 .youtube {
   position: relative;
   left: -60px;
   opacity: 0;
   animation: icones-sociais ease-in-out 1s forwards;
-  animation-delay: 1.4s; }
+  animation-delay: 1.4s;
+  background-image: url(../img/youtube-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+  @media (max-width: 768px) {
+    .youtube {
+      position: relative;
+      left: -60px;
+      opacity: 0;
+      animation: icones-sociais ease-in-out 1s forwards;
+      animation-delay: 1.4s;
+      background-image: url(../img/youtube-logo.png);
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px; } }
 
-@media (max-width: 500px) and (min-width: 416px) {
-  .youtube img {
-    width: 23px;
-    height: 23px; } }
+@media (min-width: 768px) {
+  .youtube:hover {
+    background-image: url(../img/youtube-logo-hover.png); } }
 
 .linkedin {
   position: relative;
   left: -60px;
   opacity: 0;
   animation: icones-sociais ease-in-out 1s forwards;
-  animation-delay: 1.6s; }
+  animation-delay: 1.6s;
+  background-image: url(../img/linkedin-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+  @media (max-width: 768px) {
+    .linkedin {
+      position: relative;
+      left: -60px;
+      opacity: 0;
+      animation: icones-sociais ease-in-out 1s forwards;
+      animation-delay: 1.6s;
+      background-image: url(../img/linkedin-logo.png);
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px; } }
 
-@media (max-width: 500px) and (min-width: 416px) {
-  .linkedin img {
-    width: 23px;
-    height: 23px; } }
+@media (min-width: 768px) {
+  .linkedin:hover {
+    background-image: url(../img/linkedin-logo-hover.png); } }
 
 .twitter {
   position: relative;
   left: -60px;
   opacity: 0;
   animation: icones-sociais ease-in-out 1s forwards;
-  animation-delay: 1.8s; }
+  animation-delay: 1.8s;
+  background-image: url(../img/twitter.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+  @media (max-width: 768px) {
+    .twitter {
+      position: relative;
+      left: -60px;
+      opacity: 0;
+      animation: icones-sociais ease-in-out 1s forwards;
+      animation-delay: 1.8s;
+      background-image: url(../img/twitter.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px; } }
 
-@media (max-width: 500px) and (min-width: 416px) {
-  .twitter img {
-    width: 23px;
-    height: 23px; } }
+@media (min-width: 768px) {
+  .twitter:hover {
+    background-image: url(../img/twitter-hover.png); } }
 
 .icones {
   width: 23px;
@@ -631,7 +730,11 @@ body, html {
 
 .icones-facebook {
   width: 17px;
-  height: 23px; }
+  height: 23px;
+  background-image: url(../img/facebook-logo.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .arrow__up {
   width: 38px;
@@ -652,7 +755,8 @@ body, html {
 .carousel-control {
   height: 50%;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  opacity: 1; }
 
 .about {
   height: 100%;
@@ -2204,7 +2308,7 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 18px;
+  padding-top: 5%;
   padding-bottom: 17.5px;
   letter-spacing: 2px;
   padding-left: 55px;
@@ -4900,7 +5004,8 @@ body, html {
       font-size: 15px;
       line-height: 22px;
       text-align: center;
-      margin-top: 38px; } }
+      margin-top: 38px;
+      margin-bottom: 20px; } }
 
 .form-control {
   font-family: 'Montserrat', sans-serif;
@@ -5321,5 +5426,60 @@ body, html {
   @media (max-width: 767px) and (min-width: 2px) {
     .footer-scroll {
       height: 0% !important; } }
+
+.facebook-footer {
+  background-image: url(../img/facebook-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 23px; }
+
+.facebook-footer:hover {
+  background-image: url(../img/facebook-logo-hover.png); }
+
+.instagram-footer {
+  background-image: url(../img/instagram-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+
+.instagram-footer:hover {
+  background-image: url(../img/instagram-logo-hover.png); }
+
+.youtube-footer {
+  background-image: url(../img/youtube-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+
+.youtube-footer:hover {
+  background-image: url(../img/youtube-logo-hover.png); }
+
+.linkedin-footer {
+  background-image: url(../img/linkedin-logo.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+
+.linkedin-footer:hover {
+  background-image: url(../img/linkedin-logo-hover.png); }
+
+.twitter-footer {
+  background-image: url(../img/twitter.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px; }
+
+.twitter-footer:hover {
+  background-image: url(../img/twitter-hover.png); }
 
 /*# sourceMappingURL=site.css.map */
