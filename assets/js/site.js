@@ -26,7 +26,7 @@
                 $(".menu-hamburguer").removeClass("disabled");
             })
 
-            //Os 2 próximos trechos de código podem ser feitos em um único trecho
+            //Os 2 próximos trechos de código podem ser feitos em um único trecho <---------------
             // Botão para Abrir menu
             $("#button-mobile").click(function () {
                 $(".navigation-mobile").addClass("active");
@@ -40,11 +40,19 @@
                 $(".menu-hamburguer").removeClass("disabled");
             })
 
-            // $(".navigation-mobile").click(function () {
-            //     $(".navigation-mobile").removeClass("active");
-            //     $(".menu-hamburguer").removeClass("disabled");
-            //     event.stopPropagation();
-            // })
+            // Botão para Abrir menu
+            $(".navigation-mobile").click(function () {
+                $(".navigation-mobile").removeClass("active");
+                $(".menu-hamburguer").removeClass("disabled");
+                event.stopPropagation();
+            })
+
+            // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, suprimindo o evento de fechar.
+            $(".navigation-mobile__menu").click(function () {
+                console.log("Click!");  
+                event.stopPropagation();
+            })
+
 
             // Fecha o Menu e a Janela de vídeo, caso ocorra click fora de algum dos dois quando ativos.
             $(document).click(function () {
@@ -55,10 +63,6 @@
                 $("#m_quinta-sessao-desktop").removeClass("disabled").addClass("quinta-sessao-desk");
             })
             
-            // Impede que o evento de click fora do menu se progague pelos elementos filhos no DOM, suprimindo o evento de fechar.
-            // $(".navigation-mobile").click(function () {
-            //     event.stopPropagation();
-            // })
 
             // Alterna entre a exibição do vídeo e da seção na Versão Mobile.
             $("#play_video, #control-img-play-mobile").click(function(){
@@ -84,7 +88,7 @@
                 })              
             })
 
-            // Navegação nos carousels através do deslize na Versão Mobile 
+            // Navegação nos carousels através do deslize na Versão Mobile (Swipe Touch JS)
             $("#carousel-example-generic00, #carousel-example-generic4").swipe( {
                 swipe:function(event, direction, distance, duration, fingerCount, fingerData) {    
                     if(direction=='left'){
@@ -95,7 +99,7 @@
                 }
             });     
            
-            //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch
+            //Aqui dá pra usar sim o switch. Todos os ifs podem ser substituídos por switch  <------------
             // Inicio da Navegação por sessões e Animações            
             $.scrollify({
                 section: ".sessao",
@@ -107,7 +111,7 @@
                     // Controle de Navegação da Primeira Seção
                     if (section === 0) {                        
                         $("#arrow-to-top").removeClass("arrow__up").addClass("disabled");
-                        $("#m-logo-mobile").removeClass("disabled").addClass("navigation-desktop__logo-mobile");
+                        // $("#m-logo-mobile").removeClass("disabled").addClass("navigation-desktop__logo-mobile");
                         $("#m-logo-desktop").removeClass("disabled").addClass("navigation-desktop__logo-desktop");
                         $("#m-icon-shop").removeClass("disabled").addClass("navigation-desktop__shop--img");
                         $(".m-paragraph-home").removeClass("disabled").addClass("home__desktop--paragraph");
@@ -128,7 +132,7 @@
                         $("#m-contact").removeClass("disabled").addClass("navigation-desktop__links--contact-button");
                     } else {
                         $("#arrow-to-top").removeClass("disabled").addClass("arrow__up");
-                        $("#m-logo-mobile").removeClass("navigation-desktop__logo-mobile").addClass("disabled");
+                        // $("#m-logo-mobile").removeClass("navigation-desktop__logo-mobile").addClass("disabled");
                         $("#m-logo-desktop").removeClass("navigation-desktop__logo-desktop").addClass("disabled");
                         $("#m-icon-shop").removeClass("navigation-desktop__shop--img").addClass("disabled");
                         $(".m-paragraph-home").removeClass("home__desktop--paragraph").addClass("disabled");

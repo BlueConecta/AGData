@@ -141,10 +141,10 @@ body, html{
     opacity: 0;
     animation: text1 ease-in-out 1s forwards;
     animation-delay: 0.5s;
-    @media (max-width: 361px) and (min-width: 321px) {
+    @media (max-width: 361px) and (min-width: 320px) {
         font-size: 15px;
     }    
-    @media (max-width: 500px) and (min-width: 416px) {
+    @media (max-width: 768px) and (min-width: 416px) {
         font-size: 20px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
@@ -162,18 +162,24 @@ body, html{
     opacity: 0;
     animation: title1 ease-in-out 1.5s forwards;
     // animation-delay: 1s;
-    @media (max-width: 361px) and (min-width: 321px) {
-        font-size: 30px;       
+    @media (max-width: 361px) and (min-width: 320px) {
+        font-size: 26px;       
     }
     @media (max-width: 375px) and (min-width: 362px) {
-        font-size: 31px;
+        font-size: 29px;
     } 
     @media (max-width: 415px) and (min-width: 376px) {
-        font-size: 34px;
+        font-size: 30px;
     }
     @media (max-width: 500px) and (min-width: 416px) {
+        font-size: 33px;
+    }
+    @media (max-width: 768px) and (min-width: 501px) {
         font-size: 38px;
     }
+    // @media (max-width: 500px) and (min-width: 457px) {
+    //     font-size: 38px;
+    // }
     @media (max-width: 1920px) and (min-width: 768px) {
         // font-size: 66px;
     }
@@ -192,17 +198,16 @@ body, html{
     letter-spacing: 5px;
     animation: button1 ease-in-out 2s forwards;
     animation-delay: 0.5s;
-    @media (max-width: 361px) and (min-width: 321px) {
+    @media (max-width: 361px) and (min-width: 320px) {
         padding: 6px 28px;
     }
-    @media (max-width: 500px) and (min-width: 416px) {
+    @media (max-width: 767px) and (min-width: 416px) {
         border-radius: 34px;
         padding: 15px 35px;
-    }
-    
+    }    
     @media (max-width: 1366px) and (min-width: 768px) {
     }
-    @media (min-width: 1368px) {
+    @media (min-width: 1367px) {
         border-radius: 20px;
         padding: 10px 25px;
     }
@@ -421,9 +426,11 @@ body, html{
     height: 50%;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.85;
+}
+.carousel-control:hover{
     opacity: 1;
 }
-
 // Menu Versão Definitiva
 
 

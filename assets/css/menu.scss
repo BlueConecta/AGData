@@ -2,20 +2,13 @@
     display: none;
 }
 .navigation-mobile{
-    // display: none;
     width: 100%;
     height: 100%;
     position: fixed;
-    background: rgba(0,0,0,0.8);
-    // top: 50%;
-    // transform: translateY(-50%);
+    // background: rgba(0,0,0,0.8);
     z-index: 503;
     margin-bottom: 0;
     right: -100%;
-    // border-left: 4px solid #f7aa2e;
-    // border-bottom: 4px solid #f7aa2e;
-    // border-right: 4px solid #f7aa2e;
-    // border-top: 4px solid #f7aa2e;
 
     transition: right 0.2s ease-out;
 }
@@ -53,6 +46,7 @@
     border-bottom: 2px solid #f7aa2e;
     border-right: 2px solid #f7aa2e;
     border-top: 2px solid #f7aa2e;
+    z-index: 505;
 }
 .navigation-mobile__menu--links{
     display: flex;
@@ -276,12 +270,9 @@
 .navigation-desktop__logo-mobile{
     height: 20px;
     width: 148px;
-    margin: 15px 0 0 10px;
-    position: relative;
-    // left: -60px;
+    margin: 25px 0 0 15px;
+    position: fixed;
     opacity: 1;
-    // animation: logo-agdata ease-in-out 1s forwards;
-    // animation-delay: 1.5s;
     @media (max-width: 361px) and (min-width: 321px) {
         // height: 20px;
     }
@@ -301,7 +292,7 @@
     opacity: 1;
     // animation: logo-agdata ease-in-out 1s forwards;
     // animation-delay: 1.5s;
-    @media (max-width: 767px) and (min-width: 2px) {
+    @media (max-width: 767px){
         display: none;
     }
     @media (min-width: 1200px) {
