@@ -89,7 +89,7 @@
             })
 
             // Navegação nos carousels através do deslize na Versão Mobile (Swipe Touch JS)
-            $("#carousel-example-generic00, #carousel-example-generic4").swipe( {
+            $("#carousel-example-generic00, #carousel-example-generic4, #carousel-example-generic2").swipe( {
                 swipe:function(event, direction, distance, duration, fingerCount, fingerData) {    
                     if(direction=='left'){
                         $(this).carousel('next');

@@ -7,7 +7,7 @@
     width: 100%;
 }
 .h2-oitava-sessao{
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 0;
     font-size: 14px;
     color: #f7aa2e;
@@ -20,8 +20,9 @@
     padding-left: 55px;
     padding-right: 55px;
     font-weight: bold;
-    @media (max-width: 500px) and (min-width: 415px) {
+    @media (max-width: 767px) and (min-width: 411px) {
        font-size: 18px; 
+       margin-top: 30px;
     }
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
@@ -41,8 +42,8 @@
     @media (max-width: 359px) and (min-width: 321px) {
     }
     @media (max-width: 374px) and (min-width: 360px) { 
-        font-size: 32px;
-        margin-top: 20px;
+        font-size: 30px;
+        margin-top: 0px;
     } 
     @media (max-width: 413px) and (min-width: 375px) {
         font-size: 31px;
@@ -52,7 +53,7 @@
     }
     @media (max-width: 500px) and (min-width: 417px) {
         font-size: 52px;
-        margin-top: 40px;
+        margin-top: 0px;
         line-height: 58px;
     }
     @media (max-width: 1920px) and (min-width: 768px) {
@@ -88,13 +89,13 @@
 .aspas{
     height: 32px !important;
     display: flex;
-    margin: 85px auto 50px auto;
-    @media (max-width: 500px) and (min-width: 415px) {
-        margin: 11vh auto 11.5vh auto;
+    margin: 50px auto 50px auto;
+    @media (max-width: 500px) and (min-width: 411px) {
+        margin: 70px auto 120px auto;        
     }
-    @media (max-width: 1920px) and (min-width: 768px) {
-        display: none !important;
-    }
+    // @media (max-width: 1920px) and (min-width: 768px) {
+    //     display: none !important;
+    // }
 }
 .p-oitava-sessao{
     color: #fff;
@@ -104,9 +105,9 @@
     margin-bottom: 37px;
     font-size: 14px;
     font-style: italic;
-    @media (max-width: 500px) and (min-width: 415px) {
-        font-size: 2.75vh; 
-        margin-bottom: 130px;
+    @media (max-width: 767px) and (min-width: 411px) {
+        font-size: 18px; 
+        margin-bottom: 50px;
     }
     @media (max-width: 1920px) and (min-width: 768px) {
         display: none;
@@ -137,8 +138,8 @@
 .strong-on-testimonial{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    @media (max-width: 500px) and (min-width: 415px) {
-        font-size: 22px;
+    @media (max-width: 767px) and (min-width: 411px) {
+        font-size: 20px;
     }
     @media (max-width: 1366px) and (min-width: 768px) {
     }
@@ -149,22 +150,22 @@
 .no-strong-on-testimonial{
     color: #7d7d7d;
     font-family: 'Montserrat', sans-serif;
-    @media (max-width: 500px) and (min-width: 415px) {
-        font-size: 20px;
+    @media (max-width: 500px) and (min-width: 411px) {
+        font-size: 18px;
     }
-    @media (max-width: 1366px) and (min-width: 768px) {
-    }
+    // @media (max-width: 1366px) and (min-width: 768px) {
+    // }
     @media (min-width: 1368px) {
         font-size: 20px;
     }
 }
 .indicators-testimonial{
-    background-color: #f7aa2e !important;
-    border: 1px solid #f7aa2e !important;
+    // background-color: #f7aa2e !important;
+    // border: 1px solid #f7aa2e !important;
 }
 .indicators-testimonial-disabled{
-    background-color: #000 !important;
-    border: 1px solid #f7aa2e !important;
+    // background-color: #000 !important;
+    // border: 1px solid #f7aa2e !important;
 }
 .h2-oitava-slider-sessao{
     margin-top: 0;

@@ -83,13 +83,12 @@
         font-size: 30px;
         padding: 0 52px;
     } 
-    @media (max-width: 414px) and (min-width: 375px) {
-        font-size: 34px;
-
+    @media (max-width: 411px) and (min-width: 375px) {
+        font-size: 32px;
     }
-    // @media (max-width: 420px) and (min-width: 414px) {
-    //     font-size: 40px;
-    // }
+    @media (max-width: 767px) and (min-width: 412px) {
+        font-size: 36px;
+    }
     @media (max-width: 500px) and (min-width: 420px) {
         font-size: 45px;
     }
